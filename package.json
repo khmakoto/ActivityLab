@@ -1,0 +1,45 @@
+{
+  "name": "activitylab",
+  "version": "1.0.0",
+  "description": "Gamifying the video annotation task of activity recognition.",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khmakoto/ActivityLab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khmakoto/ActivityLab/issues"
+  },
+  "homepage": "https://github.com/khmakoto/ActivityLab#readme",
+  "keywords": [],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.20.0"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-beta",
+    "cookie-parser": "^1.4.3",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-hot-loader": "^3.1.2",
+    "reactstrap": "^5.0.0-alpha.3"
+  }
+}
