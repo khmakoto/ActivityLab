@@ -19,17 +19,31 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader"
       },
-      {
-        test: /\.css$/,
+      { test: /\.css$/,
         use: [
           'style-loader',
           'css-loader'
         ]
-      }
+      },
+			{	test: /\.scss$/,
+        use: [{
+        	loader: "style-loader" // creates style nodes from JS strings
+        }, {
+          loader: "css-loader" // translates CSS into CommonJS
+        }, {
+          loader: "sass-loader" // compiles Sass to CSS
+        }]
+			}
 		]
 	},
 	plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
 	],
+	resolve: {
+	    alias: {
+	      components: path.resolve(__dirname, "client/components"),
+	      //layout: path.resolve(__dirname, "client/components/layouts/layout.css")
+	    },
+	},
 };
