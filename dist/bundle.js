@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "38d5a493771e01b6783a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "61b3bea4c6e776b2eef8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -727,6 +727,119 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./client/components/facebook/Button.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Button = function (_React$Component) {
+	_inherits(Button, _React$Component);
+
+	function Button(props) {
+		_classCallCheck(this, Button);
+
+		var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
+
+		_this.FB = props.fb;
+		_this.onLogout = _this.onLogout.bind(_this);
+		_this.onStatusChange = _this.onStatusChange.bind(_this);
+		_this.state = {
+			message: ""
+		};
+		return _this;
+	}
+
+	_createClass(Button, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			this.FB.Event.subscribe('auth.logout', this.onLogout);
+			this.FB.Event.subscribe('auth.statusChange', this.onStatusChange);
+		}
+	}, {
+		key: 'onStatusChange',
+		value: function onStatusChange(response) {
+			var _this2 = this;
+
+			console.log(response);
+			if (response.status === "connected") {
+				this.FB.api('/me', function (response) {
+					var message = "Welcome " + response.name;
+					_this2.setState({
+						message: message
+					});
+				});
+			}
+		}
+	}, {
+		key: 'onLogout',
+		value: function onLogout(response) {
+			this.setState({
+				message: ""
+			});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement('div', {
+					className: 'fb-login-button',
+					'data-max-rows': '1',
+					'data-size': 'large',
+					'data-show-faces': 'false',
+					'data-auto-logout-link': 'true'
+				}),
+				_react2.default.createElement(
+					'div',
+					null,
+					this.state.message
+				)
+			);
+		}
+	}]);
+
+	return Button;
+}(_react2.default.Component);
+
+var _default = Button;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Button, 'Button', '/home/ActivityLab/client/components/facebook/Button.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Button.js');
+}();
+
+;
+
+/***/ }),
+
 /***/ "./client/components/home/Home.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -746,6 +859,588 @@ var _react2 = _interopRequireDefault(_react);
 __webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
 
 __webpack_require__("./client/components/home/home.scss");
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
+	_inherits(Home, _React$Component);
+
+	function Home(props) {
+		_classCallCheck(this, Home);
+
+		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+	}
+
+	_createClass(Home, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				_reactstrap.Container,
+				null,
+				_react2.default.createElement(
+					_reactstrap.Row,
+					null,
+					_react2.default.createElement(
+						_reactstrap.Col,
+						null,
+						_react2.default.createElement(
+							_reactstrap.Jumbotron,
+							null,
+							_react2.default.createElement(
+								'h1',
+								{ className: 'display-3' },
+								'Hello, Challenger!'
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'lead' },
+								'This is a social annotation challenge.'
+							),
+							_react2.default.createElement('hr', { className: 'my-2' }),
+							_react2.default.createElement(
+								'p',
+								{ className: 'lead' },
+								_react2.default.createElement(
+									_reactstrap.Button,
+									{ color: 'primary' },
+									'Play'
+								)
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Home;
+}(_react2.default.Component);
+
+var _default = Home;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/home/Home.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/home/Home.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/home/home.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./client/components/layouts/Layout.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Layout = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Menu = __webpack_require__("./client/components/layouts/Menu.js");
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _Main = __webpack_require__("./client/components/layouts/Main.js");
+
+var _Main2 = _interopRequireDefault(_Main);
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Layout = exports.Layout = function (_React$Component) {
+  _inherits(Layout, _React$Component);
+
+  function Layout(props) {
+    _classCallCheck(this, Layout);
+
+    return _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this, props));
+  }
+
+  _createClass(Layout, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_Menu2.default, null),
+        _react2.default.createElement(_Main2.default, null)
+      );
+    }
+  }]);
+
+  return Layout;
+}(_react2.default.Component);
+
+var _default = Layout;
+exports.default = _default;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/home/ActivityLab/client/components/layouts/Layout.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Layout.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/layouts/Main.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _Home = __webpack_require__("./client/components/home/Home.js");
+
+var _Home2 = _interopRequireDefault(_Home);
+
+var _Profile = __webpack_require__("./client/components/profile/Profile.js");
+
+var _Profile2 = _interopRequireDefault(_Profile);
+
+var _Task = __webpack_require__("./client/components/task/Task.js");
+
+var _Task2 = _interopRequireDefault(_Task);
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+__webpack_require__("./client/components/layouts/styles/main.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function Main(props) {
+  return _react2.default.createElement(
+    'main',
+    { className: 'main_holder' },
+    _react2.default.createElement(
+      _reactRouterDom.Switch,
+      null,
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
+      _react2.default.createElement(PrivateRoute, { path: '/profile', component: _Profile2.default }),
+      _react2.default.createElement(PrivateRoute, { path: '/task', component: _Task2.default })
+    )
+  );
+}
+
+var PrivateRoute = function PrivateRoute(_ref) {
+  var Component = _ref.component,
+      rest = _objectWithoutProperties(_ref, ['component']);
+
+  return _react2.default.createElement(_reactRouterDom.Route, _extends({}, rest, { render: function render(props) {
+      return true ? _react2.default.createElement(Component, props) : _react2.default.createElement(Redirect, { to: {
+          pathname: '/',
+          state: { from: props.location }
+        } });
+    } }));
+};
+
+var _default = Main;
+exports.default = _default;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(Main, 'Main', '/home/ActivityLab/client/components/layouts/Main.js');
+
+  __REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/home/ActivityLab/client/components/layouts/Main.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Main.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/layouts/Menu.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+var _Button = __webpack_require__("./client/components/facebook/Button.js");
+
+var _Button2 = _interopRequireDefault(_Button);
+
+__webpack_require__("./client/components/layouts/styles/menu.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Menu = function (_React$Component) {
+	_inherits(Menu, _React$Component);
+
+	function Menu(props) {
+		_classCallCheck(this, Menu);
+
+		var _this = _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
+
+		_this.checkLoginState = _this.checkLoginState.bind(_this);
+		_this.toggle = _this.toggle.bind(_this);
+
+		_this.state = {
+			isOpen: false
+		};
+
+		return _this;
+	}
+
+	_createClass(Menu, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {}
+	}, {
+		key: 'checkLoginState',
+		value: function checkLoginState() {}
+	}, {
+		key: 'toggle',
+		value: function toggle() {
+			this.setState({
+				isOpen: !this.state.isOpen
+			});
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			console.log('render');
+			return _react2.default.createElement(
+				_reactstrap.Navbar,
+				{ color: 'faded', light: true, expand: 'md' },
+				_react2.default.createElement(
+					_reactstrap.NavbarBrand,
+					{ tag: _reactRouterDom.Link, to: '/' },
+					'ActivityLab'
+				),
+				_react2.default.createElement(_reactstrap.NavbarToggler, { onClick: this.toggle }),
+				_react2.default.createElement(
+					_reactstrap.Collapse,
+					{ isOpen: this.state.isOpen, navbar: true },
+					_react2.default.createElement(
+						_reactstrap.Nav,
+						{ className: 'ml-auto', navbar: true },
+						_react2.default.createElement(
+							_reactstrap.NavItem,
+							null,
+							_react2.default.createElement(
+								_reactstrap.NavLink,
+								{ tag: _reactRouterDom.Link, to: '/task' },
+								'Task'
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.NavItem,
+							null,
+							_react2.default.createElement(
+								_reactstrap.NavLink,
+								{ tag: _reactRouterDom.Link, to: '/profile' },
+								'Profile'
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.NavItem,
+							null,
+							_react2.default.createElement(_Button2.default, { fb: FB })
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Menu;
+}(_react2.default.Component);
+
+var _default = Menu;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/home/ActivityLab/client/components/layouts/Menu.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Menu.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/layouts/styles/main.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./client/components/layouts/styles/menu.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./client/components/profile/Profile.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Home = function (_React$Component) {
+	_inherits(Home, _React$Component);
+
+	function Home(props) {
+		_classCallCheck(this, Home);
+
+		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+	}
+
+	_createClass(Home, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Container,
+					null,
+					_react2.default.createElement(
+						_reactstrap.Row,
+						null,
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'h1',
+								null,
+								'Profile'
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Home;
+}(_react2.default.Component);
+
+var _default = Home;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/profile/Profile.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/profile/Profile.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/Task.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+__webpack_require__("./client/components/task/task.scss");
 
 var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
 
@@ -951,22 +1646,22 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/Task.js');
 }();
 
 ;
 
 /***/ }),
 
-/***/ "./client/components/home/home.scss":
+/***/ "./client/components/task/task.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss");
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -980,311 +1675,8 @@ if(content.locals) module.exports = content.locals;
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss", function() {
-			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss");
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./client/components/layouts/Layout.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Layout = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Menu = __webpack_require__("./client/components/layouts/Menu.js");
-
-var _Menu2 = _interopRequireDefault(_Menu);
-
-var _Main = __webpack_require__("./client/components/layouts/Main.js");
-
-var _Main2 = _interopRequireDefault(_Main);
-
-var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Layout = exports.Layout = function (_React$Component) {
-  _inherits(Layout, _React$Component);
-
-  function Layout(props) {
-    _classCallCheck(this, Layout);
-
-    return _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this, props));
-  }
-
-  _createClass(Layout, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_Menu2.default, null),
-        _react2.default.createElement(_Main2.default, null)
-      );
-    }
-  }]);
-
-  return Layout;
-}(_react2.default.Component);
-
-var _default = Layout;
-exports.default = _default;
-;
-
-var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-
-  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/home/ActivityLab/client/components/layouts/Layout.js');
-
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Layout.js');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./client/components/layouts/Main.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__("./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
-
-var _Home = __webpack_require__("./client/components/home/Home.js");
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
-
-__webpack_require__("./client/components/layouts/styles/main.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function Main(props) {
-  return _react2.default.createElement(
-    'main',
-    { className: 'main_holder' },
-    _react2.default.createElement(
-      _reactRouterDom.Switch,
-      null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default })
-    )
-  );
-}
-
-var _default = Main;
-exports.default = _default;
-;
-
-var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-
-  __REACT_HOT_LOADER__.register(Main, 'Main', '/home/ActivityLab/client/components/layouts/Main.js');
-
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Main.js');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./client/components/layouts/Menu.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__("./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
-
-var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
-
-__webpack_require__("./client/components/layouts/styles/menu.css");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Menu = function (_React$Component) {
-  _inherits(Menu, _React$Component);
-
-  function Menu(props) {
-    _classCallCheck(this, Menu);
-
-    var _this = _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
-
-    _this.toggle = _this.toggle.bind(_this);
-    _this.state = {
-      isOpen: false
-    };
-    return _this;
-  }
-
-  _createClass(Menu, [{
-    key: 'toggle',
-    value: function toggle() {
-      this.setState({
-        isOpen: !this.state.isOpen
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        _reactstrap.Navbar,
-        { color: 'faded', light: true, expand: 'md' },
-        _react2.default.createElement(
-          _reactstrap.NavbarBrand,
-          { href: '/' },
-          'ActivityLab'
-        ),
-        _react2.default.createElement(_reactstrap.NavbarToggler, { onClick: this.toggle }),
-        _react2.default.createElement(
-          _reactstrap.Collapse,
-          { isOpen: this.state.isOpen, navbar: true },
-          _react2.default.createElement(
-            _reactstrap.Nav,
-            { className: 'ml-auto', navbar: true },
-            _react2.default.createElement(
-              _reactstrap.NavItem,
-              null,
-              _react2.default.createElement(
-                _reactstrap.NavLink,
-                { href: '' },
-                'User: Mike'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Menu;
-}(_react2.default.Component);
-
-var _default = Menu;
-exports.default = _default;
-;
-
-var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-
-  __REACT_HOT_LOADER__.register(Menu, 'Menu', '/home/ActivityLab/client/components/layouts/Menu.js');
-
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Menu.js');
-}();
-
-;
-
-/***/ }),
-
-/***/ "./client/components/layouts/styles/main.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css", function() {
-			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/main.css");
-			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./client/components/layouts/styles/menu.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(true) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css", function() {
-			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./client/components/layouts/styles/menu.css");
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -10924,6 +11316,21 @@ exports.push([module.i, "/*!\n * Bootstrap v4.0.0-beta (https://getbootstrap.com
 /***/ }),
 
 /***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/home/home.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
