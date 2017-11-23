@@ -38,7 +38,14 @@ module.exports = {
 	},
 	plugins: [
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('development'),
+          'DOMAIN': JSON.stringify('http://www.chi-lin.com'),
+          'PORT': JSON.stringify('7777')
+      }
+    })
 	],
 	resolve: {
 	    alias: {
