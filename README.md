@@ -3,8 +3,7 @@ Gamifying the video annotation task of activity recognition.
 
 1. Download it
 2. npm install
-3. Set Up Facebook App
-[tutorial](http://rationalappdev.com/logging-into-react-native-apps-with-facebook-or-google/)
+3. [Set Up Facebook App](http://rationalappdev.com/logging-into-react-native-apps-with-facebook-or-google/)
 4. Change 'DOMAIN' and 'PORT' in webpack.config.js
 ```javascript
 new webpack.DefinePlugin({
