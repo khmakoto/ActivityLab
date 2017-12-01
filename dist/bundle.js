@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "162076c5c902b3ff0c9d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "743978ffcb6b1b4d165b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -737,7 +737,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Auth = {
@@ -757,15 +757,15 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 }();
 
 ;
@@ -803,7 +803,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Button = function (_React$Component) {
@@ -908,15 +908,15 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(Button, 'Button', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(Button, 'Button', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 }();
 
 ;
@@ -1018,9 +1018,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 }();
 
 ;
@@ -1127,9 +1127,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 }();
 
 ;
@@ -1264,11 +1264,11 @@ var _temp = function () {
 				return;
 		}
 
-		__REACT_HOT_LOADER__.register(Main, 'Main', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(Main, 'Main', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 }();
 
 ;
@@ -1395,9 +1395,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 }();
 
 ;
@@ -1497,7 +1497,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Profile = function (_React$Component) {
@@ -1531,11 +1531,11 @@ var Profile = function (_React$Component) {
 
 			if (!user) {
 				return _react2.default.createElement(
-					'h1',
+					'div',
 					null,
 					_react2.default.createElement(
-						'i',
-						null,
+						_reactstrap.Alert,
+						{ color: 'light' },
 						'Loading'
 					)
 				);
@@ -1566,7 +1566,9 @@ var Profile = function (_React$Component) {
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
-							user.facebook.name
+							user.facebook.name,
+							_react2.default.createElement('br', null),
+							user.facebook.email
 						)
 					)
 				)
@@ -1586,15 +1588,15 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 }();
 
 ;
@@ -1639,12 +1641,18 @@ var Home = function (_React$Component) {
 	function Home(props) {
 		_classCallCheck(this, Home);
 
-		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+		_this.currentSelection = "Root";
+		return _this;
 	}
 
 	_createClass(Home, [{
 		key: 'render',
 		value: function render() {
+			var data = __webpack_require__("./data/taxonomyTree.json");
+			console.log(data);
+
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -1715,48 +1723,21 @@ var Home = function (_React$Component) {
 											null,
 											_react2.default.createElement(
 												'a',
-												{ href: '#' },
+												{ id: 'root', href: '#' },
 												'Root'
-											)
-										),
-										_react2.default.createElement(
-											_reactstrap.BreadcrumbItem,
-											null,
-											_react2.default.createElement(
-												'a',
-												{ href: '#' },
-												'Sports, Exercise, and Recreation'
 											)
 										)
 									),
 									_react2.default.createElement(
 										_reactstrap.Input,
 										{ type: 'select', name: 'selectMulti', id: 'exampleSelectMulti', multiple: true },
-										_react2.default.createElement(
-											'option',
-											null,
-											'Doing aerobics'
-										),
-										_react2.default.createElement(
-											'option',
-											null,
-											'Participating in martial arts'
-										),
-										_react2.default.createElement(
-											'option',
-											null,
-											'Playing sports'
-										),
-										_react2.default.createElement(
-											'option',
-											null,
-											'Weightlifting'
-										),
-										_react2.default.createElement(
-											'option',
-											null,
-											'Playing hockey'
-										)
+										Object.keys(data[this.currentSelection]).map(function (key) {
+											return _react2.default.createElement(
+												'option',
+												{ value: key },
+												key
+											);
+										})
 									)
 								)
 							),
@@ -1825,9 +1806,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 }();
 
 ;
@@ -1918,10 +1899,17 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(render, 'render', '/home/ActivityLab/client/index.js');
+  __REACT_HOT_LOADER__.register(render, 'render', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/index.js');
 }();
 
 ;
+
+/***/ }),
+
+/***/ "./data/taxonomyTree.json":
+/***/ (function(module, exports) {
+
+module.exports = {"Root":{"Eating and drinking Activities":{"Food & Drink Prep., Presentation, & Clean-up":{"Eating and Drinking":{"Having an ice cream":{},"Drinking coffee":{},"Drinking beer":{}},"Food and drink preparation ":{"Baking cookies":{},"Making a cake":{},"Making a lemonade":{},"Making an omelette":{},"Peeling potatoes":{},"Preparing pasta":{},"Preparing salad":{},"Making a sandwich":{},"Mixing drinks":{}},"Kitchen and food clean-up":{"Washing dishes":{}}}},"Sports, Exercise, and Recreation":{"Participating in Sports, Exercise, or Recreation":{"Wrestling":{"Arm wrestling":{},"Sumo":{}},"Biking":{"BMX":{}},"Playing soccer":{"Beach soccer":{},"Futsal":{}},"Bowling":{"Playing ten pins":{}},"Participating in rodeo competitions":{"Bullfighting":{},"Calf roping":{}},"Boating":{"Canoeing":{},"Rafting":{},"River tubing":{}},"Working out":{"Doing crunches":{},"Kneeling":{},"Rope skipping":{}},"Fencing":{"Doing fencing":{}},"Fishing":{"Ice fishing":{}},"Playing volleyball":{"Playing beach volleyball":{},"Volleyball":{}},"Running":{"Running a marathon":{}},"Skiing, ice skating, snowboarding":{"Skiing":{},"Snow tubing":{},"Snowboarding":{}},"Doing aerobics":{"Zumba":{},"Doing step aerobics":{}},"Participating in martial arts":{"Capoeira":{},"Doing kickboxing":{},"Doing karate":{},"Tai chi":{}},"Playing sports":{"Baton twirling":{},"Camel ride":{},"Croquet":{},"Curling":{},"Doing a powerbomb":{},"Hurling":{},"Longboarding":{},"Powerbocking":{},"Rollerblading":{},"High jump":{},"Cricket":{},"Discus throw":{},"Javelin throw":{},"Paintball":{},"Long jump":{},"Bungee jumping":{},"Triple jump":{},"Shot put":{},"Dodgeball":{},"Hammer throw":{},"Skateboarding":{},"Doing motocross":{},"Starting a campfire":{},"Archery":{},"Playing kickball":{},"Pole vault":{}},"Weightlifting":{"Clean and jerk":{},"Snatch":{}},"Playing hockey":{"Playing ice hockey":{},"Playing field hockey":{}},"Doing gymnastics":{"Using the pommel horse":{},"Using the balance beam":{},"Tumbling":{},"Using parallel bars":{},"Using uneven bars":{}},"Using cardiovascular equipment":{"Elliptical trainer":{},"Using the rowing machine":{},"Spinning":{}},"Playing racquet sports ":{"Ping-pong":{},"Tennis serve with ball bouncing":{},"Playing squash":{},"Playing lacrosse":{},"Playing racquetball":{},"Playing badminton":{}},"Participating in equestrian sports":{"Playing polo":{},"Horseback riding":{}},"Playing basketball":{"Layup drill in basketball":{}},"Climbing, spelunking, caving":{"Rock climbing":{}},"Participating in water sports":{"Scuba diving":{},"Surfing":{},"Swimming":{},"Wakeboarding":{},"Waterskiing":{},"Springboard diving":{},"Sailing":{},"Plataform diving":{},"Windsurfing":{},"Playing water polo":{},"Kayaking":{}}}},"Socializing, Relaxing, and Leisure":{"Arts and Entertainment":{"Beach activities":{"Building sandcastles":{}},"Park activities":{"Fun sliding down":{},"Swinging at the playground":{},"Using the monkey bar":{}},"Attending gambling establishments":{"Playing blackjack":{}},"Dancing":{"Tango":{},"Cheerleading":{},"Cumbia":{},"Breakdancing":{},"Belly dance":{}},"Playing musical instruments":{"Drum corps":{},"Playing congas":{},"Playing drums":{},"Playing bagpipes":{},"Playing harmonica":{},"Playing saxophone":{},"Playing guitarra":{},"Playing flauta":{},"Playing piano":{},"Playing violin":{},"Playing accordion":{}},"Attending arts and entertainment":{"Ballet":{}}},"Relaxing and Leisure":{"Tobacco and drug use":{"Smoking hookah":{},"Smoking a cigarette":{}},"Playing games":{"Beer pong":{},"Hitting a pinata":{},"Hula hoop":{},"Kite flying":{},"Playing pool":{},"Playing rubik cube":{},"Riding bumper cars":{},"Rock-paper-scissors":{},"Shuffleboard":{},"Slacklining":{},"Table soccer":{},"Throwing darts":{},"Tug of war":{},"Hopscotch":{}}}},"Personal Care":{"Health-related Self Care":{"Health-related self care":{"Applying sunscreen":{}}},"Grooming":{"Washing, dressing and grooming oneself":{"Blow-drying hair":{},"Braiding hair":{},"Gargling mouthwash":{},"Putting in contact lenses":{},"Putting on shoes":{},"Putting on makeup":{},"Washing face":{},"Brushing hair":{},"Brushing teeth":{},"Doing nails":{},"Washing hands":{},"Shaving":{},"Shaving legs":{},"Removing curlers":{}},"Washing, dressing and grooming":{"Getting a tattoo":{},"Getting a piercing":{},"Getting a haircut":{}}}},"Household Activities":{"Appliances, Tools, and Toys":{"Appliance, tool, and toy set-up, repair, & maintenance (by self)":{"Sharpening knives":{},"Waxing skis":{},"Welding":{}}},"Household Management":{"Household & personal organization and planning":{"Wrapping presents":{}}},"Animals and Pets":{"Care for animals and pets (not veterinary care)":{"Clipping cat claws":{},"Grooming dog":{},"Bathing dog":{}},"Walking / exercising / playing with animals":{"Disc dog":{},"Grooming horse":{},"Walking the dog":{}}},"Interior Maintenance, Repair, & Decoration":{"Building and repairing furniture":{"Painting furniture":{}},"Heating and cooling":{"Chopping wood":{}},"Interior arrangement, decoration, & repairs":{"Carving jack-o-lanterns":{},"Cleaning sink":{},"Decorating the Christmas tree":{},"Hanging wallpaper":{},"Installing carpet":{},"Laying tile":{},"Plastering":{},"Painting":{}}},"Housework":{"Interior cleaning":{"Mooping floor":{},"Cleaning windows":{},"Vacuuming floor":{},"Polishing forniture":{}},"Sewing, repairing, & maintaining textiles":{"Knitting":{},"Cleaning shoes":{},"Polishing shoes":{}},"Laundry":{"Ironing clothes":{},"Hand washing clothes":{}}},"Vehicles":{"Vehicle repair and maintenance (by self)":{"Assembling bicycle":{},"Changing car wheel":{},"Hand car wash":{},"Removing ice from car":{},"Fixing bicycle":{}}},"Exterior Maintenance, Repair, & Decoration":{"Exterior repair, improvements, & decoration":{"Fixing the roof":{},"Roof shingle removal":{}},"Painting fence":{},"Exterior cleaning":{"Shoveling snow":{}}},"Lawn, Garden, and Houseplants":{"Lawn, garden, and houseplant care":{"Blowing leaves":{},"Cutting the grass":{},"Raking leaves":{},"Spread mulch":{},"Trimming branches or hedges":{},"Mowing the lawn":{}}}}}}
 
 /***/ }),
 

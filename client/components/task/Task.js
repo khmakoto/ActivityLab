@@ -9,10 +9,55 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Badge } from 'reactstrap';
 class Home extends React.Component {
 	constructor(props) {
-    super(props);
-  }
+		super(props);
+		this.currentPath = "Root";
+		this.data = require('../../../data/taxonomyTree.json');
+		this.currentTaxonomy = this.data["Root"];
+		this.selections = ["Root"];
+	}
+	
+	clickOption(evt) {
+		var selectMulti = document.getElementById("exampleSelectMulti");
+		var selected = selectMulti.options[selectMulti.selectedIndex].value;
+		selectMulti.selectedIndex = 0;
+
+		if (selected != "None") {
+			this.currentPath += "/" + selected;
+			this.getCurrentTaxonomy();
+		}
+	}
+
+	getCurrentTaxonomy(current) {
+		this.selections = this.currentPath.split("/");
+		var tree = this.data;
+		for (var i = 0; i < this.selections.length - 1; i++) {
+			tree = tree[this.selections[i]];
+		}
+		if (Object.keys(tree).length == 0) {
+			this.currentTaxonomy = tree;
+		}
+		else {
+			this.currentTaxonomy = tree[this.selections[this.selections.length - 1]];
+		}
+		this.forceUpdate();
+	}
+
+	returnSelection(evt) {
+		var untilSelection = evt.currentTarget.id;
+		var newPath = "";
+		for (var i = 0; i < this.selections.length; i++) {
+			newPath += this.selections[i];
+			if (this.selections[i] == untilSelection) {
+				break;
+			}
+			newPath += "/";
+		}
+		this.currentPath = newPath;
+		this.getCurrentTaxonomy();
+	}
+
 	render() {
-	  return (
+	    return (
 			<div>
 				<Container>
 					<Row>
@@ -35,17 +80,21 @@ class Home extends React.Component {
 							<Col>
 								<Form>
 								<FormGroup>
-									<Breadcrumb>
-										<BreadcrumbItem><a href="#">Root</a></BreadcrumbItem>
-										<BreadcrumbItem><a href="#">Sports, Exercise, and Recreation</a></BreadcrumbItem>
+									<Breadcrumb id="currentPath">
+									{
+										this.selections.map(selection => (
+											<BreadcrumbItem><a id={selection} href="#" onClick={(e) => this.returnSelection(e)}>{selection}</a></BreadcrumbItem>
+										))
+									}
 									</Breadcrumb>
-												<Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-													 <option>Doing aerobics</option>
-													 <option>Participating in martial arts</option>
-													 <option>Playing sports</option>
-													 <option>Weightlifting</option>
-													 <option>Playing hockey</option>
-												 </Input>
+												<Input type="select" name="selectMulti" id="exampleSelectMulti" onChange={(e) => this.clickOption(e)}>
+													<option value="None" selected>None</option>
+													{
+														Object.keys(this.currentTaxonomy).map(key => (
+															<option value={key}>{key}</option>
+														))
+													}
+												</Input>
 								 </FormGroup>
 								 </Form>
 								 <Button outline color="primary">Add Label</Button><span><br /><br /></span>
