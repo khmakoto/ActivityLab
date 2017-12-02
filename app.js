@@ -35,7 +35,7 @@ app.use(expressSession({ secret: 'keyboard cat', resave: true, saveUninitialized
 app.use(facebookController.passport.initialize());
 app.use(facebookController.passport.session());
 //mongoose
-mongoose.connect('mongodb://localhost/portfolio');
+mongoose.connect('mongodb://localhost/activityLab');
 //webpack
 const compiler = webpack(webpackConfig);
 //webpack-hot-middleware
@@ -54,7 +54,7 @@ app.use("/api/tasks", taskController);
 
 
 app.get('/*', function(req, res) {
-  res.send("index.html");
+  res.sendFile("index.html", {root: path.join(__dirname, "./dist")});
 });
 
 

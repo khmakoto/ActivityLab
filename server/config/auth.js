@@ -1,8 +1,8 @@
 module.exports = {
     'facebookAuth' : {
-        'clientID'      : '1751273455177467', // your App ID
-        'clientSecret'  : 'e70d738852fad7f618d36bca03fd19a1', // your App Secret
-        'callbackURL'   : 'http://localhost:7777/auth/facebook/callback',
+        'clientID'      : '1957873194239103', // your App ID
+        'clientSecret'  : '8ab82c53718420c2453bf712d60c3b3e', // your App Secret
+        'callbackURL'   : 'http://www.chi-lin.com:7777/auth/facebook/callback',
         'profileFields' : ['id', 'email', 'name']
     }
 };

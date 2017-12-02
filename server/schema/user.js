@@ -1,6 +1,11 @@
-
 const mongoose = require("mongoose");
 const userSchema = mongoose.Schema({
+	annotations				 :[{
+		type: mongoose.Schema.Types.ObjectId,
+		ref: 'Task',
+		label: String,
+		segment: [],
+	}],
   facebook    			 : {
         id           : String,
         token        : String,

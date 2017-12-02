@@ -1,21 +1,46 @@
+const port = process.env.PORT
+const domain = process.env.DOMAIN
+const host = process.env.NODE_ENV == 'production'? `${domain}` : `${domain}:${port}`
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './task.scss';
 import { Link } from 'react-router-dom'
+
 import { Container, Row, Col } from 'reactstrap';
+import { Alert } from 'reactstrap';
+import YouTube from 'react-youtube';
+import UserBadge from './UserBadge';
+
+
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { Badge } from 'reactstrap';
+
+
+
 class Home extends React.Component {
 	constructor(props) {
 		super(props);
+		//set init state
+		this.state = {task: null};
+
 		this.currentPath = "Root";
 		this.data = require('../../../data/taxonomyTree.json');
 		this.currentTaxonomy = this.data["Root"];
 		this.selections = ["Root"];
 	}
-	
+
+	//fetch remote task data
+	componentDidMount() {
+		fetch(`${host}/api/tasks/single`, {credentials: 'include'})
+			.then( res => res.json())
+			.then( res => {
+				this.setState({task: res.task});
+				console.log(this.state.task)
+		});
+	}
+
 	clickOption(evt) {
 		var selectMulti = document.getElementById("exampleSelectMulti");
 		var selected = selectMulti.options[selectMulti.selectedIndex].value;
@@ -57,27 +82,45 @@ class Home extends React.Component {
 	}
 
 	render() {
+			const task = this.state.task;
+			//check task state is not null
+			if (!task) {
+	      return <div><Alert color="light">Loading</Alert></div>
+	    }
+
+			//youtube opt
+			const youtube_opts = {
+	      height: '390',
+	      width: '640',
+	      playerVars: { // https://developers.google.com/youtube/player_parameters
+	        autoplay: 1
+	      }
+	    };
+
 	    return (
 			<div>
 				<Container>
-					<Row>
+					<Row className="mb-4">
 						 <Col>
-							 <Badge color="primary">You beat 40% users</Badge>
-							 <Badge color="danger">Today's MVP</Badge>
-							 <Badge color="success">102 achievements</Badge>
-							 <span><br /><br /></span>
+							 <UserBadge/>
 						</Col>
 					</Row>
-
-					 <Row>
+					 <Row className="mb-1">
 							<Col>
-								<iframe width="320" height="240" src="https://www.youtube.com/embed/5n7NCViB5TU">
-								</iframe><span><br /><br /></span>
+								<div className="embed-responsive embed-responsive-21by9">
+									<YouTube
+										className="embed-responsive-item"
+						        videoId={task.activityNetId}
+						        opts={youtube_opts}
+						        onReady={this._onReady}
+						      />
+								</div>
 							</Col>
 					 </Row>
-
 					 <Row>
 							<Col>
+								<span><br /></span>
+
 								<Form>
 								<FormGroup>
 									<Breadcrumb id="currentPath">

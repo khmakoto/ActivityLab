@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Alert } from 'reactstrap';
+import YouTube from 'react-youtube';
+
+
 class Profile extends React.Component {
 	constructor(props) {
     super(props);
@@ -26,11 +29,9 @@ class Profile extends React.Component {
 	render() {
 
 		const user = this.state.user;
-
 		if (!user) {
       return <div><Alert color="light">Loading</Alert></div>
     }
-
 	  return (
 			<div>
 				<Container>
