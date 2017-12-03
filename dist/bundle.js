@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2a8fedacaf24611e2723"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dd6d0813f5351c6520e1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -737,7 +737,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Auth = {
@@ -757,15 +757,15 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 }();
 
 ;
@@ -803,7 +803,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Button = function (_React$Component) {
@@ -908,15 +908,15 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(Button, 'Button', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(Button, 'Button', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 }();
 
 ;
@@ -1018,9 +1018,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 }();
 
 ;
@@ -1127,9 +1127,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 }();
 
 ;
@@ -1218,8 +1218,8 @@ var Main = function (_React$Component) {
 										_reactRouterDom.Switch,
 										null,
 										_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-										_react2.default.createElement(_reactRouterDom.Route, { path: '/profile', component: _Profile2.default }),
-										_react2.default.createElement(PrivateRoute, { path: '/task', component: _Task2.default, isAuthenticated: this.state.isAuthenticated })
+										_react2.default.createElement(_reactRouterDom.Route, { path: '/task', component: _Task2.default }),
+										_react2.default.createElement(PrivateRoute, { path: '/profile', component: _Profile2.default, isAuthenticated: this.state.isAuthenticated })
 								)
 						);
 				}
@@ -1264,11 +1264,11 @@ var _temp = function () {
 				return;
 		}
 
-		__REACT_HOT_LOADER__.register(Main, 'Main', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(Main, 'Main', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 }();
 
 ;
@@ -1395,9 +1395,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 }();
 
 ;
@@ -1492,6 +1492,70 @@ var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube
 
 var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
 
+var _OneAnnotationBadge = __webpack_require__("./images/OneAnnotationBadge.png");
+
+var _OneAnnotationBadge2 = _interopRequireDefault(_OneAnnotationBadge);
+
+var _OneAnnotationBadgeDisabled = __webpack_require__("./images/OneAnnotationBadgeDisabled.png");
+
+var _OneAnnotationBadgeDisabled2 = _interopRequireDefault(_OneAnnotationBadgeDisabled);
+
+var _TenAnnotationsBadge = __webpack_require__("./images/TenAnnotationsBadge.png");
+
+var _TenAnnotationsBadge2 = _interopRequireDefault(_TenAnnotationsBadge);
+
+var _TenAnnotationsBadgeDisabled = __webpack_require__("./images/TenAnnotationsBadgeDisabled.png");
+
+var _TenAnnotationsBadgeDisabled2 = _interopRequireDefault(_TenAnnotationsBadgeDisabled);
+
+var _TwentyAnnotationsBadge = __webpack_require__("./images/TwentyAnnotationsBadge.png");
+
+var _TwentyAnnotationsBadge2 = _interopRequireDefault(_TwentyAnnotationsBadge);
+
+var _TwentyAnnotationsBadgeDisabled = __webpack_require__("./images/TwentyAnnotationsBadgeDisabled.png");
+
+var _TwentyAnnotationsBadgeDisabled2 = _interopRequireDefault(_TwentyAnnotationsBadgeDisabled);
+
+var _FiftyAnnotationsBadge = __webpack_require__("./images/FiftyAnnotationsBadge.png");
+
+var _FiftyAnnotationsBadge2 = _interopRequireDefault(_FiftyAnnotationsBadge);
+
+var _FiftyAnnotationsBadgeDisabled = __webpack_require__("./images/FiftyAnnotationsBadgeDisabled.png");
+
+var _FiftyAnnotationsBadgeDisabled2 = _interopRequireDefault(_FiftyAnnotationsBadgeDisabled);
+
+var _OneSportsBadge = __webpack_require__("./images/OneSportsBadge.png");
+
+var _OneSportsBadge2 = _interopRequireDefault(_OneSportsBadge);
+
+var _OneSportsBadgeDisabled = __webpack_require__("./images/OneSportsBadgeDisabled.png");
+
+var _OneSportsBadgeDisabled2 = _interopRequireDefault(_OneSportsBadgeDisabled);
+
+var _TenSportsBadge = __webpack_require__("./images/TenSportsBadge.png");
+
+var _TenSportsBadge2 = _interopRequireDefault(_TenSportsBadge);
+
+var _TenSportsBadgeDisabled = __webpack_require__("./images/TenSportsBadgeDisabled.png");
+
+var _TenSportsBadgeDisabled2 = _interopRequireDefault(_TenSportsBadgeDisabled);
+
+var _TwentySportsBadge = __webpack_require__("./images/TwentySportsBadge.png");
+
+var _TwentySportsBadge2 = _interopRequireDefault(_TwentySportsBadge);
+
+var _TwentySportsBadgeDisabled = __webpack_require__("./images/TwentySportsBadgeDisabled.png");
+
+var _TwentySportsBadgeDisabled2 = _interopRequireDefault(_TwentySportsBadgeDisabled);
+
+var _FiftySportsBadge = __webpack_require__("./images/FiftySportsBadge.png");
+
+var _FiftySportsBadge2 = _interopRequireDefault(_FiftySportsBadge);
+
+var _FiftySportsBadgeDisabled = __webpack_require__("./images/FiftySportsBadgeDisabled.png");
+
+var _FiftySportsBadgeDisabled2 = _interopRequireDefault(_FiftySportsBadgeDisabled);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1501,8 +1565,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
+
+// Import images
 
 var Profile = function (_React$Component) {
 	_inherits(Profile, _React$Component);
@@ -1530,7 +1596,6 @@ var Profile = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-
 			var user = this.state.user;
 			if (!user) {
 				return _react2.default.createElement(
@@ -1573,6 +1638,143 @@ var Profile = function (_React$Component) {
 							user.facebook.email
 						)
 					)
+				),
+				_react2.default.createElement(
+					_reactstrap.Container,
+					{ style: { marginTop: 50 + 'px' } },
+					_react2.default.createElement(
+						_reactstrap.Row,
+						null,
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'h1',
+								null,
+								'BADGES'
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneAnnotationBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenAnnotationsBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentyAnnotationsBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftyAnnotationsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos.'
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneSportsBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenSportsBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentySportsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftySportsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos.'
+								)
+							)
+						)
+					)
 				)
 			);
 		}
@@ -1590,15 +1792,15 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 }();
 
 ;
@@ -1633,6 +1835,10 @@ var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube
 
 var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
 
+var _UserBadge = __webpack_require__("./client/components/task/UserBadge.js");
+
+var _UserBadge2 = _interopRequireDefault(_UserBadge);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1642,7 +1848,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://www.chi-lin.com";
+var domain = "http://localhost";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Home = function (_React$Component) {
@@ -1708,6 +1914,7 @@ var Home = function (_React$Component) {
 	}, {
 		key: 'returnSelection',
 		value: function returnSelection(evt) {
+			evt.preventDefault();
 			var untilSelection = evt.currentTarget.id;
 			var newPath = "";
 			for (var i = 0; i < this.selections.length; i++) {
@@ -1756,30 +1963,28 @@ var Home = function (_React$Component) {
 					null,
 					_react2.default.createElement(
 						_reactstrap.Row,
-						null,
+						{ className: 'mb-4' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(_UserBadge2.default, null)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-1' },
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
 							_react2.default.createElement(
-								_reactstrap.Badge,
-								{ color: 'primary' },
-								'You beat 40% users'
-							),
-							_react2.default.createElement(
-								_reactstrap.Badge,
-								{ color: 'danger' },
-								'Today\'s MVP'
-							),
-							_react2.default.createElement(
-								_reactstrap.Badge,
-								{ color: 'success' },
-								'102 achievements'
-							),
-							_react2.default.createElement(
-								'span',
-								null,
-								_react2.default.createElement('br', null),
-								_react2.default.createElement('br', null)
+								'div',
+								{ className: 'embed-responsive embed-responsive-21by9' },
+								_react2.default.createElement(_reactYoutube2.default, {
+									className: 'embed-responsive-item',
+									videoId: task.activityNetId,
+									opts: youtube_opts,
+									onReady: this._onReady
+								})
 							)
 						)
 					),
@@ -1789,25 +1994,11 @@ var Home = function (_React$Component) {
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
-							_react2.default.createElement(_reactYoutube2.default, {
-								videoId: task.activityNetId,
-								opts: youtube_opts,
-								onReady: this._onReady
-							}),
 							_react2.default.createElement(
 								'span',
 								null,
-								_react2.default.createElement('br', null),
 								_react2.default.createElement('br', null)
-							)
-						)
-					),
-					_react2.default.createElement(
-						_reactstrap.Row,
-						null,
-						_react2.default.createElement(
-							_reactstrap.Col,
-							null,
+							),
 							_react2.default.createElement(
 								_reactstrap.Form,
 								null,
@@ -1916,15 +2107,98 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/Task.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/UserBadge.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserBadge = function (_React$Component) {
+	_inherits(UserBadge, _React$Component);
+
+	function UserBadge() {
+		_classCallCheck(this, UserBadge);
+
+		return _possibleConstructorReturn(this, (UserBadge.__proto__ || Object.getPrototypeOf(UserBadge)).apply(this, arguments));
+	}
+
+	_createClass(UserBadge, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'primary' },
+					'You beat 40% users'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'danger' },
+					'Today\'s MVP'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'success' },
+					'102 achievements'
+				)
+			);
+		}
+	}]);
+
+	return UserBadge;
+}(_react2.default.Component);
+
+var _default = UserBadge;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(UserBadge, 'UserBadge', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/UserBadge.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/UserBadge.js');
 }();
 
 ;
@@ -2015,7 +2289,7 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(render, 'render', '/home/ActivityLab/client/index.js');
+  __REACT_HOT_LOADER__.register(render, 'render', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/index.js');
 }();
 
 ;
@@ -2026,6 +2300,118 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 module.exports = {"Root":{"Eating and drinking Activities":{"Food & Drink Prep., Presentation, & Clean-up":{"Eating and Drinking":{"Having an ice cream":{},"Drinking coffee":{},"Drinking beer":{}},"Food and drink preparation ":{"Baking cookies":{},"Making a cake":{},"Making a lemonade":{},"Making an omelette":{},"Peeling potatoes":{},"Preparing pasta":{},"Preparing salad":{},"Making a sandwich":{},"Mixing drinks":{}},"Kitchen and food clean-up":{"Washing dishes":{}}}},"Sports, Exercise, and Recreation":{"Participating in Sports, Exercise, or Recreation":{"Wrestling":{"Arm wrestling":{},"Sumo":{}},"Biking":{"BMX":{}},"Playing soccer":{"Beach soccer":{},"Futsal":{}},"Bowling":{"Playing ten pins":{}},"Participating in rodeo competitions":{"Bullfighting":{},"Calf roping":{}},"Boating":{"Canoeing":{},"Rafting":{},"River tubing":{}},"Working out":{"Doing crunches":{},"Kneeling":{},"Rope skipping":{}},"Fencing":{"Doing fencing":{}},"Fishing":{"Ice fishing":{}},"Playing volleyball":{"Playing beach volleyball":{},"Volleyball":{}},"Running":{"Running a marathon":{}},"Skiing, ice skating, snowboarding":{"Skiing":{},"Snow tubing":{},"Snowboarding":{}},"Doing aerobics":{"Zumba":{},"Doing step aerobics":{}},"Participating in martial arts":{"Capoeira":{},"Doing kickboxing":{},"Doing karate":{},"Tai chi":{}},"Playing sports":{"Baton twirling":{},"Camel ride":{},"Croquet":{},"Curling":{},"Doing a powerbomb":{},"Hurling":{},"Longboarding":{},"Powerbocking":{},"Rollerblading":{},"High jump":{},"Cricket":{},"Discus throw":{},"Javelin throw":{},"Paintball":{},"Long jump":{},"Bungee jumping":{},"Triple jump":{},"Shot put":{},"Dodgeball":{},"Hammer throw":{},"Skateboarding":{},"Doing motocross":{},"Starting a campfire":{},"Archery":{},"Playing kickball":{},"Pole vault":{}},"Weightlifting":{"Clean and jerk":{},"Snatch":{}},"Playing hockey":{"Playing ice hockey":{},"Playing field hockey":{}},"Doing gymnastics":{"Using the pommel horse":{},"Using the balance beam":{},"Tumbling":{},"Using parallel bars":{},"Using uneven bars":{}},"Using cardiovascular equipment":{"Elliptical trainer":{},"Using the rowing machine":{},"Spinning":{}},"Playing racquet sports ":{"Ping-pong":{},"Tennis serve with ball bouncing":{},"Playing squash":{},"Playing lacrosse":{},"Playing racquetball":{},"Playing badminton":{}},"Participating in equestrian sports":{"Playing polo":{},"Horseback riding":{}},"Playing basketball":{"Layup drill in basketball":{}},"Climbing, spelunking, caving":{"Rock climbing":{}},"Participating in water sports":{"Scuba diving":{},"Surfing":{},"Swimming":{},"Wakeboarding":{},"Waterskiing":{},"Springboard diving":{},"Sailing":{},"Plataform diving":{},"Windsurfing":{},"Playing water polo":{},"Kayaking":{}}}},"Socializing, Relaxing, and Leisure":{"Arts and Entertainment":{"Beach activities":{"Building sandcastles":{}},"Park activities":{"Fun sliding down":{},"Swinging at the playground":{},"Using the monkey bar":{}},"Attending gambling establishments":{"Playing blackjack":{}},"Dancing":{"Tango":{},"Cheerleading":{},"Cumbia":{},"Breakdancing":{},"Belly dance":{}},"Playing musical instruments":{"Drum corps":{},"Playing congas":{},"Playing drums":{},"Playing bagpipes":{},"Playing harmonica":{},"Playing saxophone":{},"Playing guitarra":{},"Playing flauta":{},"Playing piano":{},"Playing violin":{},"Playing accordion":{}},"Attending arts and entertainment":{"Ballet":{}}},"Relaxing and Leisure":{"Tobacco and drug use":{"Smoking hookah":{},"Smoking a cigarette":{}},"Playing games":{"Beer pong":{},"Hitting a pinata":{},"Hula hoop":{},"Kite flying":{},"Playing pool":{},"Playing rubik cube":{},"Riding bumper cars":{},"Rock-paper-scissors":{},"Shuffleboard":{},"Slacklining":{},"Table soccer":{},"Throwing darts":{},"Tug of war":{},"Hopscotch":{}}}},"Personal Care":{"Health-related Self Care":{"Health-related self care":{"Applying sunscreen":{}}},"Grooming":{"Washing, dressing and grooming oneself":{"Blow-drying hair":{},"Braiding hair":{},"Gargling mouthwash":{},"Putting in contact lenses":{},"Putting on shoes":{},"Putting on makeup":{},"Washing face":{},"Brushing hair":{},"Brushing teeth":{},"Doing nails":{},"Washing hands":{},"Shaving":{},"Shaving legs":{},"Removing curlers":{}},"Washing, dressing and grooming":{"Getting a tattoo":{},"Getting a piercing":{},"Getting a haircut":{}}}},"Household Activities":{"Appliances, Tools, and Toys":{"Appliance, tool, and toy set-up, repair, & maintenance (by self)":{"Sharpening knives":{},"Waxing skis":{},"Welding":{}}},"Household Management":{"Household & personal organization and planning":{"Wrapping presents":{}}},"Animals and Pets":{"Care for animals and pets (not veterinary care)":{"Clipping cat claws":{},"Grooming dog":{},"Bathing dog":{}},"Walking / exercising / playing with animals":{"Disc dog":{},"Grooming horse":{},"Walking the dog":{}}},"Interior Maintenance, Repair, & Decoration":{"Building and repairing furniture":{"Painting furniture":{}},"Heating and cooling":{"Chopping wood":{}},"Interior arrangement, decoration, & repairs":{"Carving jack-o-lanterns":{},"Cleaning sink":{},"Decorating the Christmas tree":{},"Hanging wallpaper":{},"Installing carpet":{},"Laying tile":{},"Plastering":{},"Painting":{}}},"Housework":{"Interior cleaning":{"Mooping floor":{},"Cleaning windows":{},"Vacuuming floor":{},"Polishing forniture":{}},"Sewing, repairing, & maintaining textiles":{"Knitting":{},"Cleaning shoes":{},"Polishing shoes":{}},"Laundry":{"Ironing clothes":{},"Hand washing clothes":{}}},"Vehicles":{"Vehicle repair and maintenance (by self)":{"Assembling bicycle":{},"Changing car wheel":{},"Hand car wash":{},"Removing ice from car":{},"Fixing bicycle":{}}},"Exterior Maintenance, Repair, & Decoration":{"Exterior repair, improvements, & decoration":{"Fixing the roof":{},"Roof shingle removal":{}},"Painting fence":{},"Exterior cleaning":{"Shoveling snow":{}}},"Lawn, Garden, and Houseplants":{"Lawn, garden, and houseplant care":{"Blowing leaves":{},"Cutting the grass":{},"Raking leaves":{},"Spread mulch":{},"Trimming branches or hedges":{},"Mowing the lawn":{}}}}}}
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cbfb50ba66d8346afde22a823ed0ddd2.png";
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4c74b06857b1bbdb6459f441b6d6b760.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7d34b450ccb271794e412f4581983561.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d197924eee6a0045f1963b7cfbdeba7b.png";
+
+/***/ }),
+
+/***/ "./images/OneAnnotationBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0cba8fa00a65792099911555794196f7.png";
+
+/***/ }),
+
+/***/ "./images/OneAnnotationBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5cbd88ba253630452ad36884de699ae7.png";
+
+/***/ }),
+
+/***/ "./images/OneSportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0e052c8b585f0213f7fa2fe0872a08d8.png";
+
+/***/ }),
+
+/***/ "./images/OneSportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "10957083c8a4a62420a1ea4ea5b82e4c.png";
+
+/***/ }),
+
+/***/ "./images/TenAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f8225fe207dfd7d76183c5ace33421a3.png";
+
+/***/ }),
+
+/***/ "./images/TenAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "deeaba966cdd411a777fd5410dc7171a.png";
+
+/***/ }),
+
+/***/ "./images/TenSportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "175cc3170e62f1193ee8971aea1f485f.png";
+
+/***/ }),
+
+/***/ "./images/TenSportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "687f53ef42d9ef5f02dbf47ddf39558e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "040de36686df8c50fa980c36307a8f5c.png";
+
+/***/ }),
+
+/***/ "./images/TwentyAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "64cd4534c6ff0a5701fdc82c5caf32b0.png";
+
+/***/ }),
+
+/***/ "./images/TwentySportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9b43f7203e454eb4c975b63ee8f78721.png";
+
+/***/ }),
+
+/***/ "./images/TwentySportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0f217f5715aaf1e76f44a64edd7a71b3.png";
 
 /***/ }),
 
@@ -11871,7 +12257,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"NODE_ENV":"development","DOMAIN":"http://www.chi-lin.com","PORT":"7777"}).DEBUG;
+    r = Object({"NODE_ENV":"development","DOMAIN":"http://localhost","PORT":"7777"}).DEBUG;
   }
 
   return r;
