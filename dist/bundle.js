@@ -61,7 +61,11 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
+<<<<<<< HEAD
 /******/ 	var hotCurrentHash = "a339b97f06eabda377f2"; // eslint-disable-line no-unused-vars
+=======
+/******/ 	var hotCurrentHash = "cdda8aacb0492e844b65"; // eslint-disable-line no-unused-vars
+>>>>>>> 87f304e1adddbc63d9aba7bff222529ada52cccf
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2312,8 +2316,8 @@ var Segments = function (_React$Component) {
 					return _react2.default.createElement(
 						_reactstrap.ListGroupItem,
 						{ key: seg.id },
-						seg.label,
-						' ',
+						seg.label.split("/")[seg.label.split("/").length - 1],
+						' --> ',
 						seg.segment[0],
 						'sec ~ ',
 						seg.segment[1],
@@ -2466,6 +2470,7 @@ var Home = function (_React$Component) {
 			var _this3 = this;
 
 			this.setState(function (prevState) {
+<<<<<<< HEAD
 				if (prevState.end_time > prevState.start_time) {
 					var timestamp = new Date().getTime();
 					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": "TODO: Mako please implement here", "segment": [prevState.start_time, prevState.end_time] }]) };
@@ -2473,6 +2478,10 @@ var Home = function (_React$Component) {
 
 					_this3.setState({ visible: true, alert_message: "End time should later than start time" });
 				}
+=======
+				var timestamp = new Date().getTime();
+				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
+>>>>>>> 87f304e1adddbc63d9aba7bff222529ada52cccf
 			});
 		}
 		//hanele submit annotation
@@ -2603,7 +2612,7 @@ var Home = function (_React$Component) {
 								_react2.default.createElement(
 									_reactstrap.CardTitle,
 									null,
-									'Pleas add segment'
+									'Please add segment'
 								),
 								_react2.default.createElement(
 									_reactstrap.CardBody,

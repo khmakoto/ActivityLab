@@ -21,7 +21,7 @@ class Segments extends React.Component {
 								{prop.annotations.map((seg) =>
 					        <ListGroupItem key={seg.id}>
 										<Button outline color="danger" className="mr-3" onClick={this.handleClick(seg.id)}>Delete</Button>
-										{seg.label} {seg.segment[0].toFixed(3)} sec ~ {seg.segment[1].toFixed(3)} sec
+										{seg.label.split("/")[seg.label.split("/").length - 1]} --> {seg.segment[0].toFixed(3)} sec ~ {seg.segment[1].toFixed(3)} sec
 									</ListGroupItem>
 					      )}
 							</ListGroup>

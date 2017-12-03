@@ -65,15 +65,13 @@ class Home extends React.Component {
 	//handle add segment
 	_handleAdd(){
 		this.setState((prevState) => {
+
 			if(prevState.end_time > prevState.start_time){
 				var timestamp = (new Date()).getTime();
-				return { annotations: [...prevState.annotations, { "id": timestamp , "label": "TODO: Mako please implement here", "segment":[prevState.start_time, prevState.end_time] }] };
-			}else {
-
+				return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
+			}else
 				this.setState({ visible: true, alert_message: "End time should later than start time" });
 
-
-			}
 		});
 	}
 	//hanele submit annotation
