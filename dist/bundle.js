@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "faf321a37aea6bd54f3b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ff6b688ab514f9a44fcd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -737,7 +737,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var port = "7777";
-var domain = "http://localhost";
+var domain = "http://www.chi-lin.com";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Auth = {
@@ -803,7 +803,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://localhost";
+var domain = "http://www.chi-lin.com";
 var host =  false ? '' + domain : domain + ':' + port;
 
 var Button = function (_React$Component) {
@@ -1492,195 +1492,195 @@ var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube
 
 var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
 
-var _OneAnnotationBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneAnnotationBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneAnnotationBadge = __webpack_require__("./images/OneAnnotationBadge.png");
 
 var _OneAnnotationBadge2 = _interopRequireDefault(_OneAnnotationBadge);
 
-var _OneAnnotationBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneAnnotationBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneAnnotationBadgeDisabled = __webpack_require__("./images/OneAnnotationBadgeDisabled.png");
 
 var _OneAnnotationBadgeDisabled2 = _interopRequireDefault(_OneAnnotationBadgeDisabled);
 
-var _TenAnnotationsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenAnnotationsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenAnnotationsBadge = __webpack_require__("./images/TenAnnotationsBadge.png");
 
 var _TenAnnotationsBadge2 = _interopRequireDefault(_TenAnnotationsBadge);
 
-var _TenAnnotationsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenAnnotationsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenAnnotationsBadgeDisabled = __webpack_require__("./images/TenAnnotationsBadgeDisabled.png");
 
 var _TenAnnotationsBadgeDisabled2 = _interopRequireDefault(_TenAnnotationsBadgeDisabled);
 
-var _TwentyAnnotationsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyAnnotationsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyAnnotationsBadge = __webpack_require__("./images/TwentyAnnotationsBadge.png");
 
 var _TwentyAnnotationsBadge2 = _interopRequireDefault(_TwentyAnnotationsBadge);
 
-var _TwentyAnnotationsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyAnnotationsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyAnnotationsBadgeDisabled = __webpack_require__("./images/TwentyAnnotationsBadgeDisabled.png");
 
 var _TwentyAnnotationsBadgeDisabled2 = _interopRequireDefault(_TwentyAnnotationsBadgeDisabled);
 
-var _FiftyAnnotationsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyAnnotationsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyAnnotationsBadge = __webpack_require__("./images/FiftyAnnotationsBadge.png");
 
 var _FiftyAnnotationsBadge2 = _interopRequireDefault(_FiftyAnnotationsBadge);
 
-var _FiftyAnnotationsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyAnnotationsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyAnnotationsBadgeDisabled = __webpack_require__("./images/FiftyAnnotationsBadgeDisabled.png");
 
 var _FiftyAnnotationsBadgeDisabled2 = _interopRequireDefault(_FiftyAnnotationsBadgeDisabled);
 
-var _OneFoodsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneFoodsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneFoodsBadge = __webpack_require__("./images/OneFoodsBadge.png");
 
 var _OneFoodsBadge2 = _interopRequireDefault(_OneFoodsBadge);
 
-var _OneFoodsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneFoodsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneFoodsBadgeDisabled = __webpack_require__("./images/OneFoodsBadgeDisabled.png");
 
 var _OneFoodsBadgeDisabled2 = _interopRequireDefault(_OneFoodsBadgeDisabled);
 
-var _TenFoodsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenFoodsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenFoodsBadge = __webpack_require__("./images/TenFoodsBadge.png");
 
 var _TenFoodsBadge2 = _interopRequireDefault(_TenFoodsBadge);
 
-var _TenFoodsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenFoodsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenFoodsBadgeDisabled = __webpack_require__("./images/TenFoodsBadgeDisabled.png");
 
 var _TenFoodsBadgeDisabled2 = _interopRequireDefault(_TenFoodsBadgeDisabled);
 
-var _TwentyFoodsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyFoodsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyFoodsBadge = __webpack_require__("./images/TwentyFoodsBadge.png");
 
 var _TwentyFoodsBadge2 = _interopRequireDefault(_TwentyFoodsBadge);
 
-var _TwentyFoodsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyFoodsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyFoodsBadgeDisabled = __webpack_require__("./images/TwentyFoodsBadgeDisabled.png");
 
 var _TwentyFoodsBadgeDisabled2 = _interopRequireDefault(_TwentyFoodsBadgeDisabled);
 
-var _FiftyFoodsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyFoodsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyFoodsBadge = __webpack_require__("./images/FiftyFoodsBadge.png");
 
 var _FiftyFoodsBadge2 = _interopRequireDefault(_FiftyFoodsBadge);
 
-var _FiftyFoodsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyFoodsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyFoodsBadgeDisabled = __webpack_require__("./images/FiftyFoodsBadgeDisabled.png");
 
 var _FiftyFoodsBadgeDisabled2 = _interopRequireDefault(_FiftyFoodsBadgeDisabled);
 
-var _OneSportsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneSportsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneSportsBadge = __webpack_require__("./images/OneSportsBadge.png");
 
 var _OneSportsBadge2 = _interopRequireDefault(_OneSportsBadge);
 
-var _OneSportsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneSportsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneSportsBadgeDisabled = __webpack_require__("./images/OneSportsBadgeDisabled.png");
 
 var _OneSportsBadgeDisabled2 = _interopRequireDefault(_OneSportsBadgeDisabled);
 
-var _TenSportsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenSportsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenSportsBadge = __webpack_require__("./images/TenSportsBadge.png");
 
 var _TenSportsBadge2 = _interopRequireDefault(_TenSportsBadge);
 
-var _TenSportsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenSportsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenSportsBadgeDisabled = __webpack_require__("./images/TenSportsBadgeDisabled.png");
 
 var _TenSportsBadgeDisabled2 = _interopRequireDefault(_TenSportsBadgeDisabled);
 
-var _TwentySportsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentySportsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentySportsBadge = __webpack_require__("./images/TwentySportsBadge.png");
 
 var _TwentySportsBadge2 = _interopRequireDefault(_TwentySportsBadge);
 
-var _TwentySportsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentySportsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentySportsBadgeDisabled = __webpack_require__("./images/TwentySportsBadgeDisabled.png");
 
 var _TwentySportsBadgeDisabled2 = _interopRequireDefault(_TwentySportsBadgeDisabled);
 
-var _FiftySportsBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftySportsBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftySportsBadge = __webpack_require__("./images/FiftySportsBadge.png");
 
 var _FiftySportsBadge2 = _interopRequireDefault(_FiftySportsBadge);
 
-var _FiftySportsBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftySportsBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftySportsBadgeDisabled = __webpack_require__("./images/FiftySportsBadgeDisabled.png");
 
 var _FiftySportsBadgeDisabled2 = _interopRequireDefault(_FiftySportsBadgeDisabled);
 
-var _OneSocialBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneSocialBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneSocialBadge = __webpack_require__("./images/OneSocialBadge.png");
 
 var _OneSocialBadge2 = _interopRequireDefault(_OneSocialBadge);
 
-var _OneSocialBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneSocialBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneSocialBadgeDisabled = __webpack_require__("./images/OneSocialBadgeDisabled.png");
 
 var _OneSocialBadgeDisabled2 = _interopRequireDefault(_OneSocialBadgeDisabled);
 
-var _TenSocialBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenSocialBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenSocialBadge = __webpack_require__("./images/TenSocialBadge.png");
 
 var _TenSocialBadge2 = _interopRequireDefault(_TenSocialBadge);
 
-var _TenSocialBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenSocialBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenSocialBadgeDisabled = __webpack_require__("./images/TenSocialBadgeDisabled.png");
 
 var _TenSocialBadgeDisabled2 = _interopRequireDefault(_TenSocialBadgeDisabled);
 
-var _TwentySocialBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentySocialBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentySocialBadge = __webpack_require__("./images/TwentySocialBadge.png");
 
 var _TwentySocialBadge2 = _interopRequireDefault(_TwentySocialBadge);
 
-var _TwentySocialBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentySocialBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentySocialBadgeDisabled = __webpack_require__("./images/TwentySocialBadgeDisabled.png");
 
 var _TwentySocialBadgeDisabled2 = _interopRequireDefault(_TwentySocialBadgeDisabled);
 
-var _FiftySocialBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftySocialBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftySocialBadge = __webpack_require__("./images/FiftySocialBadge.png");
 
 var _FiftySocialBadge2 = _interopRequireDefault(_FiftySocialBadge);
 
-var _FiftySocialBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftySocialBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftySocialBadgeDisabled = __webpack_require__("./images/FiftySocialBadgeDisabled.png");
 
 var _FiftySocialBadgeDisabled2 = _interopRequireDefault(_FiftySocialBadgeDisabled);
 
-var _OneCareBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneCareBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneCareBadge = __webpack_require__("./images/OneCareBadge.png");
 
 var _OneCareBadge2 = _interopRequireDefault(_OneCareBadge);
 
-var _OneCareBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneCareBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneCareBadgeDisabled = __webpack_require__("./images/OneCareBadgeDisabled.png");
 
 var _OneCareBadgeDisabled2 = _interopRequireDefault(_OneCareBadgeDisabled);
 
-var _TenCareBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenCareBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenCareBadge = __webpack_require__("./images/TenCareBadge.png");
 
 var _TenCareBadge2 = _interopRequireDefault(_TenCareBadge);
 
-var _TenCareBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenCareBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenCareBadgeDisabled = __webpack_require__("./images/TenCareBadgeDisabled.png");
 
 var _TenCareBadgeDisabled2 = _interopRequireDefault(_TenCareBadgeDisabled);
 
-var _TwentyCareBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyCareBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyCareBadge = __webpack_require__("./images/TwentyCareBadge.png");
 
 var _TwentyCareBadge2 = _interopRequireDefault(_TwentyCareBadge);
 
-var _TwentyCareBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyCareBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyCareBadgeDisabled = __webpack_require__("./images/TwentyCareBadgeDisabled.png");
 
 var _TwentyCareBadgeDisabled2 = _interopRequireDefault(_TwentyCareBadgeDisabled);
 
-var _FiftyCareBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyCareBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyCareBadge = __webpack_require__("./images/FiftyCareBadge.png");
 
 var _FiftyCareBadge2 = _interopRequireDefault(_FiftyCareBadge);
 
-var _FiftyCareBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyCareBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyCareBadgeDisabled = __webpack_require__("./images/FiftyCareBadgeDisabled.png");
 
 var _FiftyCareBadgeDisabled2 = _interopRequireDefault(_FiftyCareBadgeDisabled);
 
-var _OneHouseholdBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneHouseholdBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneHouseholdBadge = __webpack_require__("./images/OneHouseholdBadge.png");
 
 var _OneHouseholdBadge2 = _interopRequireDefault(_OneHouseholdBadge);
 
-var _OneHouseholdBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/OneHouseholdBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _OneHouseholdBadgeDisabled = __webpack_require__("./images/OneHouseholdBadgeDisabled.png");
 
 var _OneHouseholdBadgeDisabled2 = _interopRequireDefault(_OneHouseholdBadgeDisabled);
 
-var _TenHouseholdBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenHouseholdBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenHouseholdBadge = __webpack_require__("./images/TenHouseholdBadge.png");
 
 var _TenHouseholdBadge2 = _interopRequireDefault(_TenHouseholdBadge);
 
-var _TenHouseholdBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TenHouseholdBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TenHouseholdBadgeDisabled = __webpack_require__("./images/TenHouseholdBadgeDisabled.png");
 
 var _TenHouseholdBadgeDisabled2 = _interopRequireDefault(_TenHouseholdBadgeDisabled);
 
-var _TwentyHouseholdBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyHouseholdBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyHouseholdBadge = __webpack_require__("./images/TwentyHouseholdBadge.png");
 
 var _TwentyHouseholdBadge2 = _interopRequireDefault(_TwentyHouseholdBadge);
 
-var _TwentyHouseholdBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/TwentyHouseholdBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _TwentyHouseholdBadgeDisabled = __webpack_require__("./images/TwentyHouseholdBadgeDisabled.png");
 
 var _TwentyHouseholdBadgeDisabled2 = _interopRequireDefault(_TwentyHouseholdBadgeDisabled);
 
-var _FiftyHouseholdBadge = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyHouseholdBadge.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyHouseholdBadge = __webpack_require__("./images/FiftyHouseholdBadge.png");
 
 var _FiftyHouseholdBadge2 = _interopRequireDefault(_FiftyHouseholdBadge);
 
-var _FiftyHouseholdBadgeDisabled = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../../images/FiftyHouseholdBadgeDisabled.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _FiftyHouseholdBadgeDisabled = __webpack_require__("./images/FiftyHouseholdBadgeDisabled.png");
 
 var _FiftyHouseholdBadgeDisabled2 = _interopRequireDefault(_FiftyHouseholdBadgeDisabled);
 
@@ -1693,7 +1693,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var port = "7777";
-var domain = "http://localhost";
+var domain = "http://www.chi-lin.com";
 var host =  false ? '' + domain : domain + ':' + port;
 
 // Import images
@@ -2175,10 +2175,784 @@ var _temp = function () {
 
 /***/ }),
 
-/***/ "./client/components/task/Task.js":
-/***/ (function(module, exports) {
+/***/ "./client/components/task/CustomizedYouTube.js":
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: Unexpected token (150:1)\n\n\u001b[0m \u001b[90m 148 | \u001b[39m\t\t\t\u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 149 | \u001b[39m\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mContainer\u001b[39m\u001b[33m>\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 150 | \u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<<\u001b[39m\u001b[33m<\u001b[39m \u001b[33mHEAD\u001b[39m\n \u001b[90m     | \u001b[39m \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 151 | \u001b[39m\t\t\t\t\t\u001b[33m<\u001b[39m\u001b[33mRow\u001b[39m className\u001b[33m=\u001b[39m\u001b[32m\"mb-4\"\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 152 | \u001b[39m\t\t\t\t\t\t \u001b[33m<\u001b[39m\u001b[33mCol\u001b[39m\u001b[33m>\u001b[39m\n \u001b[90m 153 | \u001b[39m\t\t\t\t\t\t\t \u001b[33m<\u001b[39m\u001b[33mUserBadge\u001b[39m\u001b[33m/\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube.js");
+
+var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CustomizedYouTube = function (_React$Component) {
+	_inherits(CustomizedYouTube, _React$Component);
+
+	function CustomizedYouTube(props) {
+		_classCallCheck(this, CustomizedYouTube);
+
+		var _this = _possibleConstructorReturn(this, (CustomizedYouTube.__proto__ || Object.getPrototypeOf(CustomizedYouTube)).call(this, props));
+
+		_this.onReady = _this._onReady.bind(_this);
+		return _this;
+	}
+
+	_createClass(CustomizedYouTube, [{
+		key: '_onReady',
+		value: function _onReady(event) {
+			event.target.mute();
+			this.props.onYouTubeReady(event.target);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var prop = this.props;
+			var youtube_opts = {
+				height: '300',
+				playerVars: { // https://developers.google.com/youtube/player_parameters
+					autoplay: 1,
+					showinfo: 0,
+					loop: 1,
+					modestbranding: 1,
+					autohide: 0
+				}
+			};
+			return _react2.default.createElement(_reactYoutube2.default, {
+				className: 'embed-responsive-item',
+				videoId: prop.videoId,
+				opts: youtube_opts,
+				onReady: this.onReady
+			});
+		}
+	}]);
+
+	return CustomizedYouTube;
+}(_react2.default.Component);
+
+var _default = CustomizedYouTube;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(CustomizedYouTube, 'CustomizedYouTube', '/home/ActivityLab/client/components/task/CustomizedYouTube.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/CustomizedYouTube.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/Segments.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Segments = function (_React$Component) {
+	_inherits(Segments, _React$Component);
+
+	function Segments(props) {
+		_classCallCheck(this, Segments);
+
+		return _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
+		//this.handleClick = this._handleClick.bind(this)
+	}
+
+	_createClass(Segments, [{
+		key: '_handleClick',
+		value: function _handleClick(e) {
+			//this.props.onTimeSet(this.props.type);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var prop = this.props;
+			return _react2.default.createElement(
+				_reactstrap.ListGroup,
+				null,
+				prop.annotations.map(function (seg) {
+					return _react2.default.createElement(
+						_reactstrap.ListGroupItem,
+						{ key: seg.id },
+						seg.label,
+						' ',
+						seg.segment[0],
+						'sec ~ ',
+						seg.segment[1],
+						'sec'
+					);
+				})
+			);
+		}
+	}]);
+
+	return Segments;
+}(_react2.default.Component);
+
+var _default = Segments;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Segments, 'Segments', '/home/ActivityLab/client/components/task/Segments.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/Segments.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/Task.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+__webpack_require__("./client/components/task/task.scss");
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube.js");
+
+var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+
+var _UserBadge = __webpack_require__("./client/components/task/UserBadge.js");
+
+var _UserBadge2 = _interopRequireDefault(_UserBadge);
+
+var _CustomizedYouTube = __webpack_require__("./client/components/task/CustomizedYouTube.js");
+
+var _CustomizedYouTube2 = _interopRequireDefault(_CustomizedYouTube);
+
+var _TimeButton = __webpack_require__("./client/components/task/TimeButton.js");
+
+var _TimeButton2 = _interopRequireDefault(_TimeButton);
+
+var _Segments = __webpack_require__("./client/components/task/Segments.js");
+
+var _Segments2 = _interopRequireDefault(_Segments);
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var port = "7777";
+var domain = "http://www.chi-lin.com";
+var host =  false ? '' + domain : domain + ':' + port;
+
+var Home = function (_React$Component) {
+	_inherits(Home, _React$Component);
+
+	function Home(props) {
+		_classCallCheck(this, Home);
+
+		//set init state
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+		_this.state = { task: null, player: null, start_time: 0, end_time: 0, annotations: [], visible: false, alert_message: '' };
+		_this.handleYouTubeReady = _this._handleYouTubeReady.bind(_this);
+		_this.handleTimeSet = _this._handleTimeSet.bind(_this);
+		_this.handleAdd = _this._handleAdd.bind(_this);
+		_this.handleSubmit = _this._handleSubmit.bind(_this);
+		_this.onDismiss = _this.onDismiss.bind(_this);
+
+		_this.currentPath = "Root";
+		_this.data = __webpack_require__("./data/taxonomyTree.json");
+		_this.currentTaxonomy = _this.data["Root"];
+		_this.selections = ["Root"];
+		return _this;
+	}
+
+	//fetch remote task data
+
+
+	_createClass(Home, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			fetch(host + '/api/tasks/single', { credentials: 'include' }).then(function (res) {
+				return res.json();
+			}).then(function (res) {
+				_this2.setState({ task: res.task });
+			});
+		}
+		//handle youtube pause
+
+	}, {
+		key: '_handleYouTubeReady',
+		value: function _handleYouTubeReady(player) {
+			this.setState({ player: player });
+		}
+		//handle time button
+
+	}, {
+		key: '_handleTimeSet',
+		value: function _handleTimeSet(type) {
+			if (type == "start") this.setState(function (prevState, props) {
+				return { start_time: prevState.player.getCurrentTime() };
+			});else if (type == "end") this.setState(function (prevState, props) {
+				return { end_time: prevState.player.getCurrentTime() };
+			});
+		}
+		//handle add segment
+
+	}, {
+		key: '_handleAdd',
+		value: function _handleAdd() {
+			var _this3 = this;
+
+			this.setState(function (prevState) {
+				if (prevState.end_time > prevState.start_time) {
+					var timestamp = new Date().getTime();
+					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": "TODO: Mako please implement here", "segment": [prevState.start_time, prevState.end_time] }]) };
+				} else {
+
+					_this3.setState({ visible: true, alert_message: "End time should later than start time" });
+				}
+			});
+		}
+		//hanele submit annotation
+
+	}, {
+		key: '_handleSubmit',
+		value: function _handleSubmit() {
+			var _this4 = this;
+
+			var annotations = this.state.annotations.map(function (seg) {
+				var obj = Object.assign({}, { 'type': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
+				return obj;
+			});
+			var data = Object.assign({}, { "annotations": annotations });
+			fetch(host + '/api/tasks/add', { credentials: 'include',
+				method: 'POST',
+				headers: {
+					'Accept': 'application/json, text/plain, */*',
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data) }).then(function (res) {
+				return response.json();
+			}).then(function (res) {
+				console.log(res);
+			});
+		}
+		//hanele alert toggle
+
+	}, {
+		key: 'onDismiss',
+		value: function onDismiss() {
+			this.setState({ visible: false });
+		}
+	}, {
+		key: 'clickOption',
+		value: function clickOption(evt) {
+			var selectMulti = document.getElementById("exampleSelectMulti");
+			var selected = selectMulti.options[selectMulti.selectedIndex].value;
+			selectMulti.selectedIndex = 0;
+			if (selected != "None") {
+				this.currentPath += "/" + selected;
+				this.getCurrentTaxonomy();
+			}
+		}
+	}, {
+		key: 'getCurrentTaxonomy',
+		value: function getCurrentTaxonomy(current) {
+			this.selections = this.currentPath.split("/");
+			var tree = this.data;
+			for (var i = 0; i < this.selections.length - 1; i++) {
+				tree = tree[this.selections[i]];
+			}
+			if (Object.keys(tree).length == 0) {
+				this.currentTaxonomy = tree;
+			} else {
+				this.currentTaxonomy = tree[this.selections[this.selections.length - 1]];
+			}
+			this.forceUpdate();
+		}
+	}, {
+		key: 'returnSelection',
+		value: function returnSelection(evt) {
+			evt.preventDefault();
+			var untilSelection = evt.currentTarget.id;
+			var newPath = "";
+			for (var i = 0; i < this.selections.length; i++) {
+				newPath += this.selections[i];
+				if (this.selections[i] == untilSelection) {
+					break;
+				}
+				newPath += "/";
+			}
+			this.currentPath = newPath;
+			this.getCurrentTaxonomy();
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var _this5 = this;
+
+			var task = this.state.task;
+			//check task state is not null
+			if (!task) {
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						_reactstrap.Alert,
+						{ color: 'light' },
+						'Loading'
+					)
+				);
+			}
+
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Container,
+					null,
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-2' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'div',
+								{ className: 'embed-responsive embed-responsive-21by9' },
+								_react2.default.createElement(_CustomizedYouTube2.default, { videoId: task.activityNetId, onYouTubeReady: this.handleYouTubeReady })
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-2' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Card,
+								{ body: true, outline: true, color: 'secondary' },
+								_react2.default.createElement(
+									_reactstrap.Alert,
+									{ color: 'warning', isOpen: this.state.visible, toggle: this.onDismiss },
+									this.state.alert_message
+								),
+								_react2.default.createElement(
+									_reactstrap.CardTitle,
+									null,
+									'Pleas add segment'
+								),
+								_react2.default.createElement(
+									_reactstrap.CardBody,
+									null,
+									_react2.default.createElement(
+										_reactstrap.Row,
+										{ className: 'mb-2' },
+										_react2.default.createElement(
+											_reactstrap.Col,
+											null,
+											_react2.default.createElement(_TimeButton2.default, { type: 'start', time: this.state.start_time, onTimeSet: this.handleTimeSet })
+										),
+										_react2.default.createElement(
+											_reactstrap.Col,
+											null,
+											_react2.default.createElement(_TimeButton2.default, { type: 'end', time: this.state.end_time, onTimeSet: this.handleTimeSet })
+										)
+									),
+									_react2.default.createElement(
+										_reactstrap.Form,
+										null,
+										_react2.default.createElement(
+											_reactstrap.FormGroup,
+											null,
+											_react2.default.createElement(
+												_reactstrap.Breadcrumb,
+												{ id: 'currentPath' },
+												this.selections.map(function (selection) {
+													return _react2.default.createElement(
+														_reactstrap.BreadcrumbItem,
+														null,
+														_react2.default.createElement(
+															'a',
+															{ id: selection, href: '#', onClick: function onClick(e) {
+																	return _this5.returnSelection(e);
+																} },
+															selection
+														)
+													);
+												})
+											),
+											_react2.default.createElement(
+												_reactstrap.Input,
+												{ type: 'select', name: 'selectMulti', id: 'exampleSelectMulti', onChange: function onChange(e) {
+														return _this5.clickOption(e);
+													} },
+												_react2.default.createElement(
+													'option',
+													{ value: 'None', selected: true },
+													'None'
+												),
+												Object.keys(this.currentTaxonomy).map(function (key) {
+													return _react2.default.createElement(
+														'option',
+														{ value: key },
+														key
+													);
+												})
+											)
+										)
+									),
+									_react2.default.createElement(
+										_reactstrap.Button,
+										{ outline: true, color: 'primary', onClick: this.handleAdd },
+										'Add'
+									)
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-4' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Card,
+								{ body: true, outline: true, color: 'secondary' },
+								_react2.default.createElement(
+									_reactstrap.CardTitle,
+									null,
+									'Segments'
+								),
+								_react2.default.createElement(
+									_reactstrap.CardBody,
+									null,
+									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations })
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-5' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Button,
+								{ color: 'primary', size: 'lg', block: true, onClick: this.handleSubmit },
+								'Submit'
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Home;
+}(_react2.default.Component);
+
+var _default = Home;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/Task.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/TimeButton.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+		value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TimeButton = function (_React$Component) {
+		_inherits(TimeButton, _React$Component);
+
+		function TimeButton(props) {
+				_classCallCheck(this, TimeButton);
+
+				var _this = _possibleConstructorReturn(this, (TimeButton.__proto__ || Object.getPrototypeOf(TimeButton)).call(this, props));
+
+				_this.handleClick = _this._handleClick.bind(_this);
+				return _this;
+		}
+
+		_createClass(TimeButton, [{
+				key: '_handleClick',
+				value: function _handleClick(e) {
+						this.props.onTimeSet(this.props.type);
+				}
+		}, {
+				key: 'render',
+				value: function render() {
+						return _react2.default.createElement(
+								'div',
+								{ className: 'mb-1' },
+								_react2.default.createElement(
+										_reactstrap.Button,
+										{ outline: true, color: 'success', onClick: this.handleClick, className: 'mr-3' },
+										'Set ',
+										this.props.type,
+										' time'
+								),
+								_react2.default.createElement(
+										'span',
+										null,
+										this.props.type,
+										' at: ',
+										this.props.time.toFixed(3),
+										' sec'
+								)
+						);
+				}
+		}]);
+
+		return TimeButton;
+}(_react2.default.Component);
+
+var _default = TimeButton;
+exports.default = _default;
+;
+
+var _temp = function () {
+		if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+				return;
+		}
+
+		__REACT_HOT_LOADER__.register(TimeButton, 'TimeButton', '/home/ActivityLab/client/components/task/TimeButton.js');
+
+		__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/TimeButton.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/UserBadge.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserBadge = function (_React$Component) {
+	_inherits(UserBadge, _React$Component);
+
+	function UserBadge() {
+		_classCallCheck(this, UserBadge);
+
+		return _possibleConstructorReturn(this, (UserBadge.__proto__ || Object.getPrototypeOf(UserBadge)).apply(this, arguments));
+	}
+
+	_createClass(UserBadge, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'primary' },
+					'You beat 40% users'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'danger' },
+					'Today\'s MVP'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'success' },
+					'102 achievements'
+				)
+			);
+		}
+	}]);
+
+	return UserBadge;
+}(_react2.default.Component);
+
+var _default = UserBadge;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(UserBadge, 'UserBadge', '/home/ActivityLab/client/components/task/UserBadge.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/task/UserBadge.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/task.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
@@ -2238,6 +3012,349 @@ var _temp = function () {
 }();
 
 ;
+
+/***/ }),
+
+/***/ "./data/taxonomyTree.json":
+/***/ (function(module, exports) {
+
+module.exports = {"Root":{"Eating and drinking Activities":{"Food & Drink Prep., Presentation, & Clean-up":{"Eating and Drinking":{"Having an ice cream":{},"Drinking coffee":{},"Drinking beer":{}},"Food and drink preparation ":{"Baking cookies":{},"Making a cake":{},"Making a lemonade":{},"Making an omelette":{},"Peeling potatoes":{},"Preparing pasta":{},"Preparing salad":{},"Making a sandwich":{},"Mixing drinks":{}},"Kitchen and food clean-up":{"Washing dishes":{}}}},"Sports, Exercise, and Recreation":{"Participating in Sports, Exercise, or Recreation":{"Wrestling":{"Arm wrestling":{},"Sumo":{}},"Biking":{"BMX":{}},"Playing soccer":{"Beach soccer":{},"Futsal":{}},"Bowling":{"Playing ten pins":{}},"Participating in rodeo competitions":{"Bullfighting":{},"Calf roping":{}},"Boating":{"Canoeing":{},"Rafting":{},"River tubing":{}},"Working out":{"Doing crunches":{},"Kneeling":{},"Rope skipping":{}},"Fencing":{"Doing fencing":{}},"Fishing":{"Ice fishing":{}},"Playing volleyball":{"Playing beach volleyball":{},"Volleyball":{}},"Running":{"Running a marathon":{}},"Skiing, ice skating, snowboarding":{"Skiing":{},"Snow tubing":{},"Snowboarding":{}},"Doing aerobics":{"Zumba":{},"Doing step aerobics":{}},"Participating in martial arts":{"Capoeira":{},"Doing kickboxing":{},"Doing karate":{},"Tai chi":{}},"Playing sports":{"Baton twirling":{},"Camel ride":{},"Croquet":{},"Curling":{},"Doing a powerbomb":{},"Hurling":{},"Longboarding":{},"Powerbocking":{},"Rollerblading":{},"High jump":{},"Cricket":{},"Discus throw":{},"Javelin throw":{},"Paintball":{},"Long jump":{},"Bungee jumping":{},"Triple jump":{},"Shot put":{},"Dodgeball":{},"Hammer throw":{},"Skateboarding":{},"Doing motocross":{},"Starting a campfire":{},"Archery":{},"Playing kickball":{},"Pole vault":{}},"Weightlifting":{"Clean and jerk":{},"Snatch":{}},"Playing hockey":{"Playing ice hockey":{},"Playing field hockey":{}},"Doing gymnastics":{"Using the pommel horse":{},"Using the balance beam":{},"Tumbling":{},"Using parallel bars":{},"Using uneven bars":{}},"Using cardiovascular equipment":{"Elliptical trainer":{},"Using the rowing machine":{},"Spinning":{}},"Playing racquet sports ":{"Ping-pong":{},"Tennis serve with ball bouncing":{},"Playing squash":{},"Playing lacrosse":{},"Playing racquetball":{},"Playing badminton":{}},"Participating in equestrian sports":{"Playing polo":{},"Horseback riding":{}},"Playing basketball":{"Layup drill in basketball":{}},"Climbing, spelunking, caving":{"Rock climbing":{}},"Participating in water sports":{"Scuba diving":{},"Surfing":{},"Swimming":{},"Wakeboarding":{},"Waterskiing":{},"Springboard diving":{},"Sailing":{},"Plataform diving":{},"Windsurfing":{},"Playing water polo":{},"Kayaking":{}}}},"Socializing, Relaxing, and Leisure":{"Arts and Entertainment":{"Beach activities":{"Building sandcastles":{}},"Park activities":{"Fun sliding down":{},"Swinging at the playground":{},"Using the monkey bar":{}},"Attending gambling establishments":{"Playing blackjack":{}},"Dancing":{"Tango":{},"Cheerleading":{},"Cumbia":{},"Breakdancing":{},"Belly dance":{}},"Playing musical instruments":{"Drum corps":{},"Playing congas":{},"Playing drums":{},"Playing bagpipes":{},"Playing harmonica":{},"Playing saxophone":{},"Playing guitarra":{},"Playing flauta":{},"Playing piano":{},"Playing violin":{},"Playing accordion":{}},"Attending arts and entertainment":{"Ballet":{}}},"Relaxing and Leisure":{"Tobacco and drug use":{"Smoking hookah":{},"Smoking a cigarette":{}},"Playing games":{"Beer pong":{},"Hitting a pinata":{},"Hula hoop":{},"Kite flying":{},"Playing pool":{},"Playing rubik cube":{},"Riding bumper cars":{},"Rock-paper-scissors":{},"Shuffleboard":{},"Slacklining":{},"Table soccer":{},"Throwing darts":{},"Tug of war":{},"Hopscotch":{}}}},"Personal Care":{"Health-related Self Care":{"Health-related self care":{"Applying sunscreen":{}}},"Grooming":{"Washing, dressing and grooming oneself":{"Blow-drying hair":{},"Braiding hair":{},"Gargling mouthwash":{},"Putting in contact lenses":{},"Putting on shoes":{},"Putting on makeup":{},"Washing face":{},"Brushing hair":{},"Brushing teeth":{},"Doing nails":{},"Washing hands":{},"Shaving":{},"Shaving legs":{},"Removing curlers":{}},"Washing, dressing and grooming":{"Getting a tattoo":{},"Getting a piercing":{},"Getting a haircut":{}}}},"Household Activities":{"Appliances, Tools, and Toys":{"Appliance, tool, and toy set-up, repair, & maintenance (by self)":{"Sharpening knives":{},"Waxing skis":{},"Welding":{}}},"Household Management":{"Household & personal organization and planning":{"Wrapping presents":{}}},"Animals and Pets":{"Care for animals and pets (not veterinary care)":{"Clipping cat claws":{},"Grooming dog":{},"Bathing dog":{}},"Walking / exercising / playing with animals":{"Disc dog":{},"Grooming horse":{},"Walking the dog":{}}},"Interior Maintenance, Repair, & Decoration":{"Building and repairing furniture":{"Painting furniture":{}},"Heating and cooling":{"Chopping wood":{}},"Interior arrangement, decoration, & repairs":{"Carving jack-o-lanterns":{},"Cleaning sink":{},"Decorating the Christmas tree":{},"Hanging wallpaper":{},"Installing carpet":{},"Laying tile":{},"Plastering":{},"Painting":{}}},"Housework":{"Interior cleaning":{"Mooping floor":{},"Cleaning windows":{},"Vacuuming floor":{},"Polishing forniture":{}},"Sewing, repairing, & maintaining textiles":{"Knitting":{},"Cleaning shoes":{},"Polishing shoes":{}},"Laundry":{"Ironing clothes":{},"Hand washing clothes":{}}},"Vehicles":{"Vehicle repair and maintenance (by self)":{"Assembling bicycle":{},"Changing car wheel":{},"Hand car wash":{},"Removing ice from car":{},"Fixing bicycle":{}}},"Exterior Maintenance, Repair, & Decoration":{"Exterior repair, improvements, & decoration":{"Fixing the roof":{},"Roof shingle removal":{}},"Painting fence":{},"Exterior cleaning":{"Shoveling snow":{}}},"Lawn, Garden, and Houseplants":{"Lawn, garden, and houseplant care":{"Blowing leaves":{},"Cutting the grass":{},"Raking leaves":{},"Spread mulch":{},"Trimming branches or hedges":{},"Mowing the lawn":{}}}}}}
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cbfb50ba66d8346afde22a823ed0ddd2.png";
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4c74b06857b1bbdb6459f441b6d6b760.png";
+
+/***/ }),
+
+/***/ "./images/FiftyCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "626e35e5c39065a5aec4f16f28c6c708.png";
+
+/***/ }),
+
+/***/ "./images/FiftyCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "418617e3d9ea4add8fd833986fdb353a.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c463c4fcdcb1910c7692e523f2bfb1cd.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "20d636e43e5469edde921402c15b30d5.png";
+
+/***/ }),
+
+/***/ "./images/FiftyHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3bdf343791bddaba99e80137c7c94057.png";
+
+/***/ }),
+
+/***/ "./images/FiftyHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f2f4cfd3dbf92fff9783783eca175bae.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "34a3e4418fe69f5ce45b1f5ebce550f5.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a46073f19b64f153ed8e031efecbc56c.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7d34b450ccb271794e412f4581983561.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d197924eee6a0045f1963b7cfbdeba7b.png";
+
+/***/ }),
+
+/***/ "./images/OneAnnotationBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0cba8fa00a65792099911555794196f7.png";
+
+/***/ }),
+
+/***/ "./images/OneAnnotationBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5cbd88ba253630452ad36884de699ae7.png";
+
+/***/ }),
+
+/***/ "./images/OneCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fbe4aec7b9f0b0f02d43766998453bd3.png";
+
+/***/ }),
+
+/***/ "./images/OneCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "925650e0c84b654fed622b0d779bf016.png";
+
+/***/ }),
+
+/***/ "./images/OneFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "25e232d027a116781721a82d49ac90c7.png";
+
+/***/ }),
+
+/***/ "./images/OneFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6c60f7f92caf6a8e44805d78705764a6.png";
+
+/***/ }),
+
+/***/ "./images/OneHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "52cd4431cfdeec3cbe83121634f66c5f.png";
+
+/***/ }),
+
+/***/ "./images/OneHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9f977e00891bdcd33d87bd71d3c98915.png";
+
+/***/ }),
+
+/***/ "./images/OneSocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cdbb48110dec2f8ce8c0fcc55f545b56.png";
+
+/***/ }),
+
+/***/ "./images/OneSocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "84916f1b2b2839447029f1fe8f5f0b36.png";
+
+/***/ }),
+
+/***/ "./images/OneSportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0e052c8b585f0213f7fa2fe0872a08d8.png";
+
+/***/ }),
+
+/***/ "./images/OneSportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "10957083c8a4a62420a1ea4ea5b82e4c.png";
+
+/***/ }),
+
+/***/ "./images/TenAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f8225fe207dfd7d76183c5ace33421a3.png";
+
+/***/ }),
+
+/***/ "./images/TenAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "deeaba966cdd411a777fd5410dc7171a.png";
+
+/***/ }),
+
+/***/ "./images/TenCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2eed1f4ebdb4a69c8b7a425f0e375712.png";
+
+/***/ }),
+
+/***/ "./images/TenCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5549addf081e7001013fe27ba8a52e98.png";
+
+/***/ }),
+
+/***/ "./images/TenFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "aed554e17042eb7a9838b0c81dee52d3.png";
+
+/***/ }),
+
+/***/ "./images/TenFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ec958c420d8be79c825f0866113092cb.png";
+
+/***/ }),
+
+/***/ "./images/TenHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "86fb1b43da74f2a6f869856c70cce5f5.png";
+
+/***/ }),
+
+/***/ "./images/TenHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "833a1a6511215b278e29a46cd66ac6fa.png";
+
+/***/ }),
+
+/***/ "./images/TenSocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "43edc4b2990fd08eafeb8489f206e2f0.png";
+
+/***/ }),
+
+/***/ "./images/TenSocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4ae0467155e2af706e639e131bb96c6c.png";
+
+/***/ }),
+
+/***/ "./images/TenSportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "175cc3170e62f1193ee8971aea1f485f.png";
+
+/***/ }),
+
+/***/ "./images/TenSportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "687f53ef42d9ef5f02dbf47ddf39558e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "040de36686df8c50fa980c36307a8f5c.png";
+
+/***/ }),
+
+/***/ "./images/TwentyAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "64cd4534c6ff0a5701fdc82c5caf32b0.png";
+
+/***/ }),
+
+/***/ "./images/TwentyCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bbaf7ca872e0475d55f6584340ba571c.png";
+
+/***/ }),
+
+/***/ "./images/TwentyCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "57709b6cb437ee67a047e74abc62623e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "22d900bed48a0087c2274245a411de7e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "27d917849799ac4e03b85b058f72a8be.png";
+
+/***/ }),
+
+/***/ "./images/TwentyHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "083803224ce458fc2b1b46af3cb333a0.png";
+
+/***/ }),
+
+/***/ "./images/TwentyHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "df9fb5fa36250a9df770048a70df8b7e.png";
+
+/***/ }),
+
+/***/ "./images/TwentySocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b627ea659e44670f7a1d8442c76c33c1.png";
+
+/***/ }),
+
+/***/ "./images/TwentySocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "788b3e9723416b089d8e8dfda49814c4.png";
+
+/***/ }),
+
+/***/ "./images/TwentySportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9b43f7203e454eb4c975b63ee8f78721.png";
+
+/***/ }),
+
+/***/ "./images/TwentySportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0f217f5715aaf1e76f44a64edd7a71b3.png";
 
 /***/ }),
 
@@ -11825,6 +12942,21 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /***/ (function(module, exports) {
 
@@ -12068,7 +13200,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"NODE_ENV":"development","DOMAIN":"http://localhost","PORT":"7777"}).DEBUG;
+    r = Object({"NODE_ENV":"development","DOMAIN":"http://www.chi-lin.com","PORT":"7777"}).DEBUG;
   }
 
   return r;

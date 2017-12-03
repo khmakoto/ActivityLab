@@ -19,7 +19,7 @@ class Home extends React.Component {
 				        <p className="lead">This is a social annotation challenge.</p>
 				        <hr className="my-2" />
 				        <p className="lead">
-				          <Button color="primary">Play</Button>
+									<Link to="/tasks/single">Play</Link>
 				        </p>
 				      </Jumbotron>
 						</Col>
