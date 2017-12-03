@@ -122,6 +122,7 @@ class Home extends React.Component {
 		this.forceUpdate();
 	}
 	returnSelection(evt) {
+		evt.preventDefault();
 		var untilSelection = evt.currentTarget.id;
 		var newPath = "";
 		for (var i = 0; i < this.selections.length; i++) {
@@ -146,12 +147,7 @@ class Home extends React.Component {
 	    return (
 			<div>
 				<Container>
-					<Row className="mb-4">
-						 <Col>
-							 <UserBadge/>
-						</Col>
-					</Row>
-					 <Row className="mb-4">
+					 <Row className="mb-1">
 							<Col>
 								<div className="embed-responsive embed-responsive-21by9">
 									<CustomizedYouTube videoId={task.activityNetId} onYouTubeReady={this.handleYouTubeReady} />

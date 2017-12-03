@@ -19,6 +19,12 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader"
       },
+      { test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+      },
       { test: /\.css$/,
         use: [
           'style-loader',
@@ -33,7 +39,7 @@ module.exports = {
         }, {
           loader: "sass-loader" // compiles Sass to CSS
         }]
-			}
+      }
 		]
 	},
 	plugins: [
@@ -42,7 +48,7 @@ module.exports = {
     new webpack.DefinePlugin({
         'process.env': {
           'NODE_ENV': JSON.stringify('development'),
-          'DOMAIN': JSON.stringify('http://www.chi-lin.com'),
+          'DOMAIN': JSON.stringify('http://localhost'),
           'PORT': JSON.stringify('7777')
       }
     })
