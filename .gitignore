@@ -60,4 +60,3 @@ typings/
 #Activity Lab
 dist/bundle.js
 server/config/auth.js
-webpack.config.js

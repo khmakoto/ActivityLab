@@ -61,7 +61,11 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
+<<<<<<< HEAD
 /******/ 	var hotCurrentHash = "ff6b688ab514f9a44fcd"; // eslint-disable-line no-unused-vars
+=======
+/******/ 	var hotCurrentHash = "cdcc44ebbcb3211c67d4"; // eslint-disable-line no-unused-vars
+>>>>>>> c817b01d5cafcc1eb661a57f33965da29c613411
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -757,15 +761,15 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(Auth, 'Auth', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Auth.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Auth.js');
 }();
 
 ;
@@ -908,15 +912,15 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(Button, 'Button', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(Button, 'Button', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/facebook/Button.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/facebook/Button.js');
 }();
 
 ;
@@ -1018,9 +1022,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Home, 'Home', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/home/Home.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/home/Home.js');
 }();
 
 ;
@@ -1127,9 +1131,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(Layout, 'Layout', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Layout.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Layout.js');
 }();
 
 ;
@@ -1264,11 +1268,11 @@ var _temp = function () {
 				return;
 		}
 
-		__REACT_HOT_LOADER__.register(Main, 'Main', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(Main, 'Main', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(PrivateRoute, 'PrivateRoute', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 
-		__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Main.js');
+		__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Main.js');
 }();
 
 ;
@@ -1395,9 +1399,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(Menu, 'Menu', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/layouts/Menu.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/layouts/Menu.js');
 }();
 
 ;
@@ -2085,7 +2089,7 @@ var Profile = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						_reactstrap.Row,
-						{ style: { marginTop: 15 + 'px' } },
+						{ style: { marginTop: 15 + 'px', marginBottom: 15 + 'px' } },
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
@@ -2160,21 +2164,903 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(port, 'port', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(domain, 'domain', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(host, 'host', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(Profile, 'Profile', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/home/ActivityLab/client/components/profile/Profile.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/profile/Profile.js');
 }();
 
 ;
 
 /***/ }),
 
+/***/ "./client/components/task/CustomizedYouTube.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube.js");
+
+var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var CustomizedYouTube = function (_React$Component) {
+	_inherits(CustomizedYouTube, _React$Component);
+
+	function CustomizedYouTube(props) {
+		_classCallCheck(this, CustomizedYouTube);
+
+		var _this = _possibleConstructorReturn(this, (CustomizedYouTube.__proto__ || Object.getPrototypeOf(CustomizedYouTube)).call(this, props));
+
+		_this.onReady = _this._onReady.bind(_this);
+
+		return _this;
+	}
+
+	_createClass(CustomizedYouTube, [{
+		key: '_onReady',
+		value: function _onReady(event) {
+			this.props.onYouTubeReady(event.target);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var prop = this.props;
+			var youtube_opts = {
+				height: '300',
+				playerVars: { // https://developers.google.com/youtube/player_parameters
+					autoplay: 0,
+					showinfo: 0
+				}
+			};
+
+			return _react2.default.createElement(_reactYoutube2.default, {
+				className: 'embed-responsive-item',
+				videoId: prop.videoId,
+				opts: youtube_opts,
+				onReady: this.onReady
+			});
+		}
+	}]);
+
+	return CustomizedYouTube;
+}(_react2.default.Component);
+
+var _default = CustomizedYouTube;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(CustomizedYouTube, 'CustomizedYouTube', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/CustomizedYouTube.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/CustomizedYouTube.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/Segments.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Segments = function (_React$Component) {
+	_inherits(Segments, _React$Component);
+
+	function Segments(props) {
+		_classCallCheck(this, Segments);
+
+		return _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
+		//this.handleClick = this._handleClick.bind(this)
+	}
+
+	_createClass(Segments, [{
+		key: '_handleClick',
+		value: function _handleClick(e) {
+			//this.props.onTimeSet(this.props.type);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var prop = this.props;
+			return _react2.default.createElement(
+				_reactstrap.ListGroup,
+				null,
+				prop.annotations.map(function (seg) {
+					return _react2.default.createElement(
+						_reactstrap.ListGroupItem,
+						{ key: seg.id },
+						seg.label,
+						' ',
+						seg.segment[0],
+						'sec ~ ',
+						seg.segment[1],
+						'sec'
+					);
+				})
+			);
+		}
+	}]);
+
+	return Segments;
+}(_react2.default.Component);
+
+var _default = Segments;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Segments, 'Segments', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Segments.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Segments.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/Task.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+__webpack_require__("./client/components/task/task.scss");
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube.js");
+
+var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
+
+var _UserBadge = __webpack_require__("./client/components/task/UserBadge.js");
+
+var _UserBadge2 = _interopRequireDefault(_UserBadge);
+
+var _CustomizedYouTube = __webpack_require__("./client/components/task/CustomizedYouTube.js");
+
+var _CustomizedYouTube2 = _interopRequireDefault(_CustomizedYouTube);
+
+var _TimeButton = __webpack_require__("./client/components/task/TimeButton.js");
+
+var _TimeButton2 = _interopRequireDefault(_TimeButton);
+
+var _Segments = __webpack_require__("./client/components/task/Segments.js");
+
+var _Segments2 = _interopRequireDefault(_Segments);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var port = "7777";
+var domain = "http://localhost";
+var host =  false ? '' + domain : domain + ':' + port;
+
+var Home = function (_React$Component) {
+	_inherits(Home, _React$Component);
+
+	function Home(props) {
+		_classCallCheck(this, Home);
+
+		//set init state
+		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
+
+		_this.state = { task: null, player: null, start_time: 0, end_time: 0, annotations: [] };
+		_this.handleYouTubeReady = _this._handleYouTubeReady.bind(_this);
+		_this.handleTimeSet = _this._handleTimeSet.bind(_this);
+		_this.handleAdd = _this._handleAdd.bind(_this);
+		_this.handleSubmit = _this._handleSubmit.bind(_this);
+
+		_this.currentPath = "Root";
+		_this.data = __webpack_require__("./data/taxonomyTree.json");
+		_this.currentTaxonomy = _this.data["Root"];
+		_this.selections = ["Root"];
+		return _this;
+	}
+
+	//fetch remote task data
+
+
+	_createClass(Home, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			fetch(host + '/api/tasks/single', { credentials: 'include' }).then(function (res) {
+				return res.json();
+			}).then(function (res) {
+				_this2.setState({ task: res.task });
+			});
+		}
+		//handle youtube pause
+
+	}, {
+		key: '_handleYouTubeReady',
+		value: function _handleYouTubeReady(player) {
+			this.setState({ player: player });
+		}
+		//handle time button
+
+	}, {
+		key: '_handleTimeSet',
+		value: function _handleTimeSet(type) {
+			if (type == "start") this.setState(function (prevState, props) {
+				return { start_time: prevState.player.getCurrentTime() };
+			});else if (type == "end") this.setState(function (prevState, props) {
+				return { end_time: prevState.player.getCurrentTime() };
+			});
+		}
+		//handle add segment
+
+	}, {
+		key: '_handleAdd',
+		value: function _handleAdd() {
+			this.setState(function (prevState) {
+				var timestamp = new Date().getTime();
+				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": "TODO: Mako please implement here", "segment": [prevState.start_time, prevState.end_time] }]) };
+			});
+		}
+		//hanele submit annotation
+
+	}, {
+		key: '_handleSubmit',
+		value: function _handleSubmit() {
+			var _this3 = this;
+
+			var annotations = this.state.annotations.map(function (seg) {
+				var obj = Object.assign({}, { 'type': _this3.state.task.id, 'label': seg.label, "segment": seg.segment });
+				return obj;
+			});
+			var data = Object.assign({}, { "annotations": annotations });
+			console.log(data);
+
+			fetch(host + '/api/tasks/add', { credentials: 'include',
+				method: 'POST',
+				headers: {
+					'Accept': 'application/json, text/plain, */*',
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(data) }).then(function (res) {
+				return response.json();
+			}).then(function (res) {
+				console.log(res);
+			});
+
+			/*
+   fetch(`${host}/api/tasks/add`, {credentials: 'include'})
+   	.then( res => res.json())
+   	.then( res => {
+   		this.setState({task: res.task});
+   	});
+   	*/
+		}
+	}, {
+		key: 'clickOption',
+		value: function clickOption(evt) {
+			var selectMulti = document.getElementById("exampleSelectMulti");
+			var selected = selectMulti.options[selectMulti.selectedIndex].value;
+			selectMulti.selectedIndex = 0;
+			if (selected != "None") {
+				this.currentPath += "/" + selected;
+				this.getCurrentTaxonomy();
+			}
+		}
+	}, {
+		key: 'getCurrentTaxonomy',
+		value: function getCurrentTaxonomy(current) {
+			this.selections = this.currentPath.split("/");
+			var tree = this.data;
+			for (var i = 0; i < this.selections.length - 1; i++) {
+				tree = tree[this.selections[i]];
+			}
+			if (Object.keys(tree).length == 0) {
+				this.currentTaxonomy = tree;
+			} else {
+				this.currentTaxonomy = tree[this.selections[this.selections.length - 1]];
+			}
+			this.forceUpdate();
+		}
+	}, {
+		key: 'returnSelection',
+		value: function returnSelection(evt) {
+			evt.preventDefault();
+			var untilSelection = evt.currentTarget.id;
+			var newPath = "";
+			for (var i = 0; i < this.selections.length; i++) {
+				newPath += this.selections[i];
+				if (this.selections[i] == untilSelection) {
+					break;
+				}
+				newPath += "/";
+			}
+			this.currentPath = newPath;
+			this.getCurrentTaxonomy();
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			var _this4 = this;
+
+			var task = this.state.task;
+			//check task state is not null
+			if (!task) {
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						_reactstrap.Alert,
+						{ color: 'light' },
+						'Loading'
+					)
+				);
+			}
+
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Container,
+					null,
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-1' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'div',
+								{ className: 'embed-responsive embed-responsive-21by9' },
+								_react2.default.createElement(_CustomizedYouTube2.default, { videoId: task.activityNetId, onYouTubeReady: this.handleYouTubeReady })
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-4' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Card,
+								{ body: true, outline: true, color: 'secondary' },
+								_react2.default.createElement(
+									_reactstrap.CardTitle,
+									null,
+									'Pleas add segment'
+								),
+								_react2.default.createElement(
+									_reactstrap.CardBody,
+									null,
+									_react2.default.createElement(
+										_reactstrap.Form,
+										null,
+										_react2.default.createElement(
+											_reactstrap.FormGroup,
+											null,
+											_react2.default.createElement(
+												_reactstrap.Breadcrumb,
+												{ id: 'currentPath' },
+												this.selections.map(function (selection) {
+													return _react2.default.createElement(
+														_reactstrap.BreadcrumbItem,
+														null,
+														_react2.default.createElement(
+															'a',
+															{ id: selection, href: '#', onClick: function onClick(e) {
+																	return _this4.returnSelection(e);
+																} },
+															selection
+														)
+													);
+												})
+											),
+											_react2.default.createElement(
+												_reactstrap.Input,
+												{ type: 'select', name: 'selectMulti', id: 'exampleSelectMulti', onChange: function onChange(e) {
+														return _this4.clickOption(e);
+													} },
+												_react2.default.createElement(
+													'option',
+													{ value: 'None', selected: true },
+													'None'
+												),
+												Object.keys(this.currentTaxonomy).map(function (key) {
+													return _react2.default.createElement(
+														'option',
+														{ value: key },
+														key
+													);
+												})
+											)
+										)
+									),
+									_react2.default.createElement(_TimeButton2.default, { type: 'start', time: this.state.start_time, onTimeSet: this.handleTimeSet }),
+									_react2.default.createElement(_TimeButton2.default, { type: 'end', time: this.state.end_time, onTimeSet: this.handleTimeSet }),
+									_react2.default.createElement(
+										'div',
+										{ className: 'd-flex flex-row' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'p-2' },
+											_react2.default.createElement(
+												_reactstrap.Button,
+												{ outline: true, color: 'primary', onClick: this.handleAdd },
+												'Add'
+											)
+										)
+									)
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-4' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Card,
+								{ body: true, outline: true, color: 'secondary' },
+								_react2.default.createElement(
+									_reactstrap.CardTitle,
+									null,
+									'Segments'
+								),
+								_react2.default.createElement(
+									_reactstrap.CardBody,
+									null,
+									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations })
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ className: 'mb-5' },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								_reactstrap.Button,
+								{ color: 'primary', size: 'lg', block: true, onClick: this.handleSubmit },
+								'Submit'
+							)
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Home;
+}(_react2.default.Component);
+
+var _default = Home;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(port, 'port', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(domain, 'domain', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(host, 'host', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(Home, 'Home', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/Task.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/TimeButton.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TimeButton = function (_React$Component) {
+	_inherits(TimeButton, _React$Component);
+
+	function TimeButton(props) {
+		_classCallCheck(this, TimeButton);
+
+		var _this = _possibleConstructorReturn(this, (TimeButton.__proto__ || Object.getPrototypeOf(TimeButton)).call(this, props));
+
+		_this.handleClick = _this._handleClick.bind(_this);
+		return _this;
+	}
+
+	_createClass(TimeButton, [{
+		key: '_handleClick',
+		value: function _handleClick(e) {
+			this.props.onTimeSet(this.props.type);
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'd-flex flex-row' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'p-2' },
+					_react2.default.createElement(
+						_reactstrap.Button,
+						{ outline: true, color: 'primary', onClick: this.handleClick },
+						'Set ',
+						this.props.type,
+						' time'
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'p-2' },
+					this.props.type,
+					' at: ',
+					this.props.time && _react2.default.createElement(
+						'span',
+						null,
+						this.props.time
+					),
+					' sec'
+				)
+			);
+		}
+	}]);
+
+	return TimeButton;
+}(_react2.default.Component);
+
+var _default = TimeButton;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(TimeButton, 'TimeButton', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/UserBadge.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__("./node_modules/bootstrap/dist/css/bootstrap.css");
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserBadge = function (_React$Component) {
+	_inherits(UserBadge, _React$Component);
+
+	function UserBadge() {
+		_classCallCheck(this, UserBadge);
+
+		return _possibleConstructorReturn(this, (UserBadge.__proto__ || Object.getPrototypeOf(UserBadge)).apply(this, arguments));
+	}
+
+	_createClass(UserBadge, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'primary' },
+					'You beat 40% users'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'danger' },
+					'Today\'s MVP'
+				),
+				_react2.default.createElement(
+					_reactstrap.Badge,
+					{ color: 'success' },
+					'102 achievements'
+				)
+			);
+		}
+	}]);
+
+	return UserBadge;
+}(_react2.default.Component);
+
+var _default = UserBadge;
+exports.default = _default;
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(UserBadge, 'UserBadge', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/UserBadge.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/UserBadge.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./client/components/task/task.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(true) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss", function() {
+			var newContent = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./client/components/task/task.scss");
+			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./client/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__("./node_modules/react-dom/index.js");
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js");
+
+var _Layout = __webpack_require__("./client/components/layouts/Layout.js");
+
+var _Layout2 = _interopRequireDefault(_Layout);
+
+var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var render = function render(Component) {
+  _reactDom2.default.render(_react2.default.createElement(
+    _reactHotLoader.AppContainer,
+    null,
+    _react2.default.createElement(
+      _reactRouterDom.BrowserRouter,
+      null,
+      _react2.default.createElement(Component, null)
+    )
+  ), document.getElementById('root'));
+};
+
+render(_Layout2.default);
+
+// Webpack Hot Module Replacement API
+if (true) {
+  module.hot.accept("./client/components/layouts/Layout.js", function () {
+    var nextLayout = __webpack_require__("./client/components/layouts/Layout.js").default;
+    render(nextLayout);
+  });
+}
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(render, 'render', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/index.js');
+}();
+
+;
+
+/***/ }),
+
+/***/ "./data/taxonomyTree.json":
+/***/ (function(module, exports) {
+
+module.exports = {"Root":{"Eating and drinking Activities":{"Food & Drink Prep., Presentation, & Clean-up":{"Eating and Drinking":{"Having an ice cream":{},"Drinking coffee":{},"Drinking beer":{}},"Food and drink preparation ":{"Baking cookies":{},"Making a cake":{},"Making a lemonade":{},"Making an omelette":{},"Peeling potatoes":{},"Preparing pasta":{},"Preparing salad":{},"Making a sandwich":{},"Mixing drinks":{}},"Kitchen and food clean-up":{"Washing dishes":{}}}},"Sports, Exercise, and Recreation":{"Participating in Sports, Exercise, or Recreation":{"Wrestling":{"Arm wrestling":{},"Sumo":{}},"Biking":{"BMX":{}},"Playing soccer":{"Beach soccer":{},"Futsal":{}},"Bowling":{"Playing ten pins":{}},"Participating in rodeo competitions":{"Bullfighting":{},"Calf roping":{}},"Boating":{"Canoeing":{},"Rafting":{},"River tubing":{}},"Working out":{"Doing crunches":{},"Kneeling":{},"Rope skipping":{}},"Fencing":{"Doing fencing":{}},"Fishing":{"Ice fishing":{}},"Playing volleyball":{"Playing beach volleyball":{},"Volleyball":{}},"Running":{"Running a marathon":{}},"Skiing, ice skating, snowboarding":{"Skiing":{},"Snow tubing":{},"Snowboarding":{}},"Doing aerobics":{"Zumba":{},"Doing step aerobics":{}},"Participating in martial arts":{"Capoeira":{},"Doing kickboxing":{},"Doing karate":{},"Tai chi":{}},"Playing sports":{"Baton twirling":{},"Camel ride":{},"Croquet":{},"Curling":{},"Doing a powerbomb":{},"Hurling":{},"Longboarding":{},"Powerbocking":{},"Rollerblading":{},"High jump":{},"Cricket":{},"Discus throw":{},"Javelin throw":{},"Paintball":{},"Long jump":{},"Bungee jumping":{},"Triple jump":{},"Shot put":{},"Dodgeball":{},"Hammer throw":{},"Skateboarding":{},"Doing motocross":{},"Starting a campfire":{},"Archery":{},"Playing kickball":{},"Pole vault":{}},"Weightlifting":{"Clean and jerk":{},"Snatch":{}},"Playing hockey":{"Playing ice hockey":{},"Playing field hockey":{}},"Doing gymnastics":{"Using the pommel horse":{},"Using the balance beam":{},"Tumbling":{},"Using parallel bars":{},"Using uneven bars":{}},"Using cardiovascular equipment":{"Elliptical trainer":{},"Using the rowing machine":{},"Spinning":{}},"Playing racquet sports ":{"Ping-pong":{},"Tennis serve with ball bouncing":{},"Playing squash":{},"Playing lacrosse":{},"Playing racquetball":{},"Playing badminton":{}},"Participating in equestrian sports":{"Playing polo":{},"Horseback riding":{}},"Playing basketball":{"Layup drill in basketball":{}},"Climbing, spelunking, caving":{"Rock climbing":{}},"Participating in water sports":{"Scuba diving":{},"Surfing":{},"Swimming":{},"Wakeboarding":{},"Waterskiing":{},"Springboard diving":{},"Sailing":{},"Plataform diving":{},"Windsurfing":{},"Playing water polo":{},"Kayaking":{}}}},"Socializing, Relaxing, and Leisure":{"Arts and Entertainment":{"Beach activities":{"Building sandcastles":{}},"Park activities":{"Fun sliding down":{},"Swinging at the playground":{},"Using the monkey bar":{}},"Attending gambling establishments":{"Playing blackjack":{}},"Dancing":{"Tango":{},"Cheerleading":{},"Cumbia":{},"Breakdancing":{},"Belly dance":{}},"Playing musical instruments":{"Drum corps":{},"Playing congas":{},"Playing drums":{},"Playing bagpipes":{},"Playing harmonica":{},"Playing saxophone":{},"Playing guitarra":{},"Playing flauta":{},"Playing piano":{},"Playing violin":{},"Playing accordion":{}},"Attending arts and entertainment":{"Ballet":{}}},"Relaxing and Leisure":{"Tobacco and drug use":{"Smoking hookah":{},"Smoking a cigarette":{}},"Playing games":{"Beer pong":{},"Hitting a pinata":{},"Hula hoop":{},"Kite flying":{},"Playing pool":{},"Playing rubik cube":{},"Riding bumper cars":{},"Rock-paper-scissors":{},"Shuffleboard":{},"Slacklining":{},"Table soccer":{},"Throwing darts":{},"Tug of war":{},"Hopscotch":{}}}},"Personal Care":{"Health-related Self Care":{"Health-related self care":{"Applying sunscreen":{}}},"Grooming":{"Washing, dressing and grooming oneself":{"Blow-drying hair":{},"Braiding hair":{},"Gargling mouthwash":{},"Putting in contact lenses":{},"Putting on shoes":{},"Putting on makeup":{},"Washing face":{},"Brushing hair":{},"Brushing teeth":{},"Doing nails":{},"Washing hands":{},"Shaving":{},"Shaving legs":{},"Removing curlers":{}},"Washing, dressing and grooming":{"Getting a tattoo":{},"Getting a piercing":{},"Getting a haircut":{}}}},"Household Activities":{"Appliances, Tools, and Toys":{"Appliance, tool, and toy set-up, repair, & maintenance (by self)":{"Sharpening knives":{},"Waxing skis":{},"Welding":{}}},"Household Management":{"Household & personal organization and planning":{"Wrapping presents":{}}},"Animals and Pets":{"Care for animals and pets (not veterinary care)":{"Clipping cat claws":{},"Grooming dog":{},"Bathing dog":{}},"Walking / exercising / playing with animals":{"Disc dog":{},"Grooming horse":{},"Walking the dog":{}}},"Interior Maintenance, Repair, & Decoration":{"Building and repairing furniture":{"Painting furniture":{}},"Heating and cooling":{"Chopping wood":{}},"Interior arrangement, decoration, & repairs":{"Carving jack-o-lanterns":{},"Cleaning sink":{},"Decorating the Christmas tree":{},"Hanging wallpaper":{},"Installing carpet":{},"Laying tile":{},"Plastering":{},"Painting":{}}},"Housework":{"Interior cleaning":{"Mooping floor":{},"Cleaning windows":{},"Vacuuming floor":{},"Polishing forniture":{}},"Sewing, repairing, & maintaining textiles":{"Knitting":{},"Cleaning shoes":{},"Polishing shoes":{}},"Laundry":{"Ironing clothes":{},"Hand washing clothes":{}}},"Vehicles":{"Vehicle repair and maintenance (by self)":{"Assembling bicycle":{},"Changing car wheel":{},"Hand car wash":{},"Removing ice from car":{},"Fixing bicycle":{}}},"Exterior Maintenance, Repair, & Decoration":{"Exterior repair, improvements, & decoration":{"Fixing the roof":{},"Roof shingle removal":{}},"Painting fence":{},"Exterior cleaning":{"Shoveling snow":{}}},"Lawn, Garden, and Houseplants":{"Lawn, garden, and houseplant care":{"Blowing leaves":{},"Cutting the grass":{},"Raking leaves":{},"Spread mulch":{},"Trimming branches or hedges":{},"Mowing the lawn":{}}}}}}
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cbfb50ba66d8346afde22a823ed0ddd2.png";
+
+/***/ }),
+
+/***/ "./images/FiftyAnnotationsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4c74b06857b1bbdb6459f441b6d6b760.png";
+
+/***/ }),
+
+/***/ "./images/FiftyCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "626e35e5c39065a5aec4f16f28c6c708.png";
+
+/***/ }),
+
+/***/ "./images/FiftyCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "418617e3d9ea4add8fd833986fdb353a.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c463c4fcdcb1910c7692e523f2bfb1cd.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "20d636e43e5469edde921402c15b30d5.png";
+
+/***/ }),
+
+<<<<<<< HEAD
 /***/ "./client/components/task/CustomizedYouTube.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3113,6 +3999,57 @@ module.exports = __webpack_require__.p + "0cba8fa00a65792099911555794196f7.png";
 
 /***/ }),
 
+=======
+/***/ "./images/FiftyHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3bdf343791bddaba99e80137c7c94057.png";
+
+/***/ }),
+
+/***/ "./images/FiftyHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f2f4cfd3dbf92fff9783783eca175bae.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "34a3e4418fe69f5ce45b1f5ebce550f5.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a46073f19b64f153ed8e031efecbc56c.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7d34b450ccb271794e412f4581983561.png";
+
+/***/ }),
+
+/***/ "./images/FiftySportsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d197924eee6a0045f1963b7cfbdeba7b.png";
+
+/***/ }),
+
+/***/ "./images/OneAnnotationBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0cba8fa00a65792099911555794196f7.png";
+
+/***/ }),
+
+>>>>>>> c817b01d5cafcc1eb661a57f33965da29c613411
 /***/ "./images/OneAnnotationBadgeDisabled.png":
 /***/ (function(module, exports, __webpack_require__) {
 
