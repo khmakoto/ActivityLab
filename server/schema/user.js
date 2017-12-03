@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 const userSchema = mongoose.Schema({
 	annotations				 :[{
-		type: mongoose.Schema.Types.ObjectId,
-		ref: 'Task',
+		task: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'Task'},
 		label: String,
 		segment: [],
 	}],
