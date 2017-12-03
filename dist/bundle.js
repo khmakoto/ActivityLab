@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cdcc44ebbcb3211c67d4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cdda8aacb0492e844b65"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2319,8 +2319,8 @@ var Segments = function (_React$Component) {
 					return _react2.default.createElement(
 						_reactstrap.ListGroupItem,
 						{ key: seg.id },
-						seg.label,
-						' ',
+						seg.label.split("/")[seg.label.split("/").length - 1],
+						' --> ',
 						seg.segment[0],
 						'sec ~ ',
 						seg.segment[1],
@@ -2469,9 +2469,11 @@ var Home = function (_React$Component) {
 	}, {
 		key: '_handleAdd',
 		value: function _handleAdd() {
+			var _this3 = this;
+
 			this.setState(function (prevState) {
 				var timestamp = new Date().getTime();
-				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": "TODO: Mako please implement here", "segment": [prevState.start_time, prevState.end_time] }]) };
+				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
 			});
 		}
 		//hanele submit annotation
@@ -2479,10 +2481,10 @@ var Home = function (_React$Component) {
 	}, {
 		key: '_handleSubmit',
 		value: function _handleSubmit() {
-			var _this3 = this;
+			var _this4 = this;
 
 			var annotations = this.state.annotations.map(function (seg) {
-				var obj = Object.assign({}, { 'type': _this3.state.task.id, 'label': seg.label, "segment": seg.segment });
+				var obj = Object.assign({}, { 'type': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
 				return obj;
 			});
 			var data = Object.assign({}, { "annotations": annotations });
@@ -2553,7 +2555,7 @@ var Home = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			var _this4 = this;
+			var _this5 = this;
 
 			var task = this.state.task;
 			//check task state is not null
@@ -2600,7 +2602,7 @@ var Home = function (_React$Component) {
 								_react2.default.createElement(
 									_reactstrap.CardTitle,
 									null,
-									'Pleas add segment'
+									'Please add segment'
 								),
 								_react2.default.createElement(
 									_reactstrap.CardBody,
@@ -2621,7 +2623,7 @@ var Home = function (_React$Component) {
 														_react2.default.createElement(
 															'a',
 															{ id: selection, href: '#', onClick: function onClick(e) {
-																	return _this4.returnSelection(e);
+																	return _this5.returnSelection(e);
 																} },
 															selection
 														)
@@ -2631,7 +2633,7 @@ var Home = function (_React$Component) {
 											_react2.default.createElement(
 												_reactstrap.Input,
 												{ type: 'select', name: 'selectMulti', id: 'exampleSelectMulti', onChange: function onChange(e) {
-														return _this4.clickOption(e);
+														return _this5.clickOption(e);
 													} },
 												_react2.default.createElement(
 													'option',

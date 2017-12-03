@@ -19,7 +19,7 @@ class Segments extends React.Component {
 							<ListGroup>
 								{prop.annotations.map((seg) =>
 					        <ListGroupItem key={seg.id}>
-										{seg.label} {seg.segment[0]}sec ~ {seg.segment[1]}sec
+										{seg.label.split("/")[seg.label.split("/").length - 1]} --> {seg.segment[0]}sec ~ {seg.segment[1]}sec
 									</ListGroupItem>
 					      )}
 							</ListGroup>

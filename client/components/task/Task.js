@@ -65,7 +65,7 @@ class Home extends React.Component {
 	_handleAdd(){
 		this.setState((prevState) => {
 			var timestamp = (new Date()).getTime();
-			return { annotations: [...prevState.annotations, { "id": timestamp , "label": "TODO: Mako please implement here", "segment":[prevState.start_time, prevState.end_time] }] };
+			return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
 		});
 	}
 	//hanele submit annotation
@@ -157,7 +157,7 @@ class Home extends React.Component {
 					 <Row className="mb-4">
 							<Col>
 								<Card body outline color="secondary">
-									<CardTitle>Pleas add segment</CardTitle>
+									<CardTitle>Please add segment</CardTitle>
 	 								<CardBody>
 										<Form>
 										<FormGroup>
