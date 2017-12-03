@@ -25,7 +25,7 @@ class Main extends React.Component {
 			<main className="main_holder" >
 	      <Switch>
 	        <Route exact path='/' component={Home}/>
-					<Route path="/task" component={Task} />
+					<PrivateRoute path="/task" component={Task} isAuthenticated={this.state.isAuthenticated}/>
 					<PrivateRoute path="/profile" component={Profile} isAuthenticated={this.state.isAuthenticated}/>
 	      </Switch>
 	    </main>

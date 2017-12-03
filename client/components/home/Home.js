@@ -17,9 +17,9 @@ class Home extends React.Component {
 				      <Jumbotron>
 				        <h1 className="display-3">Hello, Challenger!</h1>
 				        <p className="lead">This is a social annotation challenge.</p>
-				        <hr className="my-2" />
+				        <hr className="my-5" />
 				        <p className="lead">
-									<Link to="/tasks/single">Play</Link>
+									<Button outline color="primary" size="lg" tag={Link} to="/task">Go!</Button>
 				        </p>
 				      </Jumbotron>
 						</Col>
