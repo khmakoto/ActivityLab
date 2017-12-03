@@ -101,11 +101,6 @@ class Home extends React.Component {
 	    return (
 			<div>
 				<Container>
-					<Row className="mb-4">
-						 <Col>
-							 <UserBadge/>
-						</Col>
-					</Row>
 					 <Row className="mb-1">
 							<Col>
 								<div className="embed-responsive embed-responsive-21by9">

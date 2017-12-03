@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "dd6d0813f5351c6520e1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "12245fab9589e373e1c6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1524,6 +1524,38 @@ var _FiftyAnnotationsBadgeDisabled = __webpack_require__("./images/FiftyAnnotati
 
 var _FiftyAnnotationsBadgeDisabled2 = _interopRequireDefault(_FiftyAnnotationsBadgeDisabled);
 
+var _OneFoodsBadge = __webpack_require__("./images/OneFoodsBadge.png");
+
+var _OneFoodsBadge2 = _interopRequireDefault(_OneFoodsBadge);
+
+var _OneFoodsBadgeDisabled = __webpack_require__("./images/OneFoodsBadgeDisabled.png");
+
+var _OneFoodsBadgeDisabled2 = _interopRequireDefault(_OneFoodsBadgeDisabled);
+
+var _TenFoodsBadge = __webpack_require__("./images/TenFoodsBadge.png");
+
+var _TenFoodsBadge2 = _interopRequireDefault(_TenFoodsBadge);
+
+var _TenFoodsBadgeDisabled = __webpack_require__("./images/TenFoodsBadgeDisabled.png");
+
+var _TenFoodsBadgeDisabled2 = _interopRequireDefault(_TenFoodsBadgeDisabled);
+
+var _TwentyFoodsBadge = __webpack_require__("./images/TwentyFoodsBadge.png");
+
+var _TwentyFoodsBadge2 = _interopRequireDefault(_TwentyFoodsBadge);
+
+var _TwentyFoodsBadgeDisabled = __webpack_require__("./images/TwentyFoodsBadgeDisabled.png");
+
+var _TwentyFoodsBadgeDisabled2 = _interopRequireDefault(_TwentyFoodsBadgeDisabled);
+
+var _FiftyFoodsBadge = __webpack_require__("./images/FiftyFoodsBadge.png");
+
+var _FiftyFoodsBadge2 = _interopRequireDefault(_FiftyFoodsBadge);
+
+var _FiftyFoodsBadgeDisabled = __webpack_require__("./images/FiftyFoodsBadgeDisabled.png");
+
+var _FiftyFoodsBadgeDisabled2 = _interopRequireDefault(_FiftyFoodsBadgeDisabled);
+
 var _OneSportsBadge = __webpack_require__("./images/OneSportsBadge.png");
 
 var _OneSportsBadge2 = _interopRequireDefault(_OneSportsBadge);
@@ -1555,6 +1587,102 @@ var _FiftySportsBadge2 = _interopRequireDefault(_FiftySportsBadge);
 var _FiftySportsBadgeDisabled = __webpack_require__("./images/FiftySportsBadgeDisabled.png");
 
 var _FiftySportsBadgeDisabled2 = _interopRequireDefault(_FiftySportsBadgeDisabled);
+
+var _OneSocialBadge = __webpack_require__("./images/OneSocialBadge.png");
+
+var _OneSocialBadge2 = _interopRequireDefault(_OneSocialBadge);
+
+var _OneSocialBadgeDisabled = __webpack_require__("./images/OneSocialBadgeDisabled.png");
+
+var _OneSocialBadgeDisabled2 = _interopRequireDefault(_OneSocialBadgeDisabled);
+
+var _TenSocialBadge = __webpack_require__("./images/TenSocialBadge.png");
+
+var _TenSocialBadge2 = _interopRequireDefault(_TenSocialBadge);
+
+var _TenSocialBadgeDisabled = __webpack_require__("./images/TenSocialBadgeDisabled.png");
+
+var _TenSocialBadgeDisabled2 = _interopRequireDefault(_TenSocialBadgeDisabled);
+
+var _TwentySocialBadge = __webpack_require__("./images/TwentySocialBadge.png");
+
+var _TwentySocialBadge2 = _interopRequireDefault(_TwentySocialBadge);
+
+var _TwentySocialBadgeDisabled = __webpack_require__("./images/TwentySocialBadgeDisabled.png");
+
+var _TwentySocialBadgeDisabled2 = _interopRequireDefault(_TwentySocialBadgeDisabled);
+
+var _FiftySocialBadge = __webpack_require__("./images/FiftySocialBadge.png");
+
+var _FiftySocialBadge2 = _interopRequireDefault(_FiftySocialBadge);
+
+var _FiftySocialBadgeDisabled = __webpack_require__("./images/FiftySocialBadgeDisabled.png");
+
+var _FiftySocialBadgeDisabled2 = _interopRequireDefault(_FiftySocialBadgeDisabled);
+
+var _OneCareBadge = __webpack_require__("./images/OneCareBadge.png");
+
+var _OneCareBadge2 = _interopRequireDefault(_OneCareBadge);
+
+var _OneCareBadgeDisabled = __webpack_require__("./images/OneCareBadgeDisabled.png");
+
+var _OneCareBadgeDisabled2 = _interopRequireDefault(_OneCareBadgeDisabled);
+
+var _TenCareBadge = __webpack_require__("./images/TenCareBadge.png");
+
+var _TenCareBadge2 = _interopRequireDefault(_TenCareBadge);
+
+var _TenCareBadgeDisabled = __webpack_require__("./images/TenCareBadgeDisabled.png");
+
+var _TenCareBadgeDisabled2 = _interopRequireDefault(_TenCareBadgeDisabled);
+
+var _TwentyCareBadge = __webpack_require__("./images/TwentyCareBadge.png");
+
+var _TwentyCareBadge2 = _interopRequireDefault(_TwentyCareBadge);
+
+var _TwentyCareBadgeDisabled = __webpack_require__("./images/TwentyCareBadgeDisabled.png");
+
+var _TwentyCareBadgeDisabled2 = _interopRequireDefault(_TwentyCareBadgeDisabled);
+
+var _FiftyCareBadge = __webpack_require__("./images/FiftyCareBadge.png");
+
+var _FiftyCareBadge2 = _interopRequireDefault(_FiftyCareBadge);
+
+var _FiftyCareBadgeDisabled = __webpack_require__("./images/FiftyCareBadgeDisabled.png");
+
+var _FiftyCareBadgeDisabled2 = _interopRequireDefault(_FiftyCareBadgeDisabled);
+
+var _OneHouseholdBadge = __webpack_require__("./images/OneHouseholdBadge.png");
+
+var _OneHouseholdBadge2 = _interopRequireDefault(_OneHouseholdBadge);
+
+var _OneHouseholdBadgeDisabled = __webpack_require__("./images/OneHouseholdBadgeDisabled.png");
+
+var _OneHouseholdBadgeDisabled2 = _interopRequireDefault(_OneHouseholdBadgeDisabled);
+
+var _TenHouseholdBadge = __webpack_require__("./images/TenHouseholdBadge.png");
+
+var _TenHouseholdBadge2 = _interopRequireDefault(_TenHouseholdBadge);
+
+var _TenHouseholdBadgeDisabled = __webpack_require__("./images/TenHouseholdBadgeDisabled.png");
+
+var _TenHouseholdBadgeDisabled2 = _interopRequireDefault(_TenHouseholdBadgeDisabled);
+
+var _TwentyHouseholdBadge = __webpack_require__("./images/TwentyHouseholdBadge.png");
+
+var _TwentyHouseholdBadge2 = _interopRequireDefault(_TwentyHouseholdBadge);
+
+var _TwentyHouseholdBadgeDisabled = __webpack_require__("./images/TwentyHouseholdBadgeDisabled.png");
+
+var _TwentyHouseholdBadgeDisabled2 = _interopRequireDefault(_TwentyHouseholdBadgeDisabled);
+
+var _FiftyHouseholdBadge = __webpack_require__("./images/FiftyHouseholdBadge.png");
+
+var _FiftyHouseholdBadge2 = _interopRequireDefault(_FiftyHouseholdBadge);
+
+var _FiftyHouseholdBadgeDisabled = __webpack_require__("./images/FiftyHouseholdBadgeDisabled.png");
+
+var _FiftyHouseholdBadgeDisabled2 = _interopRequireDefault(_FiftyHouseholdBadgeDisabled);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1696,7 +1824,7 @@ var Profile = function (_React$Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Annotated ten videos.'
+									'Annotated twenty videos.'
 								)
 							)
 						),
@@ -1706,7 +1834,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftyAnnotationsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: _FiftyAnnotationsBadge2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1724,11 +1852,71 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneFoodsBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video in the "Eating and Drinking Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenFoodsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos in the "Eating and Drinking Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentyFoodsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated twenty videos in the "Eating and Drinking Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftyFoodsBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos in the "Eating and Drinking Activities" category.'
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
 								_react2.default.createElement('img', { height: '100px', src: _OneSportsBadge2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
-									'Annotated your first video.'
+									'Annotated your first video in the "Sports, Exercise and Recreation" category.'
 								)
 							)
 						),
@@ -1742,7 +1930,7 @@ var Profile = function (_React$Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Annotated ten videos.'
+									'Annotated ten videos in the "Sports, Exercise and Recreation" category.'
 								)
 							)
 						),
@@ -1756,7 +1944,7 @@ var Profile = function (_React$Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Annotated ten videos.'
+									'Annotated twenty videos in the "Sports, Exercise and Recreation" category.'
 								)
 							)
 						),
@@ -1770,7 +1958,187 @@ var Profile = function (_React$Component) {
 								_react2.default.createElement(
 									'p',
 									null,
-									'Annotated fifty videos.'
+									'Annotated fifty videos in the "Sports, Exercise and Recreation" category.'
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneSocialBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video in the "Socializing, Relaxing and Leisure" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenSocialBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos in the "Socializing, Relaxing and Leisure" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentySocialBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated twenty videos in the "Socializing, Relaxing and Leisure" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftySocialBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos in the "Personal Care" category.'
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneCareBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video in the "Personal Care" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenCareBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos in the "Personal Care" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentyCareBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated twenty videos in the "Personal Care" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftyCareBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos in the "Personal Care" category.'
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_reactstrap.Row,
+						{ style: { marginTop: 15 + 'px' } },
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _OneHouseholdBadge2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated your first video in the "Household Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TenHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated ten videos in the "Household Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _TwentyHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated twenty videos in the "Household Activities" category.'
+								)
+							)
+						),
+						_react2.default.createElement(
+							_reactstrap.Col,
+							null,
+							_react2.default.createElement(
+								'center',
+								null,
+								_react2.default.createElement('img', { height: '100px', src: _FiftyHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement(
+									'p',
+									null,
+									'Annotated fifty videos in the "Household Activities" category.'
 								)
 							)
 						)
@@ -1961,15 +2329,6 @@ var Home = function (_React$Component) {
 				_react2.default.createElement(
 					_reactstrap.Container,
 					null,
-					_react2.default.createElement(
-						_reactstrap.Row,
-						{ className: 'mb-4' },
-						_react2.default.createElement(
-							_reactstrap.Col,
-							null,
-							_react2.default.createElement(_UserBadge2.default, null)
-						)
-					),
 					_react2.default.createElement(
 						_reactstrap.Row,
 						{ className: 'mb-1' },
@@ -2317,6 +2676,62 @@ module.exports = __webpack_require__.p + "4c74b06857b1bbdb6459f441b6d6b760.png";
 
 /***/ }),
 
+/***/ "./images/FiftyCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "626e35e5c39065a5aec4f16f28c6c708.png";
+
+/***/ }),
+
+/***/ "./images/FiftyCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "418617e3d9ea4add8fd833986fdb353a.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c463c4fcdcb1910c7692e523f2bfb1cd.png";
+
+/***/ }),
+
+/***/ "./images/FiftyFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "20d636e43e5469edde921402c15b30d5.png";
+
+/***/ }),
+
+/***/ "./images/FiftyHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3bdf343791bddaba99e80137c7c94057.png";
+
+/***/ }),
+
+/***/ "./images/FiftyHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "f2f4cfd3dbf92fff9783783eca175bae.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "34a3e4418fe69f5ce45b1f5ebce550f5.png";
+
+/***/ }),
+
+/***/ "./images/FiftySocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a46073f19b64f153ed8e031efecbc56c.png";
+
+/***/ }),
+
 /***/ "./images/FiftySportsBadge.png":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2342,6 +2757,62 @@ module.exports = __webpack_require__.p + "0cba8fa00a65792099911555794196f7.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "5cbd88ba253630452ad36884de699ae7.png";
+
+/***/ }),
+
+/***/ "./images/OneCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "fbe4aec7b9f0b0f02d43766998453bd3.png";
+
+/***/ }),
+
+/***/ "./images/OneCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "925650e0c84b654fed622b0d779bf016.png";
+
+/***/ }),
+
+/***/ "./images/OneFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "25e232d027a116781721a82d49ac90c7.png";
+
+/***/ }),
+
+/***/ "./images/OneFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "6c60f7f92caf6a8e44805d78705764a6.png";
+
+/***/ }),
+
+/***/ "./images/OneHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "52cd4431cfdeec3cbe83121634f66c5f.png";
+
+/***/ }),
+
+/***/ "./images/OneHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9f977e00891bdcd33d87bd71d3c98915.png";
+
+/***/ }),
+
+/***/ "./images/OneSocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cdbb48110dec2f8ce8c0fcc55f545b56.png";
+
+/***/ }),
+
+/***/ "./images/OneSocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "84916f1b2b2839447029f1fe8f5f0b36.png";
 
 /***/ }),
 
@@ -2373,6 +2844,62 @@ module.exports = __webpack_require__.p + "deeaba966cdd411a777fd5410dc7171a.png";
 
 /***/ }),
 
+/***/ "./images/TenCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "2eed1f4ebdb4a69c8b7a425f0e375712.png";
+
+/***/ }),
+
+/***/ "./images/TenCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "5549addf081e7001013fe27ba8a52e98.png";
+
+/***/ }),
+
+/***/ "./images/TenFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "aed554e17042eb7a9838b0c81dee52d3.png";
+
+/***/ }),
+
+/***/ "./images/TenFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ec958c420d8be79c825f0866113092cb.png";
+
+/***/ }),
+
+/***/ "./images/TenHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "86fb1b43da74f2a6f869856c70cce5f5.png";
+
+/***/ }),
+
+/***/ "./images/TenHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "833a1a6511215b278e29a46cd66ac6fa.png";
+
+/***/ }),
+
+/***/ "./images/TenSocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "43edc4b2990fd08eafeb8489f206e2f0.png";
+
+/***/ }),
+
+/***/ "./images/TenSocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4ae0467155e2af706e639e131bb96c6c.png";
+
+/***/ }),
+
 /***/ "./images/TenSportsBadge.png":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2398,6 +2925,62 @@ module.exports = __webpack_require__.p + "040de36686df8c50fa980c36307a8f5c.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "64cd4534c6ff0a5701fdc82c5caf32b0.png";
+
+/***/ }),
+
+/***/ "./images/TwentyCareBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "bbaf7ca872e0475d55f6584340ba571c.png";
+
+/***/ }),
+
+/***/ "./images/TwentyCareBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "57709b6cb437ee67a047e74abc62623e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyFoodsBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "22d900bed48a0087c2274245a411de7e.png";
+
+/***/ }),
+
+/***/ "./images/TwentyFoodsBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "27d917849799ac4e03b85b058f72a8be.png";
+
+/***/ }),
+
+/***/ "./images/TwentyHouseholdBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "083803224ce458fc2b1b46af3cb333a0.png";
+
+/***/ }),
+
+/***/ "./images/TwentyHouseholdBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "df9fb5fa36250a9df770048a70df8b7e.png";
+
+/***/ }),
+
+/***/ "./images/TwentySocialBadge.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b627ea659e44670f7a1d8442c76c33c1.png";
+
+/***/ }),
+
+/***/ "./images/TwentySocialBadgeDisabled.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "788b3e9723416b089d8e8dfda49814c4.png";
 
 /***/ }),
 
