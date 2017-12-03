@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "12245fab9589e373e1c6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3f565117a8932dd1b9ba"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2085,7 +2085,7 @@ var Profile = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						_reactstrap.Row,
-						{ style: { marginTop: 15 + 'px' } },
+						{ style: { marginTop: 15 + 'px', marginBottom: 15 + 'px' } },
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,

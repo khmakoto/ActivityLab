@@ -233,7 +233,7 @@ class Profile extends React.Component {
 							</center>
 						</Col>
 					</Row>
-					<Row style={{marginTop: 15 + 'px'}}>
+					<Row style={{marginTop: 15 + 'px', marginBottom: 15 + 'px'}}>
 						<Col>
 							<center>
 								<img height="100px" src={OneHouseholdBadge} />
