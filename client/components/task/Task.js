@@ -7,14 +7,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './task.scss';
 import { Link } from 'react-router-dom'
 
-import { Container, Row, Col } from 'reactstrap';
 import { Alert } from 'reactstrap';
 import YouTube from 'react-youtube';
 import UserBadge from './UserBadge';
-
+import CustomizedYouTube from './CustomizedYouTube';
+import TimeButton from './TimeButton'
+import Segments from './Segments'
+import { Container, Row, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardHeader } from 'reactstrap';
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-import { ListGroup, ListGroupItem } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 
@@ -23,7 +25,12 @@ class Home extends React.Component {
 	constructor(props) {
 		super(props);
 		//set init state
-		this.state = {task: null};
+		this.state = {task: null, player: null,  start_time: 0, end_time: 0, annotations:[]};
+		this.handleYouTubeReady = this._handleYouTubeReady.bind(this)
+		this.handleTimeSet = this._handleTimeSet.bind(this)
+		this.handleAdd = this._handleAdd.bind(this)
+		this.handleSubmit = this._handleSubmit.bind(this)
+
 
 		this.currentPath = "Root";
 		this.data = require('../../../data/taxonomyTree.json');
@@ -37,21 +44,69 @@ class Home extends React.Component {
 			.then( res => res.json())
 			.then( res => {
 				this.setState({task: res.task});
-				console.log(this.state.task)
+			});
+	}
+	//handle youtube pause
+	_handleYouTubeReady(player) {
+		this.setState({ player: player });
+  }
+	//handle time button
+	_handleTimeSet(type){
+		if(type == "start")
+			this.setState((prevState, props) => {
+			  return {start_time: prevState.player.getCurrentTime()};
+			});
+		else if(type == "end")
+			this.setState((prevState, props) => {
+				return {end_time: prevState.player.getCurrentTime()};
+			});
+	}
+	//handle add segment
+	_handleAdd(){
+		this.setState((prevState) => {
+			var timestamp = (new Date()).getTime();
+			return { annotations: [...prevState.annotations, { "id": timestamp , "label": "TODO: Mako please implement here", "segment":[prevState.start_time, prevState.end_time] }] };
 		});
+	}
+	//hanele submit annotation
+	_handleSubmit(){
+		const annotations = this.state.annotations.map( seg  => {
+			let obj = Object.assign({}, {'type': this.state.task.id, 'label': seg.label, "segment": seg.segment});
+			return obj
+		});
+		const data = Object.assign({}, {"annotations": annotations});
+		console.log(data)
+
+		fetch(`${host}/api/tasks/add`,
+		           { credentials: 'include',
+								 method: 'POST',
+		             headers: {
+		               'Accept': 'application/json, text/plain, */*',
+		               'Content-Type': 'application/json'
+		             },
+		             body: JSON.stringify(data)})
+		      .then(res => response.json())
+		      .then(res => {console.log(res)})
+
+
+		/*
+		fetch(`${host}/api/tasks/add`, {credentials: 'include'})
+			.then( res => res.json())
+			.then( res => {
+				this.setState({task: res.task});
+			});
+			*/
 	}
 
 	clickOption(evt) {
 		var selectMulti = document.getElementById("exampleSelectMulti");
 		var selected = selectMulti.options[selectMulti.selectedIndex].value;
 		selectMulti.selectedIndex = 0;
-
 		if (selected != "None") {
 			this.currentPath += "/" + selected;
 			this.getCurrentTaxonomy();
 		}
 	}
-
 	getCurrentTaxonomy(current) {
 		this.selections = this.currentPath.split("/");
 		var tree = this.data;
@@ -66,7 +121,6 @@ class Home extends React.Component {
 		}
 		this.forceUpdate();
 	}
-
 	returnSelection(evt) {
 		evt.preventDefault();
 		var untilSelection = evt.currentTarget.id;
@@ -82,6 +136,7 @@ class Home extends React.Component {
 		this.getCurrentTaxonomy();
 	}
 
+
 	render() {
 			const task = this.state.task;
 			//check task state is not null
@@ -89,71 +144,67 @@ class Home extends React.Component {
 	      return <div><Alert color="light">Loading</Alert></div>
 	    }
 
-			//youtube opt
-			const youtube_opts = {
-	      height: '390',
-	      width: '640',
-	      playerVars: { // https://developers.google.com/youtube/player_parameters
-	        autoplay: 1
-	      }
-	    };
-
 	    return (
 			<div>
 				<Container>
 					 <Row className="mb-1">
 							<Col>
 								<div className="embed-responsive embed-responsive-21by9">
-									<YouTube
-										className="embed-responsive-item"
-						        videoId={task.activityNetId}
-						        opts={youtube_opts}
-						        onReady={this._onReady}
-						      />
+									<CustomizedYouTube videoId={task.activityNetId} onYouTubeReady={this.handleYouTubeReady} />
 								</div>
 							</Col>
 					 </Row>
-					 <Row>
+					 <Row className="mb-4">
 							<Col>
-								<span><br /></span>
+								<Card body outline color="secondary">
+									<CardTitle>Pleas add segment</CardTitle>
+	 								<CardBody>
+										<Form>
+										<FormGroup>
+											<Breadcrumb id="currentPath">
+											{
+												this.selections.map(selection => (
+													<BreadcrumbItem><a id={selection} href="#" onClick={(e) => this.returnSelection(e)}>{selection}</a></BreadcrumbItem>
+												))
+											}
+											</Breadcrumb>
+														<Input type="select" name="selectMulti" id="exampleSelectMulti" onChange={(e) => this.clickOption(e)}>
+															<option value="None" selected>None</option>
+															{
+																Object.keys(this.currentTaxonomy).map(key => (
+																	<option value={key}>{key}</option>
+																))
+															}
+														</Input>
+										 </FormGroup>
+										 </Form>
 
-								<Form>
-								<FormGroup>
-									<Breadcrumb id="currentPath">
-									{
-										this.selections.map(selection => (
-											<BreadcrumbItem><a id={selection} href="#" onClick={(e) => this.returnSelection(e)}>{selection}</a></BreadcrumbItem>
-										))
-									}
-									</Breadcrumb>
-												<Input type="select" name="selectMulti" id="exampleSelectMulti" onChange={(e) => this.clickOption(e)}>
-													<option value="None" selected>None</option>
-													{
-														Object.keys(this.currentTaxonomy).map(key => (
-															<option value={key}>{key}</option>
-														))
-													}
-												</Input>
-								 </FormGroup>
-								 </Form>
-								 <Button outline color="primary">Add Label</Button><span><br /><br /></span>
-
+											<TimeButton type='start' time={this.state.start_time} onTimeSet={this.handleTimeSet} />
+											<TimeButton type='end' time={this.state.end_time} onTimeSet={this.handleTimeSet} />
+											<div className="d-flex flex-row">
+												<div className="p-2">
+													<Button outline color="primary" onClick={this.handleAdd}>Add</Button>
+												</div>
+											</div>
+					        </CardBody>
+					      </Card>
 							</Col>
 					 </Row>
-					 <Row>
+					 <Row className="mb-4">
 							<Col>
-								<h5>Segments</h5>
+								<Card body outline color="secondary">
+									<CardTitle>Segments</CardTitle>
+	 								<CardBody>
+										<Segments annotations={this.state.annotations} />
+									</CardBody>
+								</Card>
 						 </Col>
 					</Row>
-					 <Row>
-							<Col>
-							 <ListGroup>
-								 <ListGroupItem>Discus throw 24.25018sec ~ 38.08036sec</ListGroupItem>
-								 <ListGroupItem>Discus throw 97.00073sec ~ 106.284sec</ListGroupItem>
-							 </ListGroup>
-						 </Col>
-					</Row>
-
+					<Row className="mb-5">
+						 <Col>
+							 <Button color="primary" size="lg" block onClick={this.handleSubmit}>Submit</Button>
+						</Col>
+				 </Row>
 				</Container>
 			</div>
 	  );
