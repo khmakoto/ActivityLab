@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cdda8aacb0492e844b65"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "36059f1dd980ca9cc14e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -2483,8 +2483,9 @@ var Home = function (_React$Component) {
 		value: function _handleSubmit() {
 			var _this4 = this;
 
+			console.log(this.state.task.id);
 			var annotations = this.state.annotations.map(function (seg) {
-				var obj = Object.assign({}, { 'type': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
+				var obj = Object.assign({}, { 'task': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
 				return obj;
 			});
 			var data = Object.assign({}, { "annotations": annotations });

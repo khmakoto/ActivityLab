@@ -70,8 +70,9 @@ class Home extends React.Component {
 	}
 	//hanele submit annotation
 	_handleSubmit(){
+		console.log(this.state.task.id);
 		const annotations = this.state.annotations.map( seg  => {
-			let obj = Object.assign({}, {'type': this.state.task.id, 'label': seg.label, "segment": seg.segment});
+			let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
 			return obj
 		});
 		const data = Object.assign({}, {"annotations": annotations});
