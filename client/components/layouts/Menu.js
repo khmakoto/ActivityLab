@@ -30,9 +30,6 @@ class Menu extends React.Component {
 				<Collapse isOpen={this.state.isOpen} navbar>
 					<Nav className="ml-auto" navbar>
 						<NavItem>
-							<NavLink tag={Link} to="/task/single">Task</NavLink>
-						</NavItem>
-						<NavItem>
 							<NavLink tag={Link} to="/profile">Profile</NavLink>
 						</NavItem>
 						<NavItem>

@@ -11,11 +11,9 @@ class TimeButton extends React.Component {
     this.props.onTimeSet(this.props.type);
   }
   render() {
-    return (	<div className="d-flex flex-row">
-								<div className="p-2">
-									<Button outline color="primary" onClick={this.handleClick} >Set {this.props.type} time</Button>
-								</div>
-								<div className="p-2">{this.props.type} at: {this.props.time && <span>{this.props.time}</span>} sec</div>
+    return (	<div className="mb-1">
+									<Button outline color="success" onClick={this.handleClick} className="mr-3">Set {this.props.type} time</Button>
+									<span>{this.props.type} at: {this.props.time.toFixed(3)} sec</span>
 							</div>
 					 );
   }

@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './task.scss';
 import { Link } from 'react-router-dom'
 
-import { Alert } from 'reactstrap';
 import YouTube from 'react-youtube';
 import UserBadge from './UserBadge';
 import CustomizedYouTube from './CustomizedYouTube';
@@ -15,6 +14,7 @@ import TimeButton from './TimeButton'
 import Segments from './Segments'
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardHeader } from 'reactstrap';
+import { Alert } from 'reactstrap';
 
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
@@ -25,11 +25,12 @@ class Home extends React.Component {
 	constructor(props) {
 		super(props);
 		//set init state
-		this.state = {task: null, player: null,  start_time: 0, end_time: 0, annotations:[]};
+		this.state = {task: null, player: null,  start_time: 0, end_time: 0, annotations:[], visible: false, alert_message: ''};
 		this.handleYouTubeReady = this._handleYouTubeReady.bind(this)
 		this.handleTimeSet = this._handleTimeSet.bind(this)
 		this.handleAdd = this._handleAdd.bind(this)
 		this.handleSubmit = this._handleSubmit.bind(this)
+		this.onDismiss = this.onDismiss.bind(this);
 
 
 		this.currentPath = "Root";
@@ -64,20 +65,22 @@ class Home extends React.Component {
 	//handle add segment
 	_handleAdd(){
 		this.setState((prevState) => {
-			var timestamp = (new Date()).getTime();
-			return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
+
+			if(prevState.end_time > prevState.start_time){
+				var timestamp = (new Date()).getTime();
+				return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
+			}else
+				this.setState({ visible: true, alert_message: "End time should be later than start time" });
+
 		});
 	}
 	//hanele submit annotation
 	_handleSubmit(){
-		console.log(this.state.task.id);
 		const annotations = this.state.annotations.map( seg  => {
 			let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
 			return obj
 		});
 		const data = Object.assign({}, {"annotations": annotations});
-		console.log(data)
-
 		fetch(`${host}/api/tasks/add`,
 		           { credentials: 'include',
 								 method: 'POST',
@@ -88,16 +91,12 @@ class Home extends React.Component {
 		             body: JSON.stringify(data)})
 		      .then(res => response.json())
 		      .then(res => {console.log(res)})
-
-
-		/*
-		fetch(`${host}/api/tasks/add`, {credentials: 'include'})
-			.then( res => res.json())
-			.then( res => {
-				this.setState({task: res.task});
-			});
-			*/
 	}
+	//hanele alert toggle
+	onDismiss() {
+    this.setState({ visible: false });
+  }
+
 
 	clickOption(evt) {
 		var selectMulti = document.getElementById("exampleSelectMulti");
@@ -148,18 +147,28 @@ class Home extends React.Component {
 	    return (
 			<div>
 				<Container>
-					 <Row className="mb-1">
+					 <Row className="mb-2">
 							<Col>
 								<div className="embed-responsive embed-responsive-21by9">
 									<CustomizedYouTube videoId={task.activityNetId} onYouTubeReady={this.handleYouTubeReady} />
 								</div>
 							</Col>
 					 </Row>
-					 <Row className="mb-4">
+					 <Row className="mb-2">
 							<Col>
 								<Card body outline color="secondary">
-									<CardTitle>Please add segment</CardTitle>
+									<Alert color="warning" isOpen={this.state.visible} toggle={this.onDismiss}>{this.state.alert_message}</Alert>
+									<CardTitle>Pleas add segment</CardTitle>
 	 								<CardBody>
+										<Row className="mb-2">
+			 								<Col>
+												<TimeButton type='start' time={this.state.start_time} onTimeSet={this.handleTimeSet} />
+											</Col>
+											<Col>
+												<TimeButton type='end' time={this.state.end_time} onTimeSet={this.handleTimeSet} />
+											</Col>
+										</Row>
+
 										<Form>
 										<FormGroup>
 											<Breadcrumb id="currentPath">
@@ -179,14 +188,7 @@ class Home extends React.Component {
 														</Input>
 										 </FormGroup>
 										 </Form>
-
-											<TimeButton type='start' time={this.state.start_time} onTimeSet={this.handleTimeSet} />
-											<TimeButton type='end' time={this.state.end_time} onTimeSet={this.handleTimeSet} />
-											<div className="d-flex flex-row">
-												<div className="p-2">
-													<Button outline color="primary" onClick={this.handleAdd}>Add</Button>
-												</div>
-											</div>
+										 <Button outline color="primary" onClick={this.handleAdd}>Add</Button>
 					        </CardBody>
 					      </Card>
 							</Col>

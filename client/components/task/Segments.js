@@ -1,15 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { ListGroup, ListGroupItem } from 'reactstrap';
-
+import { Button } from 'reactstrap';
 
 class Segments extends React.Component {
 	constructor(props) {
 		super(props);
-		//this.handleClick = this._handleClick.bind(this)
+		this.handleClick = this._handleClick.bind(this)
 	}
 	_handleClick(e) {
-    //this.props.onTimeSet(this.props.type);
+		console.log(e)
+  	//this.props.onTimeSet(this.props.type);
   }
 
 
@@ -19,7 +20,8 @@ class Segments extends React.Component {
 							<ListGroup>
 								{prop.annotations.map((seg) =>
 					        <ListGroupItem key={seg.id}>
-										{seg.label.split("/")[seg.label.split("/").length - 1]} --> {seg.segment[0]}sec ~ {seg.segment[1]}sec
+										<Button outline color="danger" className="mr-3" onClick={this.handleClick(seg.id)}>Delete</Button>
+										{seg.label.split("/")[seg.label.split("/").length - 1]} --> {seg.segment[0].toFixed(3)} sec ~ {seg.segment[1].toFixed(3)} sec
 									</ListGroupItem>
 					      )}
 							</ListGroup>

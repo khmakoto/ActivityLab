@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "36059f1dd980ca9cc14e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8bc48be2e4dfff1f15f0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -989,14 +989,14 @@ var Home = function (_React$Component) {
 								{ className: 'lead' },
 								'This is a social annotation challenge.'
 							),
-							_react2.default.createElement('hr', { className: 'my-2' }),
+							_react2.default.createElement('hr', { className: 'my-5' }),
 							_react2.default.createElement(
 								'p',
 								{ className: 'lead' },
 								_react2.default.createElement(
 									_reactstrap.Button,
-									{ color: 'primary' },
-									'Play'
+									{ outline: true, color: 'primary', size: 'lg', tag: _reactRouterDom.Link, to: '/task' },
+									'Go!'
 								)
 							)
 						)
@@ -1218,7 +1218,7 @@ var Main = function (_React$Component) {
 										_reactRouterDom.Switch,
 										null,
 										_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-										_react2.default.createElement(_reactRouterDom.Route, { path: '/task', component: _Task2.default }),
+										_react2.default.createElement(PrivateRoute, { path: '/task', component: _Task2.default, isAuthenticated: this.state.isAuthenticated }),
 										_react2.default.createElement(PrivateRoute, { path: '/profile', component: _Profile2.default, isAuthenticated: this.state.isAuthenticated })
 								)
 						);
@@ -1354,15 +1354,6 @@ var Menu = function (_React$Component) {
 					_react2.default.createElement(
 						_reactstrap.Nav,
 						{ className: 'ml-auto', navbar: true },
-						_react2.default.createElement(
-							_reactstrap.NavItem,
-							null,
-							_react2.default.createElement(
-								_reactstrap.NavLink,
-								{ tag: _reactRouterDom.Link, to: '/task/single' },
-								'Task'
-							)
-						),
 						_react2.default.createElement(
 							_reactstrap.NavItem,
 							null,
@@ -2214,13 +2205,13 @@ var CustomizedYouTube = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (CustomizedYouTube.__proto__ || Object.getPrototypeOf(CustomizedYouTube)).call(this, props));
 
 		_this.onReady = _this._onReady.bind(_this);
-
 		return _this;
 	}
 
 	_createClass(CustomizedYouTube, [{
 		key: '_onReady',
 		value: function _onReady(event) {
+			event.target.mute();
 			this.props.onYouTubeReady(event.target);
 		}
 	}, {
@@ -2230,11 +2221,13 @@ var CustomizedYouTube = function (_React$Component) {
 			var youtube_opts = {
 				height: '300',
 				playerVars: { // https://developers.google.com/youtube/player_parameters
-					autoplay: 0,
-					showinfo: 0
+					autoplay: 1,
+					showinfo: 0,
+					loop: 1,
+					modestbranding: 1,
+					autohide: 0
 				}
 			};
-
 			return _react2.default.createElement(_reactYoutube2.default, {
 				className: 'embed-responsive-item',
 				videoId: prop.videoId,
@@ -2299,18 +2292,23 @@ var Segments = function (_React$Component) {
 	function Segments(props) {
 		_classCallCheck(this, Segments);
 
-		return _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
-		//this.handleClick = this._handleClick.bind(this)
+		var _this = _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
+
+		_this.handleClick = _this._handleClick.bind(_this);
+		return _this;
 	}
 
 	_createClass(Segments, [{
 		key: '_handleClick',
 		value: function _handleClick(e) {
+			console.log(e);
 			//this.props.onTimeSet(this.props.type);
 		}
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			var prop = this.props;
 			return _react2.default.createElement(
 				_reactstrap.ListGroup,
@@ -2319,12 +2317,17 @@ var Segments = function (_React$Component) {
 					return _react2.default.createElement(
 						_reactstrap.ListGroupItem,
 						{ key: seg.id },
+						_react2.default.createElement(
+							_reactstrap.Button,
+							{ outline: true, color: 'danger', className: 'mr-3', onClick: _this2.handleClick(seg.id) },
+							'Delete'
+						),
 						seg.label.split("/")[seg.label.split("/").length - 1],
 						' --> ',
-						seg.segment[0],
-						'sec ~ ',
-						seg.segment[1],
-						'sec'
+						seg.segment[0].toFixed(3),
+						' sec ~ ',
+						seg.segment[1].toFixed(3),
+						' sec'
 					);
 				})
 			);
@@ -2374,8 +2377,6 @@ __webpack_require__("./client/components/task/task.scss");
 
 var _reactRouterDom = __webpack_require__("./node_modules/react-router-dom/es/index.js");
 
-var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
-
 var _reactYoutube = __webpack_require__("./node_modules/react-youtube/es/YouTube.js");
 
 var _reactYoutube2 = _interopRequireDefault(_reactYoutube);
@@ -2395,6 +2396,8 @@ var _TimeButton2 = _interopRequireDefault(_TimeButton);
 var _Segments = __webpack_require__("./client/components/task/Segments.js");
 
 var _Segments2 = _interopRequireDefault(_Segments);
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2419,11 +2422,12 @@ var Home = function (_React$Component) {
 		//set init state
 		var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
 
-		_this.state = { task: null, player: null, start_time: 0, end_time: 0, annotations: [] };
+		_this.state = { task: null, player: null, start_time: 0, end_time: 0, annotations: [], visible: false, alert_message: '' };
 		_this.handleYouTubeReady = _this._handleYouTubeReady.bind(_this);
 		_this.handleTimeSet = _this._handleTimeSet.bind(_this);
 		_this.handleAdd = _this._handleAdd.bind(_this);
 		_this.handleSubmit = _this._handleSubmit.bind(_this);
+		_this.onDismiss = _this.onDismiss.bind(_this);
 
 		_this.currentPath = "Root";
 		_this.data = __webpack_require__("./data/taxonomyTree.json");
@@ -2472,8 +2476,11 @@ var Home = function (_React$Component) {
 			var _this3 = this;
 
 			this.setState(function (prevState) {
-				var timestamp = new Date().getTime();
-				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
+
+				if (prevState.end_time > prevState.start_time) {
+					var timestamp = new Date().getTime();
+					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
+				} else _this3.setState({ visible: true, alert_message: "End time should be later than start time" });
 			});
 		}
 		//hanele submit annotation
@@ -2483,14 +2490,11 @@ var Home = function (_React$Component) {
 		value: function _handleSubmit() {
 			var _this4 = this;
 
-			console.log(this.state.task.id);
 			var annotations = this.state.annotations.map(function (seg) {
 				var obj = Object.assign({}, { 'task': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
 				return obj;
 			});
 			var data = Object.assign({}, { "annotations": annotations });
-			console.log(data);
-
 			fetch(host + '/api/tasks/add', { credentials: 'include',
 				method: 'POST',
 				headers: {
@@ -2502,14 +2506,13 @@ var Home = function (_React$Component) {
 			}).then(function (res) {
 				console.log(res);
 			});
+		}
+		//hanele alert toggle
 
-			/*
-   fetch(`${host}/api/tasks/add`, {credentials: 'include'})
-   	.then( res => res.json())
-   	.then( res => {
-   		this.setState({task: res.task});
-   	});
-   	*/
+	}, {
+		key: 'onDismiss',
+		value: function onDismiss() {
+			this.setState({ visible: false });
 		}
 	}, {
 		key: 'clickOption',
@@ -2580,7 +2583,7 @@ var Home = function (_React$Component) {
 					null,
 					_react2.default.createElement(
 						_reactstrap.Row,
-						{ className: 'mb-1' },
+						{ className: 'mb-2' },
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
@@ -2593,7 +2596,7 @@ var Home = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						_reactstrap.Row,
-						{ className: 'mb-4' },
+						{ className: 'mb-2' },
 						_react2.default.createElement(
 							_reactstrap.Col,
 							null,
@@ -2601,13 +2604,32 @@ var Home = function (_React$Component) {
 								_reactstrap.Card,
 								{ body: true, outline: true, color: 'secondary' },
 								_react2.default.createElement(
+									_reactstrap.Alert,
+									{ color: 'warning', isOpen: this.state.visible, toggle: this.onDismiss },
+									this.state.alert_message
+								),
+								_react2.default.createElement(
 									_reactstrap.CardTitle,
 									null,
-									'Please add segment'
+									'Pleas add segment'
 								),
 								_react2.default.createElement(
 									_reactstrap.CardBody,
 									null,
+									_react2.default.createElement(
+										_reactstrap.Row,
+										{ className: 'mb-2' },
+										_react2.default.createElement(
+											_reactstrap.Col,
+											null,
+											_react2.default.createElement(_TimeButton2.default, { type: 'start', time: this.state.start_time, onTimeSet: this.handleTimeSet })
+										),
+										_react2.default.createElement(
+											_reactstrap.Col,
+											null,
+											_react2.default.createElement(_TimeButton2.default, { type: 'end', time: this.state.end_time, onTimeSet: this.handleTimeSet })
+										)
+									),
 									_react2.default.createElement(
 										_reactstrap.Form,
 										null,
@@ -2651,20 +2673,10 @@ var Home = function (_React$Component) {
 											)
 										)
 									),
-									_react2.default.createElement(_TimeButton2.default, { type: 'start', time: this.state.start_time, onTimeSet: this.handleTimeSet }),
-									_react2.default.createElement(_TimeButton2.default, { type: 'end', time: this.state.end_time, onTimeSet: this.handleTimeSet }),
 									_react2.default.createElement(
-										'div',
-										{ className: 'd-flex flex-row' },
-										_react2.default.createElement(
-											'div',
-											{ className: 'p-2' },
-											_react2.default.createElement(
-												_reactstrap.Button,
-												{ outline: true, color: 'primary', onClick: this.handleAdd },
-												'Add'
-											)
-										)
+										_reactstrap.Button,
+										{ outline: true, color: 'primary', onClick: this.handleAdd },
+										'Add'
 									)
 								)
 							)
@@ -2744,7 +2756,7 @@ var _temp = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2766,56 +2778,48 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var TimeButton = function (_React$Component) {
-	_inherits(TimeButton, _React$Component);
+		_inherits(TimeButton, _React$Component);
 
-	function TimeButton(props) {
-		_classCallCheck(this, TimeButton);
+		function TimeButton(props) {
+				_classCallCheck(this, TimeButton);
 
-		var _this = _possibleConstructorReturn(this, (TimeButton.__proto__ || Object.getPrototypeOf(TimeButton)).call(this, props));
+				var _this = _possibleConstructorReturn(this, (TimeButton.__proto__ || Object.getPrototypeOf(TimeButton)).call(this, props));
 
-		_this.handleClick = _this._handleClick.bind(_this);
-		return _this;
-	}
-
-	_createClass(TimeButton, [{
-		key: '_handleClick',
-		value: function _handleClick(e) {
-			this.props.onTimeSet(this.props.type);
+				_this.handleClick = _this._handleClick.bind(_this);
+				return _this;
 		}
-	}, {
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'd-flex flex-row' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'p-2' },
-					_react2.default.createElement(
-						_reactstrap.Button,
-						{ outline: true, color: 'primary', onClick: this.handleClick },
-						'Set ',
-						this.props.type,
-						' time'
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'p-2' },
-					this.props.type,
-					' at: ',
-					this.props.time && _react2.default.createElement(
-						'span',
-						null,
-						this.props.time
-					),
-					' sec'
-				)
-			);
-		}
-	}]);
 
-	return TimeButton;
+		_createClass(TimeButton, [{
+				key: '_handleClick',
+				value: function _handleClick(e) {
+						this.props.onTimeSet(this.props.type);
+				}
+		}, {
+				key: 'render',
+				value: function render() {
+						return _react2.default.createElement(
+								'div',
+								{ className: 'mb-1' },
+								_react2.default.createElement(
+										_reactstrap.Button,
+										{ outline: true, color: 'success', onClick: this.handleClick, className: 'mr-3' },
+										'Set ',
+										this.props.type,
+										' time'
+								),
+								_react2.default.createElement(
+										'span',
+										null,
+										this.props.type,
+										' at: ',
+										this.props.time.toFixed(3),
+										' sec'
+								)
+						);
+				}
+		}]);
+
+		return TimeButton;
 }(_react2.default.Component);
 
 var _default = TimeButton;
@@ -2823,13 +2827,13 @@ exports.default = _default;
 ;
 
 var _temp = function () {
-	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-		return;
-	}
+		if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+				return;
+		}
 
-	__REACT_HOT_LOADER__.register(TimeButton, 'TimeButton', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
+		__REACT_HOT_LOADER__.register(TimeButton, 'TimeButton', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
+		__REACT_HOT_LOADER__.register(_default, 'default', '/mnt/c/Users/humbe/Documents/Estudios/Universidad/9.-Noveno Semestre/Crowdsourcing for CPU Vision/Final Project/ActivityLab/client/components/task/TimeButton.js');
 }();
 
 ;

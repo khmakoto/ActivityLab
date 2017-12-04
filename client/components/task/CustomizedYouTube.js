@@ -7,11 +7,9 @@ class CustomizedYouTube extends React.Component {
 	constructor(props) {
 		super(props);
 		this.onReady = this._onReady.bind(this)
-
-
 	}
-
 	_onReady(event) {
+		event.target.mute();
 		this.props.onYouTubeReady(event.target);
   }
 
@@ -20,11 +18,13 @@ class CustomizedYouTube extends React.Component {
 		const youtube_opts = {
 			height: '300',
 			playerVars: { // https://developers.google.com/youtube/player_parameters
-				autoplay: 0,
-				showinfo: 0
+				autoplay: 1,
+				showinfo: 0,
+				loop: 1,
+				modestbranding: 1,
+				autohide: 0
 			}
 		};
-
     return (
 							<YouTube
 								className="embed-responsive-item"
@@ -35,6 +35,4 @@ class CustomizedYouTube extends React.Component {
 					 );
   }
 }
-
-
 export default CustomizedYouTube;
