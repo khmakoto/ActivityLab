@@ -178,7 +178,7 @@ class Home extends React.Component {
 							<Col>
 								<Card body outline color="secondary">
 									<Alert color="warning" isOpen={this.state.visible} toggle={this.onDismiss}>{this.state.alert_message}</Alert>
-									<CardTitle>Pleas add segment</CardTitle>
+									<CardTitle>Please add segment</CardTitle>
 	 								<CardBody>
 										<Row className="mb-2">
 			 								<Col>

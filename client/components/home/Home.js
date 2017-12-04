@@ -44,7 +44,7 @@ class Home extends React.Component {
 									<li>You are to watch a video in which one or more activities are happening.</li>
 									<li>
 										For each of these activities, select the start and end times in which they happen and select the correct
-										label that represents them from the ones presented as most as possible. Then click the "Add" button to add
+										label that represents them from the ones presented as specifically as possible. Then click the "Add" button to add
 										register the specified segment times with the specified label.
 									</li>
 									<li>
