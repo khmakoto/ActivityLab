@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "54ee4d92cc2f1b28cdaa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "6ec3131ce8def0215ae8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1329,6 +1329,15 @@ var Menu = function (_React$Component) {
 	}
 
 	_createClass(Menu, [{
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			var _this2 = this;
+
+			_Auth2.default.isAuthenticated().then(function (res) {
+				_this2.setState({ isAuthenticated: res.isAuthenticated });
+			});
+		}
+	}, {
 		key: 'toggle',
 		value: function toggle() {
 			this.setState({
@@ -1354,13 +1363,13 @@ var Menu = function (_React$Component) {
 					_react2.default.createElement(
 						_reactstrap.Nav,
 						{ className: 'ml-auto', navbar: true },
-						_react2.default.createElement(
+						this.state.isAuthenticated && _react2.default.createElement(
 							_reactstrap.NavItem,
 							null,
 							_react2.default.createElement(
 								_reactstrap.NavLink,
 								{ tag: _reactRouterDom.Link, to: '/profile' },
-								'Profile'
+								'Achievements'
 							)
 						),
 						_react2.default.createElement(
@@ -2327,9 +2336,8 @@ var Segments = function (_React$Component) {
 
 	_createClass(Segments, [{
 		key: '_handleClick',
-		value: function _handleClick(e) {
-			console.log(e);
-			//this.props.onTimeSet(this.props.type);
+		value: function _handleClick(id) {
+			this.props.onSegmentDelete(id);
 		}
 	}, {
 		key: 'render',
@@ -2346,11 +2354,17 @@ var Segments = function (_React$Component) {
 						{ key: seg.id },
 						_react2.default.createElement(
 							_reactstrap.Button,
-							{ outline: true, color: 'danger', className: 'mr-3', onClick: _this2.handleClick(seg.id) },
+							{ outline: true, color: 'danger', className: 'mr-3', onClick: function onClick() {
+									return _this2.handleClick(seg.id);
+								} },
 							'Delete'
 						),
-						seg.label.split("/")[seg.label.split("/").length - 1],
-						' --> ',
+						_react2.default.createElement(
+							_reactstrap.Badge,
+							{ color: 'secondary' },
+							seg.label.split("/")[seg.label.split("/").length - 1]
+						),
+						' ',
 						seg.segment[0].toFixed(3),
 						' sec ~ ',
 						seg.segment[1].toFixed(3),
@@ -2455,6 +2469,7 @@ var Home = function (_React$Component) {
 		_this.handleAdd = _this._handleAdd.bind(_this);
 		_this.handleSubmit = _this._handleSubmit.bind(_this);
 		_this.onDismiss = _this.onDismiss.bind(_this);
+		_this.handleDelete = _this._handleDelete.bind(_this);
 
 		_this.currentPath = "Root";
 		_this.data = __webpack_require__("./data/taxonomyTree.json");
@@ -2503,7 +2518,6 @@ var Home = function (_React$Component) {
 			var _this3 = this;
 
 			this.setState(function (prevState) {
-
 				if (prevState.end_time > prevState.start_time) {
 					var timestamp = new Date().getTime();
 					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
@@ -2517,22 +2531,35 @@ var Home = function (_React$Component) {
 		value: function _handleSubmit() {
 			var _this4 = this;
 
-			var annotations = this.state.annotations.map(function (seg) {
-				var obj = Object.assign({}, { 'task': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
-				return obj;
-			});
-			var data = Object.assign({}, { "annotations": annotations });
-			fetch(host + '/api/tasks/add', { credentials: 'include',
-				method: 'POST',
-				headers: {
-					'Accept': 'application/json, text/plain, */*',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(data) }).then(function (res) {
-				return response.json();
-			}).then(function (res) {
-				console.log(res);
-			});
+			if (this.state.annotations.length == 0) {
+				this.setState({ visible: true, alert_message: "Please add at least one segment" });
+			} else {
+				var annotations = this.state.annotations.map(function (seg) {
+					var obj = Object.assign({}, { 'task': _this4.state.task.id, 'label': seg.label, "segment": seg.segment });
+					return obj;
+				});
+				var data = Object.assign({}, { "annotations": annotations });
+				fetch(host + '/api/tasks/add', { credentials: 'include',
+					method: 'POST',
+					headers: {
+						'Accept': 'application/json, text/plain, */*',
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(data) }).then(function (res) {
+					return res.json();
+				}).then(function (res) {
+					fetch(host + '/api/tasks/single', { credentials: 'include' }).then(function (res) {
+						return res.json();
+					}).then(function (res) {
+						_this4.setState({ task: res.task,
+							player: null,
+							start_time: 0, end_time: 0,
+							annotations: [],
+							visible: false, alert_message: ''
+						});
+					});
+				});
+			}
 		}
 		//hanele alert toggle
 
@@ -2540,6 +2567,18 @@ var Home = function (_React$Component) {
 		key: 'onDismiss',
 		value: function onDismiss() {
 			this.setState({ visible: false });
+		}
+		//hanele alert toggle
+
+	}, {
+		key: '_handleDelete',
+		value: function _handleDelete(id) {
+			this.setState(function (prevState) {
+				var new_annotations = prevState.annotations.filter(function (seg) {
+					return seg.id !== id;
+				});
+				return { annotations: new_annotations };
+			});
 		}
 	}, {
 		key: 'clickOption',
@@ -2726,7 +2765,7 @@ var Home = function (_React$Component) {
 								_react2.default.createElement(
 									_reactstrap.CardBody,
 									null,
-									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations })
+									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations, onSegmentDelete: this.handleDelete })
 								)
 							)
 						)
@@ -2740,7 +2779,7 @@ var Home = function (_React$Component) {
 							_react2.default.createElement(
 								_reactstrap.Button,
 								{ color: 'primary', size: 'lg', block: true, onClick: this.handleSubmit },
-								'Submit'
+								'Submit & Next'
 							)
 						)
 					)
@@ -2829,7 +2868,7 @@ var TimeButton = function (_React$Component) {
 								{ className: 'mb-1' },
 								_react2.default.createElement(
 										_reactstrap.Button,
-										{ outline: true, color: 'success', onClick: this.handleClick, className: 'mr-3' },
+										{ outline: true, color: 'primary', onClick: this.handleClick, className: 'mr-3' },
 										'Set ',
 										this.props.type,
 										' time'

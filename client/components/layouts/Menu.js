@@ -15,6 +15,12 @@ class Menu extends React.Component {
 		this.state = {isAuthenticated:false};
   }
 
+	componentDidMount() {
+		Auth.isAuthenticated().then( res => {
+				this.setState({isAuthenticated: res.isAuthenticated});
+		});
+	}
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -29,9 +35,7 @@ class Menu extends React.Component {
 				<NavbarToggler onClick={this.toggle} />
 				<Collapse isOpen={this.state.isOpen} navbar>
 					<Nav className="ml-auto" navbar>
-						<NavItem>
-							<NavLink tag={Link} to="/profile">Profile</NavLink>
-						</NavItem>
+						{ this.state.isAuthenticated && <NavItem><NavLink tag={Link} to="/profile">Achievements</NavLink></NavItem>}
 						<NavItem>
 							<FacebookButton />
 						</NavItem>

@@ -31,7 +31,7 @@ class Home extends React.Component {
 		this.handleAdd = this._handleAdd.bind(this)
 		this.handleSubmit = this._handleSubmit.bind(this)
 		this.onDismiss = this.onDismiss.bind(this);
-
+		this.handleDelete = this._handleDelete.bind(this);
 
 		this.currentPath = "Root";
 		this.data = require('../../../data/taxonomyTree.json');
@@ -65,38 +65,57 @@ class Home extends React.Component {
 	//handle add segment
 	_handleAdd(){
 		this.setState((prevState) => {
-
 			if(prevState.end_time > prevState.start_time){
 				var timestamp = (new Date()).getTime();
 				return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
 			}else
 				this.setState({ visible: true, alert_message: "End time should be later than start time" });
-
 		});
 	}
 	//hanele submit annotation
 	_handleSubmit(){
-		const annotations = this.state.annotations.map( seg  => {
-			let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
-			return obj
-		});
-		const data = Object.assign({}, {"annotations": annotations});
-		fetch(`${host}/api/tasks/add`,
-		           { credentials: 'include',
-								 method: 'POST',
-		             headers: {
-		               'Accept': 'application/json, text/plain, */*',
-		               'Content-Type': 'application/json'
-		             },
-		             body: JSON.stringify(data)})
-		      .then(res => response.json())
-		      .then(res => {console.log(res)})
+		if(this.state.annotations.length == 0){
+			this.setState({ visible: true, alert_message: "Please add at least one segment" });
+		}else{
+			const annotations = this.state.annotations.map( seg  => {
+				let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
+				return obj
+			});
+			const data = Object.assign({}, {"annotations": annotations});
+			fetch(`${host}/api/tasks/add`,
+			           { credentials: 'include',
+									 method: 'POST',
+			             headers: {
+			               'Accept': 'application/json, text/plain, */*',
+			               'Content-Type': 'application/json'
+			             },
+			             body: JSON.stringify(data)})
+			      .then(res => res.json())
+			      .then(res => {
+							fetch(`${host}/api/tasks/single`, {credentials: 'include'})
+								.then( res => res.json())
+								.then( res => {
+										this.setState({task: res.task,
+										player: null,
+										start_time: 0, end_time: 0,
+										annotations:[],
+										visible: false, alert_message: ''
+									});
+								});
+						})
+		}
 	}
 	//hanele alert toggle
 	onDismiss() {
     this.setState({ visible: false });
   }
-
+	//hanele alert toggle
+	_handleDelete(id){
+		this.setState((prevState) => {
+				const new_annotations = prevState.annotations.filter( seg => seg.id !== id );
+				return { annotations: new_annotations };
+		});
+  }
 
 	clickOption(evt) {
 		var selectMulti = document.getElementById("exampleSelectMulti");
@@ -198,14 +217,14 @@ class Home extends React.Component {
 								<Card body outline color="secondary">
 									<CardTitle>Segments</CardTitle>
 	 								<CardBody>
-										<Segments annotations={this.state.annotations} />
+										<Segments annotations={this.state.annotations} onSegmentDelete={this.handleDelete}  />
 									</CardBody>
 								</Card>
 						 </Col>
 					</Row>
 					<Row className="mb-5">
 						 <Col>
-							 <Button color="primary" size="lg" block onClick={this.handleSubmit}>Submit</Button>
+							 <Button color="primary" size="lg" block onClick={this.handleSubmit}>Submit & Next</Button>
 						</Col>
 				 </Row>
 				</Container>
