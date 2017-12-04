@@ -56,7 +56,7 @@ const PrivateRoute = ({ component: Component, isAuthenticated, ...rest }) =>{
 	    ) : (
 	      <Redirect to={{
 	        pathname: '/',
-	        state: { from: props.location }
+	        state: { from: props.location, alert_message: "Please login first" }
 	      }}/>
 	    )
 	  )}/>
