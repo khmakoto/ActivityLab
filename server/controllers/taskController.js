@@ -37,6 +37,7 @@ function add(req, res) {
 	User.findById(req.user._id, function (err, user) {
 	  if (err) return handleError(err);
 		req.body.annotations.forEach( seg  => {
+			console.log(seg)
 			user.annotations.push(seg);
 		});
 	  user.save(function (err, updatedUser) {
