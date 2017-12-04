@@ -91,6 +91,7 @@ class Home extends React.Component {
 			             },
 			             body: JSON.stringify(data)})
 			      .then(res => res.json())
+						.then(res => this.setState({task: null}) )					
 			      .then(res => {
 							fetch(`${host}/api/tasks/single`, {credentials: 'include'})
 								.then( res => res.json())
