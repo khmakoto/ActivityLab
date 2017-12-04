@@ -74,21 +74,36 @@ class Home extends React.Component {
 	}
 	//hanele submit annotation
 	_handleSubmit(){
-		const annotations = this.state.annotations.map( seg  => {
-			let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
-			return obj
-		});
-		const data = Object.assign({}, {"annotations": annotations});
-		fetch(`${host}/api/tasks/add`,
-		           { credentials: 'include',
-								 method: 'POST',
-		             headers: {
-		               'Accept': 'application/json, text/plain, */*',
-		               'Content-Type': 'application/json'
-		             },
-		             body: JSON.stringify(data)})
-		      .then(res => response.json())
-		      .then(res => {console.log(res)})
+		if(this.state.annotations.length == 0){
+			this.setState({ visible: true, alert_message: "Please add at least one segment" });
+		}else{
+			const annotations = this.state.annotations.map( seg  => {
+				let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
+				return obj
+			});
+			const data = Object.assign({}, {"annotations": annotations});
+			fetch(`${host}/api/tasks/add`,
+			           { credentials: 'include',
+									 method: 'POST',
+			             headers: {
+			               'Accept': 'application/json, text/plain, */*',
+			               'Content-Type': 'application/json'
+			             },
+			             body: JSON.stringify(data)})
+			      .then(res => res.json())
+			      .then(res => {
+							fetch(`${host}/api/tasks/single`, {credentials: 'include'})
+								.then( res => res.json())
+								.then( res => {
+										this.setState({task: res.task,
+										player: null,
+										start_time: 0, end_time: 0,
+										annotations:[],
+										visible: false, alert_message: ''
+									});
+								});
+						})
+		}
 	}
 	//hanele alert toggle
 	onDismiss() {
@@ -209,7 +224,7 @@ class Home extends React.Component {
 					</Row>
 					<Row className="mb-5">
 						 <Col>
-							 <Button color="primary" size="lg" block onClick={this.handleSubmit}>Submit</Button>
+							 <Button color="primary" size="lg" block onClick={this.handleSubmit}>Submit & Next</Button>
 						</Col>
 				 </Row>
 				</Container>
