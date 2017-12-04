@@ -12,7 +12,7 @@ class TimeButton extends React.Component {
   }
   render() {
     return (	<div className="mb-1">
-									<Button outline color="success" onClick={this.handleClick} className="mr-3">Set {this.props.type} time</Button>
+									<Button outline color="primary" onClick={this.handleClick} className="mr-3">Set {this.props.type} time</Button>
 									<span>{this.props.type} at: {this.props.time.toFixed(3)} sec</span>
 							</div>
 					 );

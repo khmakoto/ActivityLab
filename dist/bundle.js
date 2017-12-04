@@ -61,11 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-<<<<<<< HEAD
-/******/ 	var hotCurrentHash = "a339b97f06eabda377f2"; // eslint-disable-line no-unused-vars
-=======
-/******/ 	var hotCurrentHash = "cdda8aacb0492e844b65"; // eslint-disable-line no-unused-vars
->>>>>>> 87f304e1adddbc63d9aba7bff222529ada52cccf
+/******/ 	var hotCurrentHash = "9422cd93cbcac50a57d6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -993,14 +989,14 @@ var Home = function (_React$Component) {
 								{ className: 'lead' },
 								'This is a social annotation challenge.'
 							),
-							_react2.default.createElement('hr', { className: 'my-2' }),
+							_react2.default.createElement('hr', { className: 'my-5' }),
 							_react2.default.createElement(
 								'p',
 								{ className: 'lead' },
 								_react2.default.createElement(
-									_reactRouterDom.Link,
-									{ to: '/tasks/single' },
-									'Play'
+									_reactstrap.Button,
+									{ outline: true, color: 'primary', size: 'lg', tag: _reactRouterDom.Link, to: '/task' },
+									'Go!'
 								)
 							)
 						)
@@ -1222,7 +1218,7 @@ var Main = function (_React$Component) {
 										_reactRouterDom.Switch,
 										null,
 										_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-										_react2.default.createElement(_reactRouterDom.Route, { path: '/task', component: _Task2.default }),
+										_react2.default.createElement(PrivateRoute, { path: '/task', component: _Task2.default, isAuthenticated: this.state.isAuthenticated }),
 										_react2.default.createElement(PrivateRoute, { path: '/profile', component: _Profile2.default, isAuthenticated: this.state.isAuthenticated })
 								)
 						);
@@ -2296,18 +2292,22 @@ var Segments = function (_React$Component) {
 	function Segments(props) {
 		_classCallCheck(this, Segments);
 
-		return _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
-		//this.handleClick = this._handleClick.bind(this)
+		var _this = _possibleConstructorReturn(this, (Segments.__proto__ || Object.getPrototypeOf(Segments)).call(this, props));
+
+		_this.handleClick = _this._handleClick.bind(_this);
+		return _this;
 	}
 
 	_createClass(Segments, [{
 		key: '_handleClick',
-		value: function _handleClick(e) {
-			//this.props.onTimeSet(this.props.type);
+		value: function _handleClick(id) {
+			this.props.onSegmentDelete(id);
 		}
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			var prop = this.props;
 			return _react2.default.createElement(
 				_reactstrap.ListGroup,
@@ -2316,12 +2316,23 @@ var Segments = function (_React$Component) {
 					return _react2.default.createElement(
 						_reactstrap.ListGroupItem,
 						{ key: seg.id },
-						seg.label.split("/")[seg.label.split("/").length - 1],
-						' --> ',
-						seg.segment[0],
-						'sec ~ ',
-						seg.segment[1],
-						'sec'
+						_react2.default.createElement(
+							_reactstrap.Button,
+							{ outline: true, color: 'danger', className: 'mr-3', onClick: function onClick() {
+									return _this2.handleClick(seg.id);
+								} },
+							'Delete'
+						),
+						_react2.default.createElement(
+							_reactstrap.Badge,
+							{ color: 'secondary' },
+							seg.label.split("/")[seg.label.split("/").length - 1]
+						),
+						' ',
+						seg.segment[0].toFixed(3),
+						' sec ~ ',
+						seg.segment[1].toFixed(3),
+						' sec'
 					);
 				})
 			);
@@ -2422,6 +2433,7 @@ var Home = function (_React$Component) {
 		_this.handleAdd = _this._handleAdd.bind(_this);
 		_this.handleSubmit = _this._handleSubmit.bind(_this);
 		_this.onDismiss = _this.onDismiss.bind(_this);
+		_this.handleDelete = _this._handleDelete.bind(_this);
 
 		_this.currentPath = "Root";
 		_this.data = __webpack_require__("./data/taxonomyTree.json");
@@ -2470,18 +2482,10 @@ var Home = function (_React$Component) {
 			var _this3 = this;
 
 			this.setState(function (prevState) {
-<<<<<<< HEAD
 				if (prevState.end_time > prevState.start_time) {
 					var timestamp = new Date().getTime();
-					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": "TODO: Mako please implement here", "segment": [prevState.start_time, prevState.end_time] }]) };
-				} else {
-
-					_this3.setState({ visible: true, alert_message: "End time should later than start time" });
-				}
-=======
-				var timestamp = new Date().getTime();
-				return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
->>>>>>> 87f304e1adddbc63d9aba7bff222529ada52cccf
+					return { annotations: [].concat(_toConsumableArray(prevState.annotations), [{ "id": timestamp, "label": _this3.currentPath, "segment": [prevState.start_time, prevState.end_time] }]) };
+				} else _this3.setState({ visible: true, alert_message: "End time should later than start time" });
 			});
 		}
 		//hanele submit annotation
@@ -2514,6 +2518,18 @@ var Home = function (_React$Component) {
 		key: 'onDismiss',
 		value: function onDismiss() {
 			this.setState({ visible: false });
+		}
+		//hanele alert toggle
+
+	}, {
+		key: '_handleDelete',
+		value: function _handleDelete(id) {
+			this.setState(function (prevState) {
+				var new_annotations = prevState.annotations.filter(function (seg) {
+					return seg.id !== id;
+				});
+				return { annotations: new_annotations };
+			});
 		}
 	}, {
 		key: 'clickOption',
@@ -2612,7 +2628,7 @@ var Home = function (_React$Component) {
 								_react2.default.createElement(
 									_reactstrap.CardTitle,
 									null,
-									'Please add segment'
+									'Pleas add segment'
 								),
 								_react2.default.createElement(
 									_reactstrap.CardBody,
@@ -2700,7 +2716,7 @@ var Home = function (_React$Component) {
 								_react2.default.createElement(
 									_reactstrap.CardBody,
 									null,
-									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations })
+									_react2.default.createElement(_Segments2.default, { annotations: this.state.annotations, onSegmentDelete: this.handleDelete })
 								)
 							)
 						)
@@ -2803,7 +2819,7 @@ var TimeButton = function (_React$Component) {
 								{ className: 'mb-1' },
 								_react2.default.createElement(
 										_reactstrap.Button,
-										{ outline: true, color: 'success', onClick: this.handleClick, className: 'mr-3' },
+										{ outline: true, color: 'primary', onClick: this.handleClick, className: 'mr-3' },
 										'Set ',
 										this.props.type,
 										' time'

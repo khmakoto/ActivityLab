@@ -31,7 +31,7 @@ class Home extends React.Component {
 		this.handleAdd = this._handleAdd.bind(this)
 		this.handleSubmit = this._handleSubmit.bind(this)
 		this.onDismiss = this.onDismiss.bind(this);
-
+		this.handleDelete = this._handleDelete.bind(this);
 
 		this.currentPath = "Root";
 		this.data = require('../../../data/taxonomyTree.json');
@@ -65,13 +65,11 @@ class Home extends React.Component {
 	//handle add segment
 	_handleAdd(){
 		this.setState((prevState) => {
-
 			if(prevState.end_time > prevState.start_time){
 				var timestamp = (new Date()).getTime();
 				return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
 			}else
 				this.setState({ visible: true, alert_message: "End time should later than start time" });
-
 		});
 	}
 	//hanele submit annotation
@@ -96,7 +94,13 @@ class Home extends React.Component {
 	onDismiss() {
     this.setState({ visible: false });
   }
-
+	//hanele alert toggle
+	_handleDelete(id){
+		this.setState((prevState) => {
+				const new_annotations = prevState.annotations.filter( seg => seg.id !== id );
+				return { annotations: new_annotations };
+		});
+  }
 
 	clickOption(evt) {
 		var selectMulti = document.getElementById("exampleSelectMulti");
@@ -198,7 +202,7 @@ class Home extends React.Component {
 								<Card body outline color="secondary">
 									<CardTitle>Segments</CardTitle>
 	 								<CardBody>
-										<Segments annotations={this.state.annotations} />
+										<Segments annotations={this.state.annotations} onSegmentDelete={this.handleDelete}  />
 									</CardBody>
 								</Card>
 						 </Col>
