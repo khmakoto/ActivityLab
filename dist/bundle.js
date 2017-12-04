@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8bc48be2e4dfff1f15f0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "54ee4d92cc2f1b28cdaa"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1727,6 +1727,33 @@ var Profile = function (_React$Component) {
 					)
 				);
 			}
+
+			var counts = { "videos": 0, "eating": 0, "sports": 0, "social": 0, "care": 0, "household": 0 };
+			for (var index in user["annotations"]) {
+				var annotation = user["annotations"][index];
+				var label = annotation["label"];
+				label = label.split("/");
+				if (label.length <= 1) {
+					label = "Root";
+				} else {
+					label = label[1];
+				}
+
+				counts["videos"] += 1;
+				if (label == "Eating and drinking Activities") {
+					counts["eating"] += 1;
+				} else if (label == "Sports, Exercise, and Recreation") {
+					counts["sports"] += 1;
+				} else if (label == "Socializing, Relaxing, and Leisure") {
+					counts["social"] += 1;
+				} else if (label == "Personal Care") {
+					counts["care"] += 1;
+				} else if (label == "Household Activities") {
+					counts["household"] += 1;
+				}
+				console.log(counts);
+			}
+
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -1783,7 +1810,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneAnnotationBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["videos"] >= 1 ? _OneAnnotationBadge2.default : _OneAnnotationBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1797,7 +1824,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenAnnotationsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["videos"] >= 10 ? _TenAnnotationsBadge2.default : _TenAnnotationsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1811,7 +1838,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentyAnnotationsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["videos"] >= 20 ? _TwentyAnnotationsBadge2.default : _TwentyAnnotationsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1825,7 +1852,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftyAnnotationsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["videos"] >= 50 ? _FiftyAnnotationsBadge2.default : _FiftyAnnotationsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1843,7 +1870,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneFoodsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["eating"] >= 1 ? _OneFoodsBadge2.default : _OneFoodsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1857,7 +1884,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenFoodsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["eating"] >= 10 ? _TenFoodsBadge2.default : _TenFoodsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1871,7 +1898,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentyFoodsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["eating"] >= 20 ? _TwentyFoodsBadge2.default : _TwentyFoodsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1885,7 +1912,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftyFoodsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["eating"] >= 50 ? _FiftyFoodsBadge2.default : _FiftyFoodsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1903,7 +1930,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneSportsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["sports"] >= 1 ? _OneSportsBadge2.default : _OneSportsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1917,7 +1944,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenSportsBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["sports"] >= 10 ? _TenSportsBadge2.default : _TenSportsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1931,7 +1958,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentySportsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["sports"] >= 20 ? _TwentySportsBadge2.default : _TwentySportsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1945,7 +1972,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftySportsBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["sports"] >= 50 ? _FiftySportsBadge2.default : _FiftySportsBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1963,7 +1990,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneSocialBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["social"] >= 1 ? _OneSocialBadge2.default : _OneSocialBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1977,7 +2004,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenSocialBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["social"] >= 10 ? _TenSocialBadge2.default : _TenSocialBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -1991,7 +2018,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentySocialBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["social"] >= 20 ? _TwentySocialBadge2.default : _TwentySocialBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2005,7 +2032,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftySocialBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["social"] >= 50 ? _FiftySocialBadge2.default : _FiftySocialBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2023,7 +2050,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneCareBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["care"] >= 1 ? _OneCareBadge2.default : _OneCareBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2037,7 +2064,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenCareBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["care"] >= 10 ? _TenCareBadge2.default : _TenCareBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2051,7 +2078,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentyCareBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["care"] >= 20 ? _TwentyCareBadge2.default : _TwentyCareBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2065,7 +2092,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftyCareBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["care"] >= 50 ? _FiftyCareBadge2.default : _FiftyCareBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2083,7 +2110,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _OneHouseholdBadge2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["household"] >= 1 ? _OneHouseholdBadge2.default : _OneHouseholdBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2097,7 +2124,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TenHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["household"] >= 10 ? _TenHouseholdBadge2.default : _TenHouseholdBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2111,7 +2138,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _TwentyHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["household"] >= 20 ? _TwentyHouseholdBadge2.default : _TwentyHouseholdBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,
@@ -2125,7 +2152,7 @@ var Profile = function (_React$Component) {
 							_react2.default.createElement(
 								'center',
 								null,
-								_react2.default.createElement('img', { height: '100px', src: _FiftyHouseholdBadgeDisabled2.default }),
+								_react2.default.createElement('img', { height: '100px', src: counts["household"] >= 50 ? _FiftyHouseholdBadge2.default : _FiftyHouseholdBadgeDisabled2.default }),
 								_react2.default.createElement(
 									'p',
 									null,

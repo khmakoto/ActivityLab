@@ -78,9 +78,41 @@ class Profile extends React.Component {
 	render() {
 		const user = this.state.user;
 		if (!user) {
-      return <div><Alert color="light">Loading</Alert></div>
-    }
-	  return (
+			return <div><Alert color="light">Loading</Alert></div>
+		}
+
+		var counts = {"videos": 0, "eating": 0, "sports": 0, "social": 0, "care": 0, "household": 0};
+		for (var index in user["annotations"]) {
+			var annotation = user["annotations"][index];
+			var label = annotation["label"];
+			label = label.split("/");
+			if (label.length <= 1) {
+				label = "Root";
+			}
+			else {
+				label = label[1];
+			}
+
+			counts["videos"] += 1;
+			if (label == "Eating and drinking Activities") {
+				counts["eating"] += 1;
+			}
+			else if (label == "Sports, Exercise, and Recreation") {
+				counts["sports"] += 1;
+			}
+			else if (label == "Socializing, Relaxing, and Leisure") {
+				counts["social"] += 1;
+			}
+			else if (label == "Personal Care") {
+				counts["care"] += 1;
+			}
+			else if (label == "Household Activities") {
+				counts["household"] += 1;
+			}
+			console.log(counts);
+		}
+		
+	  	return (
 			<div>
 				<Container>
 					 <Row>
@@ -106,25 +138,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneAnnotationBadge} />
+								<img height="100px" src={counts["videos"] >= 1 ? OneAnnotationBadge : OneAnnotationBadgeDisabled} />
 								<p>Annotated your first video.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenAnnotationsBadge} />
+								<img height="100px" src={counts["videos"] >= 10 ? TenAnnotationsBadge : TenAnnotationsBadgeDisabled} />
 								<p>Annotated ten videos.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentyAnnotationsBadge} />
+								<img height="100px" src={counts["videos"] >= 20 ? TwentyAnnotationsBadge : TwentyAnnotationsBadgeDisabled} />
 								<p>Annotated twenty videos.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftyAnnotationsBadge} />
+								<img height="100px" src={counts["videos"] >= 50 ? FiftyAnnotationsBadge : FiftyAnnotationsBadgeDisabled} />
 								<p>Annotated fifty videos.</p>
 							</center>
 						</Col>
@@ -132,25 +164,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneFoodsBadge} />
+								<img height="100px" src={counts["eating"] >= 1 ? OneFoodsBadge : OneFoodsBadgeDisabled} />
 								<p>Annotated your first video in the "Eating and Drinking Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenFoodsBadgeDisabled} />
+								<img height="100px" src={counts["eating"] >= 10 ? TenFoodsBadge : TenFoodsBadgeDisabled} />
 								<p>Annotated ten videos in the "Eating and Drinking Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentyFoodsBadgeDisabled} />
+								<img height="100px" src={counts["eating"] >= 20 ? TwentyFoodsBadge : TwentyFoodsBadgeDisabled} />
 								<p>Annotated twenty videos in the "Eating and Drinking Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftyFoodsBadgeDisabled} />
+								<img height="100px" src={counts["eating"] >= 50 ? FiftyFoodsBadge : FiftyFoodsBadgeDisabled} />
 								<p>Annotated fifty videos in the "Eating and Drinking Activities" category.</p>
 							</center>
 						</Col>
@@ -158,25 +190,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneSportsBadge} />
+								<img height="100px" src={counts["sports"] >= 1 ? OneSportsBadge : OneSportsBadgeDisabled} />
 								<p>Annotated your first video in the "Sports, Exercise and Recreation" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenSportsBadge} />
+								<img height="100px" src={counts["sports"] >= 10 ? TenSportsBadge : TenSportsBadgeDisabled} />
 								<p>Annotated ten videos in the "Sports, Exercise and Recreation" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentySportsBadgeDisabled} />
+								<img height="100px" src={counts["sports"] >= 20 ? TwentySportsBadge : TwentySportsBadgeDisabled} />
 								<p>Annotated twenty videos in the "Sports, Exercise and Recreation" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftySportsBadgeDisabled} />
+								<img height="100px" src={counts["sports"] >= 50 ? FiftySportsBadge : FiftySportsBadgeDisabled} />
 								<p>Annotated fifty videos in the "Sports, Exercise and Recreation" category.</p>
 							</center>
 						</Col>
@@ -184,25 +216,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneSocialBadge} />
+								<img height="100px" src={counts["social"] >= 1 ? OneSocialBadge : OneSocialBadgeDisabled} />
 								<p>Annotated your first video in the "Socializing, Relaxing and Leisure" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenSocialBadge} />
+								<img height="100px" src={counts["social"] >= 10 ? TenSocialBadge : TenSocialBadgeDisabled} />
 								<p>Annotated ten videos in the "Socializing, Relaxing and Leisure" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentySocialBadge} />
+								<img height="100px" src={counts["social"] >= 20 ? TwentySocialBadge : TwentySocialBadgeDisabled} />
 								<p>Annotated twenty videos in the "Socializing, Relaxing and Leisure" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftySocialBadgeDisabled} />
+								<img height="100px" src={counts["social"] >= 50 ? FiftySocialBadge : FiftySocialBadgeDisabled} />
 								<p>Annotated fifty videos in the "Personal Care" category.</p>
 							</center>
 						</Col>
@@ -210,25 +242,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneCareBadge} />
+								<img height="100px" src={counts["care"] >= 1 ? OneCareBadge : OneCareBadgeDisabled} />
 								<p>Annotated your first video in the "Personal Care" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenCareBadge} />
+								<img height="100px" src={counts["care"] >= 10 ? TenCareBadge : TenCareBadgeDisabled} />
 								<p>Annotated ten videos in the "Personal Care" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentyCareBadgeDisabled} />
+								<img height="100px" src={counts["care"] >= 20 ? TwentyCareBadge : TwentyCareBadgeDisabled} />
 								<p>Annotated twenty videos in the "Personal Care" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftyCareBadgeDisabled} />
+								<img height="100px" src={counts["care"] >= 50 ? FiftyCareBadge : FiftyCareBadgeDisabled} />
 								<p>Annotated fifty videos in the "Personal Care" category.</p>
 							</center>
 						</Col>
@@ -236,25 +268,25 @@ class Profile extends React.Component {
 					<Row style={{marginTop: 15 + 'px', marginBottom: 15 + 'px'}}>
 						<Col>
 							<center>
-								<img height="100px" src={OneHouseholdBadge} />
+								<img height="100px" src={counts["household"] >= 1 ? OneHouseholdBadge : OneHouseholdBadgeDisabled} />
 								<p>Annotated your first video in the "Household Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TenHouseholdBadgeDisabled} />
+								<img height="100px" src={counts["household"] >= 10 ? TenHouseholdBadge : TenHouseholdBadgeDisabled} />
 								<p>Annotated ten videos in the "Household Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={TwentyHouseholdBadgeDisabled} />
+								<img height="100px" src={counts["household"] >= 20 ? TwentyHouseholdBadge : TwentyHouseholdBadgeDisabled} />
 								<p>Annotated twenty videos in the "Household Activities" category.</p>
 							</center>
 						</Col>
 						<Col>
 							<center>
-								<img height="100px" src={FiftyHouseholdBadgeDisabled} />
+								<img height="100px" src={counts["household"] >= 50 ? FiftyHouseholdBadge : FiftyHouseholdBadgeDisabled} />
 								<p>Annotated fifty videos in the "Household Activities" category.</p>
 							</center>
 						</Col>

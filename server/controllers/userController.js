@@ -46,7 +46,6 @@ function me(req, res) {
     }
 	});
 }
-
 /*
 
 // route middleware to validate :id
