@@ -69,13 +69,13 @@ class Home extends React.Component {
 				var timestamp = (new Date()).getTime();
 				return { annotations: [...prevState.annotations, { "id": timestamp , "label": this.currentPath, "segment":[prevState.start_time, prevState.end_time] }] };
 			}else
-				this.setState({ visible: true, alert_message: "End time should later than start time" });
+				this.setState({ visible: true, alert_message: "End time should be later than start time" });
 		});
 	}
 	//hanele submit annotation
 	_handleSubmit(){
 		const annotations = this.state.annotations.map( seg  => {
-			let obj = Object.assign({}, {'type': this.state.task.id, 'label': seg.label, "segment": seg.segment});
+			let obj = Object.assign({}, {'task': this.state.task.id, 'label': seg.label, "segment": seg.segment});
 			return obj
 		});
 		const data = Object.assign({}, {"annotations": annotations});

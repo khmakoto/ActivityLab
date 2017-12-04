@@ -5,7 +5,7 @@ const userSchema = mongoose.Schema({
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'Task'},
 		label: String,
-		segment: [],
+		segment: []
 	}],
   facebook    			 : {
         id           : String,
