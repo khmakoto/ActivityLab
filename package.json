@@ -46,13 +46,13 @@
     "mongoose": "^5.13.15",
     "passport": "^0.6.0",
     "passport-facebook": "^2.1.1",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-hot-loader": "^3.1.2",
     "react-native-restart": "0.0.6",
     "react-router-dom": "^4.2.2",
     "react-youtube": "^7.5.0",
-    "reactstrap": "^5.0.0-alpha.3",
+    "reactstrap": "^5.0.0",
     "save": "^2.3.1"
   }
 }
