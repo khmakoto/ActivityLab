@@ -23,7 +23,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^6.7.2",
+    "css-loader": "^6.7.3",
     "express": "^4.18.2",
     "file-loader": "^1.1.5",
     "image-webpack-loader": "^8.1.0",
