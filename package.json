@@ -27,7 +27,7 @@
     "express": "^4.18.2",
     "file-loader": "^1.1.5",
     "image-webpack-loader": "^8.1.0",
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.3",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.2",
     "webpack": "^5.76.1",
