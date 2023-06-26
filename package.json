@@ -32,7 +32,7 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.87.0",
     "webpack-dev-middleware": "^6.1.1",
-    "webpack-hot-middleware": "^2.25.3"
+    "webpack-hot-middleware": "^2.25.4"
   },
   "dependencies": {
     "babel-loader": "^7.1.2",
