@@ -29,7 +29,7 @@
     "image-webpack-loader": "^8.1.0",
     "node-sass": "^9.0.0",
     "sass-loader": "^13.3.3",
-    "style-loader": "^3.3.3",
+    "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
     "webpack-dev-middleware": "^7.0.0",
     "webpack-hot-middleware": "^2.26.0"
