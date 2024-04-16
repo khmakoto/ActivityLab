@@ -28,7 +28,7 @@
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
     "node-sass": "^9.0.0",
-    "sass-loader": "^14.2.0",
+    "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",
     "webpack-dev-middleware": "^7.2.1",
