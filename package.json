@@ -52,7 +52,7 @@
     "react-native-restart": "0.0.14",
     "react-router-dom": "^6.26.2",
     "react-youtube": "^10.1.0",
-    "reactstrap": "^9.2.2",
+    "reactstrap": "^9.2.3",
     "save": "^2.9.0"
   }
 }
