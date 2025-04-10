@@ -38,7 +38,7 @@
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^2.2.0",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.5",
     "cookie-parser": "^1.4.7",
     "express-session": "^1.18.1",
     "json-loader": "^0.5.7",
